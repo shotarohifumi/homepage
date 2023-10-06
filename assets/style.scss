@@ -1,0 +1,24 @@
+* {
+	width: 80vw;
+}
+
+header {
+	height: 150px;
+	background-color: transparent;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+footer {
+	.footer {
+		background-color: adjust-color($color: #459BDB, $red: 1, $green: 2, $blue: 3, $hue: 0, $saturation: 0%, $lightness: 0%, $alpha: 1.0);
+		color: #ffff;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	p {
+		display: flex;
+		justify-content: center;
+	}
+}

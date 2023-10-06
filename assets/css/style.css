@@ -1,0 +1,10 @@
+* {
+  width: 80vw;
+}
+
+header {
+  height: 150px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+}
