@@ -43,6 +43,7 @@ footer .content {
   color: white;
   display: flex;
   justify-content: space-between;
+  margin-top: 1rem;
 }
 footer .content p {
   padding-top: 0.5vh;
