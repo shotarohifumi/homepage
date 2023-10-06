@@ -35,7 +35,7 @@
 .wrapper .maincontents .box {
   height: 10em;
   width: auto;
-  background: #deebff;
+  background: rgba(222, 235, 255, 0.5215686275);
 }
 
 footer .content {
