@@ -1,24 +1,73 @@
-* {
-	width: 80vw;
-}
+.wrapper {
+	padding-right: 10vw;
+	padding-left: 10vw;
 
-header {
-	height: 150px;
-	background-color: transparent;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
+	header {
+		background-color: transparent;
+		display: flex;
+		justify-content: space-between;
+		height: 12vh;
+		padding-top: 10px;
+		h1 {
+			padding-top: 5vh;
+		}
+		img.toplogo {
+			height: 100px;
+			width: 150px;
+			src: url(https://www.nebit.co.jp/);
+		}
+		img.home {
+			height: 50px;
+			width: 100px;
+			padding-top: 4vh;
+		}
+	}
+	.maincontents {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		h2 {
+			border-bottom: 5px solid;
+			display: inline-block;
+			margin-bottom: auto;
+			// width: fit-content;
+			// text-align: center;
+		}
+		.box {
+			height: 10em;
+			width: auto;
+			background: #e0e7fa;
+		}
+	}
 }
+	
 footer {
-	.footer {
-		background-color: adjust-color($color: #459BDB, $red: 1, $green: 2, $blue: 3, $hue: 0, $saturation: 0%, $lightness: 0%, $alpha: 1.0);
+	.content {
+		height: 10vh;
+		background-color: #459BDB;
 		color: #ffff;
 		display: flex;
 		justify-content: space-between;
-		flex-direction: column;
+		padding-left: 10vw;
+		padding-right: 10vw;
+		p {
+			padding-top: .5vh;
+		}
+		img.btmlogo {
+			height: 64px;
+			width: 100px;
+			padding-top: 1vh;
+		}
+		img.pmark {
+			height: 56px;
+			width: 56px;
+			padding-top: 1.5vh;
+		}
 	}
 	p {
-		display: flex;
-		justify-content: center;
+    text-align: center;
 	}
 }
+
+
+
