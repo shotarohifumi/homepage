@@ -44,6 +44,8 @@ footer .content {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 footer .content p {
   padding-top: 0.5vh;
@@ -51,14 +53,11 @@ footer .content p {
 footer .content img.btmlogo {
   height: 64px;
   width: 100px;
-  padding-top: 1vh;
-  padding-left: 10vw;
 }
 footer .content img.pmark {
   height: 56px;
   width: 56px;
-  padding-top: 1.5vh;
-  padding-right: 10vw;
+  margin-top: 0.5vh;
 }
 footer p {
   text-align: center;
