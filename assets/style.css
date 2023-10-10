@@ -47,16 +47,13 @@
   margin-bottom: 1rem;
   margin-top: 2rem;
 }
-.wrapper .maincontents .dlbtn img {
-  position: relative;
-}
 .wrapper .maincontents .box {
   height: 10em;
   width: auto;
   background: rgba(222, 235, 255, 0.5215686275);
 }
-.wrapper .main1, .wrapper .main2, .wrapper .main3, .wrapper .main4, .wrapper .main5 {
-  position: relative;
+.wrapper .main1 .dlbtn, .wrapper .main2 .dlbtn, .wrapper .main3 .dlbtn, .wrapper .main4 .dlbtn, .wrapper .main5 .dlbtn {
+  position: absolute;
 }
 .wrapper .main2 .applybtn {
   margin-top: 1rem;

@@ -57,9 +57,7 @@
 			margin-bottom: 1rem;
 			margin-top: 2rem;
 		}
-		// .dlbtn img {
-			// position: relative
-		// }
+
 		.box {
 			height: 10em;
 			width: auto;
@@ -67,8 +65,9 @@
 		}
 	}
 	.main1, .main2, .main3, .main4, .main5 {
-		position: relative;
-		
+		.dlbtn {
+			position: absolute;
+		}
 	}
 	.main2 {
 		.applybtn {
