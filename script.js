@@ -40,7 +40,7 @@ $(function () {
             'font-size': '12px',
             'repeat': 'infinity',
             // 'margin': '+=10'
-        }, 'fast');
+        }, 'slow');
     });
     $('button').mouseout(function(){
         $(this).animate({

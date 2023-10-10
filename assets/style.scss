@@ -57,11 +57,18 @@
 			margin-bottom: 1rem;
 			margin-top: 2rem;
 		}
+		.dlbtn img {
+			position: relative
+		}
 		.box {
 			height: 10em;
 			width: auto;
 			background: #deebff85;
 		}
+	}
+	.main1, .main2, .main3, .main4, .main5 {
+		position: relative;
+		
 	}
 	.main2 {
 		.applybtn {
