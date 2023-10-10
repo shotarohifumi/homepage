@@ -8,14 +8,16 @@
   justify-content: space-between;
   height: 12vh;
   padding-top: 10px;
+  transform-style: preserve-3d;
 }
 .wrapper header h1 {
+  font-size: 2em;
+  font-weight: bold;
   padding-top: 5vh;
 }
 .wrapper header img.toplogo {
   height: 100px;
   width: 150px;
-  src: url(https://www.nebit.co.jp/);
 }
 .wrapper header img.home {
   height: 80px;
@@ -30,17 +32,27 @@
 .wrapper .maincontents h2 {
   border-bottom: 5px solid;
   display: inline-block;
-  margin-bottom: auto;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 .wrapper .maincontents .box {
   height: 10em;
   width: auto;
   background: rgba(222, 235, 255, 0.5215686275);
 }
-.wrapper .maincontents .applybtn {
+.wrapper .main2 .applybtn {
+  margin-top: 1rem;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.wrapper .main2 .applybtn a, .wrapper .main2 .applybtn button {
+  cursor: pointer;
   height: 48px;
   width: 128px;
-  background-color: #0061ff;
+  background: linear-gradient(to top, rgb(20, 186, 255) 0%, rgb(81, 144, 230) 40%, rgb(135, 117, 255) 100%);
+  border-radius: 10%;
+  margin-right: 12px;
+  box-shadow: 2px 2px 1px 0px;
 }
 
 footer .content {

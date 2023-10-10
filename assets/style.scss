@@ -8,13 +8,15 @@
 		justify-content: space-between;
 		height: 12vh;
 		padding-top: 10px;
+		transform-style: preserve-3d;
 		h1 {
+			font-size: 2em;
+			font-weight: bold;
 			padding-top: 5vh;
 		}
 		img.toplogo {
 			height: 100px;
 			width: 150px;
-			src: url(https://www.nebit.co.jp/);
 		}
 		img.home {
 			height: 80px;
@@ -30,7 +32,8 @@
 		h2 {
 			border-bottom: 5px solid;
 			display: inline-block;
-			margin-bottom: auto;
+			margin-bottom: 1rem;
+			margin-top: 2rem;
 			// width: fit-content;
 			// text-align: center;
 		}
@@ -39,12 +42,30 @@
 			width: auto;
 			background: #deebff85;
 		}
+	}
+	.main2 {
 		.applybtn {
-			height: 48px;
-			width: 128px;
-			background-color: #0061ff;
+			margin-top: 1rem;
+			display: flex;
+			margin-bottom: 1rem;
+			a, button{
+				cursor: pointer;
+				height: 48px;
+				width: 128px;
+				background: linear-gradient(to top, rgb(20 186 370) 0%, rgb(81 144 230) 40%, rgb(135 117 363) 100%);
+				// background: linear-gradient(to top, rgb(30 190 245) 0%, rgb(62 223 240) 40%, rgb(254 245 260) 100%);
+				// background-color: #0062ff;
+				// background-color: rgb(rgb(177, 57, 57), rgb(52, 117, 52), rgb(0, 0, 255));
+				border-radius: 10%;
+				margin-right: 12px;		
+				box-shadow: 2px 2px 1px 0px;
+				// button:hover {	
+				// transform: scale(0.8, 0.8);
+				// }
+			}
 		}
 	}
+
 }
 	
 footer {
