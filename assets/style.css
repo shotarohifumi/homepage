@@ -8,21 +8,33 @@
   justify-content: space-between;
   height: 12vh;
   padding-top: 10px;
-  transform-style: preserve-3d;
+  transform: translateY(0deg);
 }
 .wrapper header h1 {
   font-size: 2em;
   font-weight: bold;
   padding-top: 5vh;
 }
-.wrapper header img.toplogo {
+.wrapper header #toplogo {
   height: 100px;
   width: 150px;
+  animation: rotateY none 3s infinite linear 2s normal;
 }
-.wrapper header img.home {
+@keyframes rotateY {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.wrapper header a img {
   height: 80px;
   width: 100px;
-  padding-top: 4vh;
+  padding-top: 2vh;
 }
 .wrapper .maincontents {
   display: flex;
