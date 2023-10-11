@@ -46,11 +46,18 @@
 			padding-top: 2vh;
 			}
 	}
+	.caution {
+		font-size: 0.8em;
+		text-align: end;
+	}
 
 	.maincontents {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
+		input[type="checkbox"] {
+			all: revert;
+		}
 		h2 {
 			border-bottom: 4px solid;
 			display: inline-block;
@@ -59,7 +66,9 @@
 		}
 
 		.box {
-			height: 10em;
+			height: fit-content;
+			padding-top: 1em;
+			padding-bottom: 1em;
 			width: auto;
 			background: #deebff85;
 		}
@@ -68,6 +77,9 @@
 		#dlbtn {
 			cursor: pointer;
 			position: absolute;
+		}
+		.box {
+			padding-top: 1em;
 		}
 	}
 	.main1, .main3, .main4, .main5{
@@ -116,6 +128,13 @@
 					padding-top: 12px;
 				}
 			}
+		}
+	}
+	.main3 {
+		.box {
+			display: flex;
+			justify-content: start;
+			padding-left: 1em;
 		}
 	}
 }

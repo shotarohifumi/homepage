@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>社員用専用ホームページ</title>
 	<link rel="stylesheet" href="./reset.css">
-	<!-- <link rel="stylesheet" href="./assets/style.css"> -->
-	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/style.css">
+	<!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
 </head>
 <body>
 	<div class="wrapper">
@@ -17,7 +17,8 @@
 			<a href="https://www.nebit.co.jp/" id="home">
 				<img src="./pics/ホームボタン.png" alt="ホームボタン">
 			</a>
-			</header>
+		</header>
+		<p class="caution">*複数まとめてダウンロードする際にはboxにチェックをお願いします。</p>
 		<div class="maincontents">
 			<!-- お知らせ -->
 			<div class="main1">
@@ -54,8 +55,12 @@
 				<h2>勤務時間報告書</h2>
 				<img src="./pics/ダウンロードbtn.png" alt="dlbtn" id="dlbtn">
 				<div class="box">
-					<a href="https://www.dropbox.com/sh/i7rqce2hit8qp71/AADN0xsMOfGrBB__JfIk9SvUa/90%20%E5%8B%A4%E5%8B%99%E6%99%82%E9%96%93%E5%A0%B1%E5%91%8A%E6%9B%B8/2023?dl=0&preview=%E5%8B%A4%E6%80%A0%E5%A0%B1%E5%91%8A%E8%A1%A8%EF%BC%882023%E5%B9%B4%EF%BC%89+-%E6%AE%8B%E6%A5%AD%E7%A9%8D%E4%B8%8A.xlsx&subfolder_nav_tracking=1">
-						勤怠報告書(2023)</a>
+					<input type="checkbox" id="kintai" name="kintai" value="kintai">
+					<label for="kintai">
+						<a href="https://www.dropbox.com/sh/i7rqce2hit8qp71/AADN0xsMOfGrBB__JfIk9SvUa/90%20%E5%8B%A4%E5%8B%99%E6%99%82%E9%96%93%E5%A0%B1%E5%91%8A%E6%9B%B8/2023?dl=0&preview=%E5%8B%A4%E6%80%A0%E5%A0%B1%E5%91%8A%E8%A1%A8%EF%BC%882023%E5%B9%B4%EF%BC%89+-%E6%AE%8B%E6%A5%AD%E7%A9%8D%E4%B8%8A.xlsx&subfolder_nav_tracking=1">
+							勤怠報告書(2023)</a>
+					</label>
+					
 				</div>
 			</div>
 			<!-- 就業規則等 -->
