@@ -71,9 +71,10 @@
   flex-direction: column;
   position: relative;
 }
-.wrapper .main2 .btns {
-  display: flex;
-  flex-direction: row-reverse;
+.wrapper .main2 #dlbtn {
+  position: absolute;
+  right: 4px;
+  top: 104px;
 }
 .wrapper .main2 .applybtn {
   margin-top: 1rem;
@@ -113,4 +114,12 @@ footer .content img.pmark {
 }
 footer p {
   text-align: center;
+}
+
+.test {
+  width: 100px;
+  color: darkblue;
+  text-align: center;
+  cursor: pointer;
+  background-color: yellow;
 }/*# sourceMappingURL=style.css.map */
