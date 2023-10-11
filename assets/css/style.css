@@ -42,18 +42,38 @@
   text-align: center;
 }
 .wrapper .maincontents h2 {
-  border-bottom: 5px solid;
+  border-bottom: 4px solid;
   display: inline-block;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
+  width: fit-content;
+  margin: 1em auto;
 }
 .wrapper .maincontents .box {
   height: 10em;
   width: auto;
   background: rgba(222, 235, 255, 0.5215686275);
 }
-.wrapper .main1, .wrapper .main2, .wrapper .main3, .wrapper .main4, .wrapper .main5 {
+.wrapper .main1 #dlbtn, .wrapper .main2 #dlbtn, .wrapper .main3 #dlbtn, .wrapper .main4 #dlbtn, .wrapper .main5 #dlbtn {
+  cursor: pointer;
+  position: absolute;
+}
+.wrapper .main1, .wrapper .main3, .wrapper .main4, .wrapper .main5 {
+  display: flex;
+  flex-direction: column;
   position: relative;
+}
+.wrapper .main1 #dlbtn, .wrapper .main3 #dlbtn, .wrapper .main4 #dlbtn, .wrapper .main5 #dlbtn {
+  top: 20px;
+  right: 4px;
+}
+.wrapper .main2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.wrapper .main2 #dlbtn {
+  position: absolute;
+  right: 4px;
+  top: 104px;
 }
 .wrapper .main2 .applybtn {
   margin-top: 1rem;
@@ -93,4 +113,12 @@ footer .content img.pmark {
 }
 footer p {
   text-align: center;
+}
+
+.test {
+  width: 100px;
+  color: darkblue;
+  text-align: center;
+  cursor: pointer;
+  background-color: yellow;
 }/*# sourceMappingURL=style.css.map */
