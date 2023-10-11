@@ -134,8 +134,11 @@ $(function () {
     //     $('#dayoff').css('width', '128px');
     // }
     // $('#dayoff').hover(handleHoverIn, handleHoverOut);
+
+    // jqueryuiのやーつ
     $('.test').draggable();
 });
+
 // SheetJSライブラリをインポート
 const XLSX = require('xlsx');
 
