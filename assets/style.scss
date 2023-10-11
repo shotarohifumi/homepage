@@ -96,11 +96,13 @@
 			margin-top: 1rem;
 			display: flex;
 			margin-bottom: 1rem;
-			a, button{
+			// background-image: linear-gradient(180deg, #0062ff, transparent);
+			a{
 				cursor: pointer;
 				height: 48px;
 				width: 128px;
-				background: linear-gradient(to top, rgb(20 186 370) 0%, rgb(81 144 230) 40%, rgb(135 117 363) 100%);
+				background-image: linear-gradient(180deg, #0062ff, transparent);
+				// background: linear-gradient(to top, rgb(20 186 370) 0%, rgb(81 144 230) 40%, rgb(135 117 363) 100%);
 				// background: linear-gradient(to top, rgb(30 190 245) 0%, rgb(62 223 240) 40%, rgb(254 245 260) 100%);
 				// background-color: #0062ff;
 				// background-color: rgb(rgb(177, 57, 57), rgb(52, 117, 52), rgb(0, 0, 255));
@@ -110,6 +112,9 @@
 				// button:hover {	
 				// transform: scale(0.8, 0.8);
 				// }
+				p {
+					padding-top: 12px;
+				}
 			}
 		}
 	}

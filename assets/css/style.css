@@ -80,14 +80,17 @@
   display: flex;
   margin-bottom: 1rem;
 }
-.wrapper .main2 .applybtn a, .wrapper .main2 .applybtn button {
+.wrapper .main2 .applybtn a {
   cursor: pointer;
   height: 48px;
   width: 128px;
-  background: linear-gradient(to top, rgb(20, 186, 255) 0%, rgb(81, 144, 230) 40%, rgb(135, 117, 255) 100%);
+  background-image: linear-gradient(180deg, #0062ff, transparent);
   border-radius: 10%;
   margin-right: 12px;
   box-shadow: 2px 2px 1px 0px;
+}
+.wrapper .main2 .applybtn a p {
+  padding-top: 12px;
 }
 
 footer .content {
