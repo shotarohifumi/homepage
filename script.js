@@ -139,20 +139,20 @@ $(function () {
     $('.test').draggable();
 });
 
-// SheetJSライブラリをインポート
-const XLSX = require('xlsx');
+// // SheetJSライブラリをインポート
+// const XLSX = require('xlsx');
 
-// Excelファイルを読み込む
-const workbook = XLSX.readFile('ファイル名.xlsx');
+// // Excelファイルを読み込む
+// const workbook = XLSX.readFile('ファイル名.xlsx');
 
-// シートを選択
-const sheetName = workbook.SheetNames[0]; // シート名を指定
-const sheet = workbook.Sheets[sheetName];
+// // シートを選択
+// const sheetName = workbook.SheetNames[0]; // シート名を指定
+// const sheet = workbook.Sheets[sheetName];
 
-// セルにアクセス
-const cellValue = sheet['A1'].v; // セルA1の値を取得
+// // セルにアクセス
+// const cellValue = sheet['A1'].v; // セルA1の値を取得
 
-console.log(cellValue);
+// console.log(cellValue);
 
-// 任意の後処理
+// // 任意の後処理
 
