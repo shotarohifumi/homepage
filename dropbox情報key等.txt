@@ -1,0 +1,16 @@
+App folder name
+nebit
+
+App key
+hu64t550owhq88k
+
+App secret
+kvtfw55sig8n27a
+
+
+dropbox api
+generated access token
+
+
+sl.BnzfE4LoQHRmfqlv4d3Pq1aZeFpocqy3NXezNyykqDRcWAM36is5zYXxR1vO5sY_0uivQICdQTZENYcEhc-FPokqVEWt6ikLXikIJRAvAUq79duuzO4XVpsCIVyBEapKYvnWzfatg9Yl
+
