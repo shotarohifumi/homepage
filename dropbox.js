@@ -119,8 +119,8 @@
 //     });
 // });
 // console.log("123");
-
-const ACCESS_TOKEN = 'sl.Bn1PImTTl2_9EV8-zaCN39XRb7JSR0dHpM_oeu6uHkhxnrB2eQtiWNWC3LMgzUvN5kc-tg_3XLUaLetZKPZ207I4QtVedh8QDcCkEGjV4cYbEmXmVLbveOErajN9yAhc8SDqzQI3fYPM';
+// GVd44Z_mD1UAAAAAAAAAHBvRjvdZeq5tBwAKhmxeQ_8
+const ACCESS_TOKEN = 'GVd44Z_mD1UAAAAAAAAAHBvRjvdZeq5tBwAKhmxeQ_8';
 
 $('#fetchData').click(function() {
 	$.ajax({

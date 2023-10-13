@@ -36,10 +36,17 @@
   width: 100px;
   padding-top: 2vh;
 }
+.wrapper .caution {
+  font-size: 0.8em;
+  text-align: end;
+}
 .wrapper .maincontents {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+.wrapper .maincontents input[type=checkbox] {
+  all: revert;
 }
 .wrapper .maincontents h2 {
   border-bottom: 4px solid;
@@ -48,13 +55,18 @@
   margin: 1em auto;
 }
 .wrapper .maincontents .box {
-  height: 10em;
+  height: fit-content;
+  padding-top: 1em;
+  padding-bottom: 1em;
   width: auto;
   background: rgba(222, 235, 255, 0.5215686275);
 }
 .wrapper .main1 #dlbtn, .wrapper .main2 #dlbtn, .wrapper .main3 #dlbtn, .wrapper .main4 #dlbtn, .wrapper .main5 #dlbtn {
   cursor: pointer;
   position: absolute;
+}
+.wrapper .main1 .box, .wrapper .main2 .box, .wrapper .main3 .box, .wrapper .main4 .box, .wrapper .main5 .box {
+  padding-top: 1em;
 }
 .wrapper .main1, .wrapper .main3, .wrapper .main4, .wrapper .main5 {
   display: flex;
@@ -91,6 +103,11 @@
 }
 .wrapper .main2 .applybtn a p {
   padding-top: 12px;
+}
+.wrapper .main3 .box {
+  display: flex;
+  justify-content: start;
+  padding-left: 1em;
 }
 
 footer .content {
