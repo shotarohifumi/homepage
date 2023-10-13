@@ -119,3 +119,41 @@ $(document).ready(function () {
     });
 });
 console.log("123");
+
+const ACCESS_TOKEN = 'sl.Bn1PImTTl2_9EV8-zaCN39XRb7JSR0dHpM_oeu6uHkhxnrB2eQtiWNWC3LMgzUvN5kc-tg_3XLUaLetZKPZ207I4QtVedh8QDcCkEGjV4cYbEmXmVLbveOErajN9yAhc8SDqzQI3fYPM';
+
+$('#fetchData').click(function() {
+	$.ajax({
+		url: 'https://www.dropbox.com/oauth2/authorize?client_id=4hdmjghwoyc2ysf&token_access_type=offline&response_type=code',
+		type: 'POST',
+		headers: {
+			'Authorization': 'Bearer ' + ACCESS_TOKEN,
+			'Content-Type': 'application/json'
+		},
+		data: JSON.stringify({
+			path: '/nebit/お知らせ',  // Specify the Dropbox path you want to list
+			recursive: false,
+			include_media_info: false,
+			include_deleted: false,
+			include_has_explicit_shared_members: false,
+			include_mounted_folders: true
+		}),
+		success: function(data) {
+			displayFileList(data.entries);
+		},
+		error: function(error) {
+			console.error('Error fetching data from Dropbox:', error);
+		}
+	});
+});
+
+function displayFileList(entries) {
+	const fileList = $('#fileList');
+	fileList.empty();
+
+	entries.forEach(function(entry) {
+		if (entry['.tag'] === 'file') {
+			fileList.append('<li>' + entry.name + '</li>');
+		}
+	});
+}
