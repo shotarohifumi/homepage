@@ -90,35 +90,35 @@
 // })
 
 
-$(document).ready(function () {
-    var accessToken = 'sl.BnxZfJ3F_04ChD-3mu9D2rats1IPAoAb-920rUYcYMpyEn8Z2GRaQcAAKhCSYpvIsfoKDr3_HmIf0DU4iVhGfVyasjUtzcJtOpWQx8AEPVfabdjhTdwYCQVtDkcT4Eeyu6xDl9RJ02dn';
-    var folderPath = 'C:\Desktop\Dropbox';
+// $(document).ready(function () {
+//     var accessToken = 'sl.BnxZfJ3F_04ChD-3mu9D2rats1IPAoAb-920rUYcYMpyEn8Z2GRaQcAAKhCSYpvIsfoKDr3_HmIf0DU4iVhGfVyasjUtzcJtOpWQx8AEPVfabdjhTdwYCQVtDkcT4Eeyu6xDl9RJ02dn';
+//     var folderPath = 'C:\Desktop\Dropbox';
 
-    $.ajax({
-        url: 'https://www.dropbox.com/scl/fo/vgs04agmj7i3ug7a5h2dm/h?rlkey=q0kw94fd0fag3r5ogfshtdob3&dl=0',
-        type: 'GET',
-        headers: {
-            'Authorization': 'Bearer ' + accessToken,
-            'Content-Type': 'application/json'
-        },
-        data: JSON.stringify({
-            "path": folderPath
-        }),
-        success: function (data) {
-            // Process and display the folder contents on your website
-            var fileList = $('#file-list');
-            data.entries.forEach(function (entry) {
-                if (entry[".tag"] === "file") {
-                    fileList.append('<li><a href="' + entry.path_display + '">' + entry.name + '</a></li>');
-                }
-            });
-        },
-        error: function (error) {
-            console.log(error);
-        }
-    });
-});
-console.log("123");
+//     $.ajax({
+//         url: 'https://www.dropbox.com/scl/fo/vgs04agmj7i3ug7a5h2dm/h?rlkey=q0kw94fd0fag3r5ogfshtdob3&dl=0',
+//         type: 'GET',
+//         headers: {
+//             'Authorization': 'Bearer ' + accessToken,
+//             'Content-Type': 'application/json'
+//         },
+//         data: JSON.stringify({
+//             "path": folderPath
+//         }),
+//         success: function (data) {
+//             // Process and display the folder contents on your website
+//             var fileList = $('#file-list');
+//             data.entries.forEach(function (entry) {
+//                 if (entry[".tag"] === "file") {
+//                     fileList.append('<li><a href="' + entry.path_display + '">' + entry.name + '</a></li>');
+//                 }
+//             });
+//         },
+//         error: function (error) {
+//             console.log(error);
+//         }
+//     });
+// });
+// console.log("123");
 
 const ACCESS_TOKEN = 'sl.Bn1PImTTl2_9EV8-zaCN39XRb7JSR0dHpM_oeu6uHkhxnrB2eQtiWNWC3LMgzUvN5kc-tg_3XLUaLetZKPZ207I4QtVedh8QDcCkEGjV4cYbEmXmVLbveOErajN9yAhc8SDqzQI3fYPM';
 
