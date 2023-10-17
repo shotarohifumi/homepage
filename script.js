@@ -1,6 +1,7 @@
 $(function () {
 // ボタンにカーソルが合うと大きさ文字が８０％縮み色も褪せる
-    $('#dayoff').mouseover(function(){
+    // 休暇申請
+    $('#dayoff').mouseenter(function(){
         // $(this).hide({
         //     'display': 'none'
         // });
@@ -9,20 +10,23 @@ $(function () {
             'height': '40px',
             'opacity': '0.5',
             'font-size': '12px',
-            'repeat': 'infinity',
-            'overflow': 'hidden'
+            'repeat': 'infinite',
+            'overflow': 'hidden',
+            // 'transform-origin': 'center'
             // 'margin': '+=10'
         }, 'slow');
     });
-    $('#dayoff').mouseout(function(){
+    $('#dayoff').mouseleave(function(){
         $(this).animate({
             'height': '48px',
             'width': '128px',
             'opacity': '1',
             // 'margin': '-=10'
             'font-size': '16px',
+            // 'transform-origin': 'center'
         }, 'fast');
     });
+    // 住所変更
     $('#address').mouseover(function(){
         // $(this).hide({
         //     'display': 'none'
@@ -32,7 +36,7 @@ $(function () {
             'height': '40px',
             'opacity': '0.5',
             'font-size': '12px',
-            'repeat': 'infinity',
+            'repeat': 'infinite',
             'overflow': 'hidden'
             // 'margin': '+=10'
         }, 'slow');
@@ -46,6 +50,7 @@ $(function () {
             // 'margin': '-=10'
         }, 'fast');
     });
+    // 銀行口座
     $('#bankaccount').mouseover(function(){
         // $(this).hide({
         //     'display': 'none'
@@ -55,7 +60,7 @@ $(function () {
             'height': '40px',
             'opacity': '0.5',
             'font-size': '12px',
-            'repeat': 'infinity',
+            'repeat': 'infinite',
             'overflow': 'hidden'
             // 'margin': '+=10'
         }, 'slow');

@@ -1,6 +1,7 @@
 .wrapper {
   padding-right: 10vw;
   padding-left: 10vw;
+  position: relative;
 }
 .wrapper header {
   background-color: transparent;
@@ -36,14 +37,9 @@
   width: 100px;
   padding-top: 2vh;
 }
-.wrapper .caution {
-  font-size: 0.8em;
-  text-align: end;
-}
 .wrapper .maincontents {
   display: flex;
   flex-direction: column;
-  text-align: center;
 }
 .wrapper .maincontents input[type=checkbox] {
   all: revert;
@@ -55,46 +51,69 @@
   width: fit-content;
   margin: 1em auto;
 }
-.wrapper .maincontents .box {
-  height: -moz-fit-content;
-  height: fit-content;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  width: auto;
-  background: rgba(222, 235, 255, 0.5215686275);
+.wrapper .maincontents .main1,
+.wrapper .maincontents .main2,
+.wrapper .maincontents .main3,
+.wrapper .maincontents .main4,
+.wrapper .maincontents .main5 {
+  position: relative;
 }
-.wrapper .main1 #dlbtn, .wrapper .main2 #dlbtn, .wrapper .main3 #dlbtn, .wrapper .main4 #dlbtn, .wrapper .main5 #dlbtn {
-  cursor: pointer;
-  position: absolute;
+.wrapper .maincontents .main1 .box1,
+.wrapper .maincontents .main1 .box2,
+.wrapper .maincontents .main1 .box5,
+.wrapper .maincontents .main2 .box1,
+.wrapper .maincontents .main2 .box2,
+.wrapper .maincontents .main2 .box5,
+.wrapper .maincontents .main3 .box1,
+.wrapper .maincontents .main3 .box2,
+.wrapper .maincontents .main3 .box5,
+.wrapper .maincontents .main4 .box1,
+.wrapper .maincontents .main4 .box2,
+.wrapper .maincontents .main4 .box5,
+.wrapper .maincontents .main5 .box1,
+.wrapper .maincontents .main5 .box2,
+.wrapper .maincontents .main5 .box5 {
+  margin-top: 10px;
+  height: 245px;
+  overflow-y: scroll;
+  border: solid;
 }
-.wrapper .main1 .box, .wrapper .main2 .box, .wrapper .main3 .box, .wrapper .main4 .box, .wrapper .main5 .box {
-  padding-top: 1em;
+.wrapper .maincontents .main1 .box3,
+.wrapper .maincontents .main1 .box4,
+.wrapper .maincontents .main2 .box3,
+.wrapper .maincontents .main2 .box4,
+.wrapper .maincontents .main3 .box3,
+.wrapper .maincontents .main3 .box4,
+.wrapper .maincontents .main4 .box3,
+.wrapper .maincontents .main4 .box4,
+.wrapper .maincontents .main5 .box3,
+.wrapper .maincontents .main5 .box4 {
+  margin-top: 10px;
+  height: 144px;
+  overflow-y: scroll;
+  border: solid;
 }
-.wrapper .main1, .wrapper .main3, .wrapper .main4, .wrapper .main5 {
+.wrapper .maincontents .main1,
+.wrapper .maincontents .main3,
+.wrapper .maincontents .main4,
+.wrapper .maincontents .main5 {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.wrapper .main1 #dlbtn, .wrapper .main3 #dlbtn, .wrapper .main4 #dlbtn, .wrapper .main5 #dlbtn {
-  top: 20px;
-  right: 4px;
-}
-.wrapper .main2 {
+.wrapper .maincontents .main2 {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.wrapper .main2 #dlbtn {
-  position: absolute;
-  right: 4px;
-  top: 104px;
-}
-.wrapper .main2 .applybtn {
+.wrapper .maincontents .main2 .applybtn {
   margin-top: 1rem;
   display: flex;
   margin-bottom: 1rem;
+  text-align: center;
 }
-.wrapper .main2 .applybtn a {
+.wrapper .maincontents .main2 .applybtn a {
+  position: relative;
   cursor: pointer;
   height: 48px;
   width: 128px;
@@ -103,13 +122,112 @@
   margin-right: 12px;
   box-shadow: 2px 2px 1px 0px;
 }
-.wrapper .main2 .applybtn a p {
+.wrapper .maincontents .main2 .applybtn a p {
   padding-top: 12px;
 }
-.wrapper .main3 .box {
+.wrapper .maincontents .main3 .box {
   display: flex;
   justify-content: start;
   padding-left: 1em;
+}
+.wrapper .maincontents .main1 #csvTable1 td:nth-child(1) {
+  padding-left: 1vw;
+  position: relative;
+  width: 50px;
+}
+.wrapper .maincontents .main1 #csvTable1 td:nth-child(1)::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 150%;
+  background-color: black;
+  position: absolute;
+  top: -2px;
+  right: 1px;
+}
+.wrapper .maincontents .main1 #csvTable1 td:nth-child(2) {
+  padding-left: 1vw;
+}
+.wrapper .maincontents .main2 #csvTable2 td:nth-child(1) {
+  padding-left: 1vw;
+  position: relative;
+  width: 50px;
+}
+.wrapper .maincontents .main2 #csvTable2 td:nth-child(1)::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 150%;
+  background-color: black;
+  position: absolute;
+  top: -2px;
+  right: 1px;
+}
+.wrapper .maincontents .main2 #csvTable2 td:nth-child(2) {
+  padding-left: 1vw;
+}
+.wrapper .maincontents .main3 #csvTable3 td:nth-child(1) {
+  /* margin-top: 20px;
+  width: 80vw; */
+  padding-left: 1vw;
+  position: relative;
+  width: 50px;
+  /* border-right: solid 1px; */
+}
+.wrapper .maincontents .main3 #csvTable3 td:nth-child(1)::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 200%;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.wrapper .maincontents .main3 #csvTable3 td:nth-child(2) {
+  padding-left: 1vw;
+}
+.wrapper .maincontents .main4 #csvTable4 td:nth-child(1) {
+  /* margin-top: 20px;
+  width: 80vw; */
+  padding-left: 1vw;
+  position: relative;
+  width: 50px;
+  /* border-right: solid 1px; */
+}
+.wrapper .maincontents .main4 #csvTable4 td:nth-child(1)::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 500%;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.wrapper .maincontents .main4 #csvTable4 td:nth-child(2) {
+  padding-left: 1vw;
+}
+.wrapper .maincontents #csvTable5 td:nth-child(1) {
+  /* margin-top: 20px;
+  width: 80vw; */
+  padding-left: 1vw;
+  position: relative;
+  width: 50px;
+  /* border-right: solid 1px; */
+}
+.wrapper .maincontents #csvTable5 td:nth-child(1)::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.wrapper .maincontents #csvTable5 td:nth-child(2) {
+  padding-left: 1vw;
 }
 
 footer .content {
@@ -135,12 +253,4 @@ footer .content img.pmark {
 }
 footer p {
   text-align: center;
-}
-
-.test {
-  width: 100px;
-  color: darkblue;
-  text-align: center;
-  cursor: pointer;
-  background-color: yellow;
 }/*# sourceMappingURL=style.css.map */
