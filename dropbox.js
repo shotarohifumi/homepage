@@ -157,3 +157,15 @@ function displayFileList(entries) {
 		}
 	});
 }
+
+// var clientId = 'YOUR_CLIENT_ID';
+// var redirectUri = 'YOUR_REDIRECT_URI';
+// var scope = 'user'; // 必要に応じてスコープを調整
+
+// var authorizeUrl = 'https://github.com/login/oauth/authorize' +
+//   '?client_id=' + clientId +
+//   '&redirect_uri=' + encodeURIComponent(redirectUri) +
+//   '&scope=' + scope;
+
+// // ユーザーを認証用URLにリダイレクト
+// // window.location.href = authorizeUrl;
