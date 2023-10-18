@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // CSVファイルのパスを指定
-    var csvFilePath = 'C:\Users\社員１\Desktop\csvfile_trial.csv';
+    var csvFilePath = '\csvfile_trial.csv';
 
     // 特定の区分番号を設定
     var targetKubun = '1';
@@ -44,7 +44,7 @@ $(document).ready(function () {
         table.empty();
 
         // // ヘッダ行を追加
-        var headerRow = '<tr><th>番号</th><th>内容</th></tr>';
+        var headerRow = '<tr><th>番号</th><th>項目</th></tr>';
         table.append(headerRow);
 
         // フィルタリングされたデータをテーブルに追加し、ワードをクリック可能なリンクとして表示
@@ -55,8 +55,8 @@ $(document).ready(function () {
     }
 });
 
-// リンクのクリックハンドラーを設定
-$(document).on('click', '.wordLink', function (e) {
-    // リンクをクリックしても通常のページ遷移を行う
-    return true;
-});
+// // リンクのクリックハンドラーを設定
+// $(document).on('click', '.wordLink', function (e) {
+//     // リンクをクリックしても通常のページ遷移を行う
+//     return true;
+// });

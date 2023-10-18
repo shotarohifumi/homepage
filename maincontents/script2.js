@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // CSVファイルのパスを指定
-    var csvFilePath = 'C:\Users\社員１\Desktop\csvfile_trial.csv';
+    var csvFilePath = '\csvfile_trial.csv';
 
     // 特定の区分番号を設定
     var targetKubun = '2';
@@ -44,8 +44,8 @@ $(document).ready(function () {
         table.empty();
 
         // // ヘッダ行を追加
-        // var headerRow = '<tr><th>区分番号</th><th>区分別番号</th><th>ワード</th><th>URL</th></tr>';
-        // table.append(headerRow);
+        var headerRow = '<tr><th>番号</th><th>項目</th></tr>';
+        table.append(headerRow);
 
         // フィルタリングされたデータをテーブルに追加し、ワードをクリック可能なリンクとして表示
         for (var i = 0; i < data.length; i++) {

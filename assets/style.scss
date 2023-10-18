@@ -1,6 +1,17 @@
+* {
+	font-family: 'Inter', sans-serif;
+}
+h2 {
+	font-size: 22px;
+}
+footer p {
+	font-size: 16px;
+}
+
+
 .wrapper {
-	padding-right: 10vw;
-	padding-left: 10vw;
+	padding-right: 15vw;
+	padding-left: 15vw;
 	position: relative;
 
 	header {
@@ -12,8 +23,9 @@
 		transform: translateY(0deg);
 
 		h1 {
-			font-size: 2em;
-			font-weight: bold;
+			// font-size: 2em;
+			// font-weight: bold;
+			font-size: 28px;
 			padding-top: 5vh;
 		}
 
@@ -61,9 +73,9 @@
 		flex-direction: column;
 		// text-align: center;
 
-		input[type="checkbox"] {
-			all: revert;
-		}
+		// input[type="checkbox"] {
+		// 	all: revert;
+		// }
 
 		h2 {
 			border-bottom: 4px solid;
@@ -93,23 +105,25 @@
 			.box1,
 			.box2,
 			.box5 {
+				background: #deebff 50%;
 				margin-top: 10px;
 				// margin-left: 20vw;
 				// margin-right: 20vw;
-				height: 245px;
+				height: 264px;
 				overflow-y: scroll;
-				border: solid;
+				// border: solid;
 				// padding-top: 1em;
 			}
 
 			.box3,
 			.box4 {
+				background: #deebff 50%;
 				// margin-left: 20vw;
 				// margin-right: 20vw;
 				margin-top: 10px;
 				height: 144px;
 				overflow-y: scroll;
-				border: solid;
+				// border: solid;
 			}
 		}
 
@@ -145,41 +159,25 @@
 				display: flex;
 				margin-bottom: 1rem;
 				text-align: center;
-
+				a{
+					text-decoration: none;
+				}
 				.button {
 					text-align: center;
 					height: 48px;
 					width: 120px;
 					// width: 100px;
 					// height: 40px;
-					padding-top: 10px;
+					padding-top: 12px;
 					transition: transform 0.3s, background 0.3s, color 0.3s;
 					color: #0a0a0a;
 					/* background: linear-gradient(180deg, #3498db, #a3d9ee); */
-					background: linear-gradient(to bottom, #0fb0fae0, #cccccc);
+					background: linear-gradient(to bottom, #00c1fe 5%, #faf7f7);
 					margin-right: 1rem;
 					position: relative;
 					box-shadow: 2px 2px 1px 0px;
 					border-radius: 10%;
 				}
-
-				// background-image: linear-gradient(180deg, #0062ff, transparent);
-				a {
-					text-decoration: none;
-					// position: relative;
-					// cursor: pointer;
-					// height: 48px;
-					// width: 128px;
-					// background-image: linear-gradient(180deg, #0062ff, transparent);
-					// border-radius: 10%;
-					// margin-right: 12px;
-
-					// transform-origin: center;
-					// button:hover {	
-					// transform: scale(0.8, 0.8);
-					// }
-				}
-
 				.hovered {
 					animation: pulse 2s infinite;
 				}
@@ -187,27 +185,29 @@
 				@keyframes pulse {
 					0% {
 						transform: scale(1);
-						background: linear-gradient(to bottom, #3498db, #cccccc);
+						background: linear-gradient(to bottom, #00c1fe, #faf7f7);
 					}
 
 					25% {
 						transform: scale(1.1);
-						background: linear-gradient(to bottom, #3197db, #a8dbf0);
+						background: linear-gradient(to bottom, #0061ff 50%, #cccccc);
+						color: whitesmoke;
 					}
 
 					50% {
 						transform: scale(1);
-						background: linear-gradient(to bottom, #3498db, #cccccc);
+						background: linear-gradient(to bottom, #00c1fe, #faf7f7);
 					}
 
 					75% {
 						transform: scale(1.1);
-						background: linear-gradient(to bottom, #3197db, #a8dbf0);
+						background: linear-gradient(to bottom, #0061ff, #cccccc);
+						color: whitesmoke;
 					}
 
 					100% {
 						transform: scale(1);
-						background: linear-gradient(to bottom, #3498db, #cccccc);
+						background: linear-gradient(to bottom, #00c1fe, #faf7f7);
 					}
 				}
 			}
@@ -222,15 +222,77 @@
 		}
 
 		.main1 {
-			#csvTable1 td:nth-child(1) {
-				padding-left: 1vw;
+			// tr {
+			// 	border-bottom: black;
+			// 	width: 100%;
+			// }
+			// 下線を引く
+			// td {
+			// 	position: relative;
+			//   }
+
+			//   td::before,
+			//   td::after {
+			// 	content: "";
+			// 	position: absolute;
+			// 	bottom: 0;
+			// 	height: 1px;
+			// 	background-color: #000; /* 下線の色 */
+			//   }
+
+			//   td::before {
+			// 	left: 0;
+			// 	width: 50%; /* 下線を左に伸ばす */
+			//   }
+
+			//   td::after {
+			// 	right: 0;
+			// 	width: 500%; /* 下線を右に伸ばす */
+			//   }
+			//   tr td{
+			//   .no-border::before,
+			//   .no-border::after {
+			// 	display: none; /* 特定のセルに対して下線を非表示にする */
+			//   }}
+			// 	#csvTable1 th {
+			// 		position: relative;
+			// 		text-decoration: none;
+
+			// 		&::before,
+			// 		&::after {
+			// 			content: "";
+			// 			position: absolute;
+			// 			bottom: 0;
+			// 			height: 1px;
+			// 			background-color: #000;
+			// 			/* 下線の色 */
+
+			// 		}
+
+			// 		&::before {
+			// 			left: 0;
+			// 			width: 100%;
+			// 			/* 下線を左に伸ばす */
+			// 		}
+
+			// 		&::after {
+			// 			right: 0;
+			// 			width: 1px;
+			// 			/* 下線を右に伸ばす */
+			// 		}
+
+			// 	}
+			// }
+
+			#csvTable1 th:nth-child(1) {
+				padding-left: 1.5vw;
 				position: relative;
-				width: 50px;
+				width: 5vw;
 
 				&::after {
 					content: "";
 					display: inline-block;
-					width: 1px;
+					width: 0.5px;
 					height: 150%;
 					background-color: black;
 					position: absolute;
@@ -238,100 +300,98 @@
 					right: 1px;
 				}
 			}
-
-			#csvTable1 td:nth-child(2) {
-				padding-left: 1vw;
-			}
 		}
 
-		.main2 {
-			#csvTable2 td:nth-child(1) {
-				padding-left: 1vw;
-				position: relative;
-				width: 50px;
-
-				&::after {
-					content: "";
-					display: inline-block;
-					width: 1px;
-					height: 150%;
-					background-color: black;
-					position: absolute;
-					top: -2px;
-					right: 1px;
-				}
-			}
-
-			#csvTable2 td:nth-child(2) {
-				padding-left: 1vw;
-			}
+		#csvTable1 th:nth-child(2) {
+			padding-left: 5vw;
 		}
 
-		.main3 {
-			#csvTable3 td:nth-child(1) {
-				/* margin-top: 20px;
-				width: 80vw; */
-				padding-left: 1vw;
-				position: relative;
-				width: 50px;
-				/* border-right: solid 1px; */
+		// #csvTable1 th:nth-child(3) {
+		// 	padding-left: 1vw;
+		// }
 
-				&::after {
-					content: "";
-					display: inline-block;
-					width: 1px;
-					height: 200%;
-					background-color: black;
-					position: absolute;
-					top: 0px;
-					right: 0px;
-				}
-			}
-
-			#csvTable3 td:nth-child(2) {
-				padding-left: 1vw;
-			}
-		}
-
-		.main4 {
-			#csvTable4 td:nth-child(1) {
-				/* margin-top: 20px;
-				width: 80vw; */
-				padding-left: 1vw;
-				position: relative;
-				width: 50px;
-
-				/* border-right: solid 1px; */
-				&::after {
-					content: "";
-					display: inline-block;
-					width: 1px;
-					height: 500%;
-					background-color: black;
-					position: absolute;
-					top: 0px;
-					right: 0px;
-				}
-			}
-
-			#csvTable4 td:nth-child(2) {
-				padding-left: 1vw;
-			}
-		}
-
-		#csvTable5 td:nth-child(1) {
-			/* margin-top: 20px;
-			width: 80vw; */
-			padding-left: 1vw;
+		#csvTable1 td:nth-child(1) {
+			padding-left: 2vw;
 			position: relative;
 			width: 50px;
 
-			/* border-right: solid 1px; */
 			&::after {
 				content: "";
 				display: inline-block;
-				width: 1px;
-				height: 100%;
+				width: 0.5px;
+				height: 150%;
+				background-color: black;
+				position: absolute;
+				top: -2px;
+				right: 1px;
+			}
+		}
+
+		#csvTable1 td:nth-child(2) {
+			padding-left: 3vw;
+		}
+
+		// #csvTable1 td:nth-child(3) {
+		// 	border-bottom: 1px black solid;
+		// }
+
+	}
+
+	.main2 {
+		#csvTable2 th:nth-child(1) {
+			padding-left: 1.5vw;
+			position: relative;
+			width: 5vw;
+
+			&::after {
+				content: "";
+				display: inline-block;
+				width: 0.5px;
+				height: 150%;
+				background-color: black;
+				position: absolute;
+				top: -2px;
+				right: 1px;
+			}
+		}
+
+		#csvTable2 th:nth-child(2) {
+			padding-left: 5vw;
+		}
+
+		#csvTable2 td:nth-child(1) {
+			padding-left: 2vw;
+			position: relative;
+			width: 50px;
+
+			&::after {
+				content: "";
+				display: inline-block;
+				width: 0.5px;
+				height: 150%;
+				background-color: black;
+				position: absolute;
+				top: -2px;
+				right: 1px;
+			}
+		}
+
+		#csvTable2 td:nth-child(2) {
+			padding-left: 3vw;
+		}
+	}
+
+	.main3 {
+		#csvTable3 th:nth-child(1) {
+			padding-left: 1.5vw;
+			position: relative;
+			width: 5vw;
+
+			&::after {
+				content: "";
+				display: inline-block;
+				width: 0.5px;
+				height: 150%;
 				background-color: black;
 				position: absolute;
 				top: 0px;
@@ -339,25 +399,142 @@
 			}
 		}
 
-		#csvTable5 td:nth-child(2) {
-			padding-left: 1vw;
+		#csvTable3 th:nth-child(2) {
+			padding-left: 5vw;
+		}
+
+		#csvTable3 td:nth-child(1) {
+			/* margin-top: 20px;
+				width: 80vw; */
+			padding-left: 2vw;
+			position: relative;
+			width: 50px;
+			/* border-right: solid 1px; */
+
+			&::after {
+				content: "";
+				display: inline-block;
+				width: 0.5px;
+				height: 200%;
+				background-color: black;
+				position: absolute;
+				top: 0px;
+				right: 0px;
+			}
+		}
+
+		#csvTable3 td:nth-child(2) {
+			padding-left: 3vw;
 		}
 	}
+
+	.main4 {
+		#csvTable4 th:nth-child(1) {
+			padding-left: 1.5vw;
+			position: relative;
+			width: 5vw;
+
+			&::after {
+				content: "";
+				display: inline-block;
+				width: 0.5px;
+				height: 150%;
+				background-color: black;
+				position: absolute;
+				top: 0px;
+				right: 0px;
+			}
+		}
+
+		#csvTable4 th:nth-child(2) {
+			padding-left: 5vw;
+		}
+
+		#csvTable4 td:nth-child(1) {
+			/* margin-top: 20px;
+				width: 80vw; */
+			padding-left: 2vw;
+			position: relative;
+			width: 50px;
+
+			/* border-right: solid 1px; */
+			&::after {
+				content: "";
+				display: inline-block;
+				width: 0.5px;
+				height: 500%;
+				background-color: black;
+				position: absolute;
+				top: 0px;
+				right: 0px;
+			}
+		}
+
+		#csvTable4 td:nth-child(2) {
+			padding-left: 3vw;
+		}
+	}
+
+	#csvTable5 th:nth-child(1) {
+		padding-left: 1.5vw;
+		position: relative;
+		width: 5vw;
+
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 0.5px;
+			height: 150%;
+			background-color: black;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+		}
+	}
+
+	#csvTable5 th:nth-child(2) {
+		padding-left: 5vw;
+	}
+
+	#csvTable5 td:nth-child(1) {
+		/* margin-top: 20px;
+			width: 80vw; */
+		padding-left: 2vw;
+		position: relative;
+		width: 50px;
+
+		/* border-right: solid 1px; */
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 0.5px;
+			height: 100%;
+			background-color: black;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+		}
+	}
+
+	#csvTable5 td:nth-child(2) {
+		padding-left: 3vw;
+	}
 }
+
 
 footer {
 	.content {
 		// height: 10vh;
 		background-color: #459BDB;
+		#items {
+		padding-left: 15vw;
+		padding-right: 15vw;
 		color: #ffff;
 		display: flex;
 		justify-content: space-between;
 		margin-top: 1rem;
-		padding-left: 10vw;
-		padding-right: 10vw;
-
 		p {
-			padding-top: .5vh;
+			padding-top: 1vh;
 		}
 
 		img.btmlogo {
@@ -365,12 +542,13 @@ footer {
 			width: 100px;
 		}
 
-		img.pmark {
+		a#pmark {
 			height: 56px;
 			width: 56px;
-			margin-top: .5vh;
+			padding-top: 4px;
 		}
 	}
+}
 
 	p {
 		text-align: center;
