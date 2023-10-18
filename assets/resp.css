@@ -1,0 +1,47 @@
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 18px;
+  }
+  .wrapper {
+    padding: unset;
+  }
+  .wrapper header {
+    height: 5vh;
+    justify-content: space-around;
+  }
+  .wrapper header h1 {
+    font-size: 16px;
+    padding-top: 2vh;
+  }
+  .wrapper header #toplogo {
+    height: 50px;
+    width: 100px;
+  }
+  .wrapper header a img {
+    height: 50px;
+    width: 75px;
+    padding-top: unset;
+  }
+  .wrapper .maincontents h2 {
+    border-bottom: 2px solid;
+    margin-top: 20px;
+    margin-bottom: auto;
+  }
+  footer p {
+    font-size: 10px;
+  }
+  footer .content #items {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    justify-content: space-between;
+  }
+  footer .content #items img.btmlogo {
+    height: 52px;
+    width: 88px;
+  }
+  footer .content #items a#pmark {
+    height: 48px;
+    width: 48px;
+    padding-top: 0px;
+  }
+}/*# sourceMappingURL=resp.css.map */
