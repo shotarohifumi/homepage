@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // CSVファイルのパスを指定
-    var csvFilePath = 'C:\Users\社員１\Desktop\csvfile_trial.csv';
+    var csvFilePath = 'C:\Users\owner\Desktop\csvfile_trial.csv';
 
     // 特定の区分番号を設定
     var targetKubun = '2';
