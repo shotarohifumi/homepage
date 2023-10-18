@@ -146,26 +146,68 @@
 				margin-bottom: 1rem;
 				text-align: center;
 
+				.button {
+					text-align: center;
+					height: 48px;
+					width: 120px;
+					// width: 100px;
+					// height: 40px;
+					padding-top: 10px;
+					transition: transform 0.3s, background 0.3s, color 0.3s;
+					color: #0a0a0a;
+					/* background: linear-gradient(180deg, #3498db, #a3d9ee); */
+					background: linear-gradient(to bottom, #0fb0fae0, #cccccc);
+					margin-right: 1rem;
+					position: relative;
+					box-shadow: 2px 2px 1px 0px;
+					border-radius: 10%;
+				}
+
 				// background-image: linear-gradient(180deg, #0062ff, transparent);
 				a {
-					position: relative;
-					cursor: pointer;
-					height: 48px;
-					width: 128px;
-					background-image: linear-gradient(180deg, #0062ff, transparent);
-					// background: linear-gradient(to top, rgb(20 186 370) 0%, rgb(81 144 230) 40%, rgb(135 117 363) 100%);
-					// background: linear-gradient(to top, rgb(30 190 245) 0%, rgb(62 223 240) 40%, rgb(254 245 260) 100%);
-					// background-color: #0062ff;
-					// background-color: rgb(rgb(177, 57, 57), rgb(52, 117, 52), rgb(0, 0, 255));
-					border-radius: 10%;
-					margin-right: 12px;
-					box-shadow: 2px 2px 1px 0px;
+					text-decoration: none;
+					// position: relative;
+					// cursor: pointer;
+					// height: 48px;
+					// width: 128px;
+					// background-image: linear-gradient(180deg, #0062ff, transparent);
+					// border-radius: 10%;
+					// margin-right: 12px;
+
 					// transform-origin: center;
 					// button:hover {	
 					// transform: scale(0.8, 0.8);
 					// }
-					p {
-						padding-top: 12px;
+				}
+
+				.hovered {
+					animation: pulse 2s infinite;
+				}
+
+				@keyframes pulse {
+					0% {
+						transform: scale(1);
+						background: linear-gradient(to bottom, #3498db, #cccccc);
+					}
+
+					25% {
+						transform: scale(1.1);
+						background: linear-gradient(to bottom, #3197db, #a8dbf0);
+					}
+
+					50% {
+						transform: scale(1);
+						background: linear-gradient(to bottom, #3498db, #cccccc);
+					}
+
+					75% {
+						transform: scale(1.1);
+						background: linear-gradient(to bottom, #3197db, #a8dbf0);
+					}
+
+					100% {
+						transform: scale(1);
+						background: linear-gradient(to bottom, #3498db, #cccccc);
 					}
 				}
 			}
