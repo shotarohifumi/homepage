@@ -17,17 +17,25 @@ footer p {
 }
 .wrapper header {
   background-color: transparent;
-  display: flex;
-  justify-content: space-between;
   height: 12vh;
   padding-top: 10px;
   transform: translateY(0deg);
+  position: relative;
 }
 .wrapper header h1 {
   font-size: 28px;
-  padding-top: 5vh;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
-.wrapper header #toplogo {
+.wrapper header .logos {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper header .logos #toplogo {
   height: 100px;
   width: 150px;
   animation: rotateY none 3s infinite linear 2s normal;
@@ -43,10 +51,16 @@ footer p {
     transform: rotateY(360deg);
   }
 }
-.wrapper header a img {
-  height: 80px;
-  width: 100px;
-  padding-top: 2vh;
+.wrapper header .logos .headerB {
+  position: absolute;
+  top: 8vh;
+  right: 0vh;
+}
+.wrapper header .logos .headerB .fa-solid, .wrapper header .logos .headerB .fas {
+  font-size: 24px;
+}
+.wrapper header .logos .headerB i.fa-solid.fa-gear {
+  margin-right: 20px;
 }
 .wrapper .maincontents {
   display: flex;
