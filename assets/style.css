@@ -38,29 +38,25 @@ footer p {
 .wrapper header .logos #toplogo {
   height: 100px;
   width: 150px;
-  animation: rotateY none 3s infinite linear 2s normal;
-}
-@keyframes rotateY {
-  0% {
-    transform: rotateY(0deg);
-  }
-  50% {
-    transform: rotateY(180deg);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
 }
 .wrapper header .logos .headerB {
+  display: flex;
   position: absolute;
   top: 8vh;
   right: 0vh;
 }
-.wrapper header .logos .headerB .fa-solid, .wrapper header .logos .headerB .fas {
-  font-size: 24px;
+.wrapper header .logos .headerB #kanri,
+.wrapper header .logos .headerB #logo {
+  display: flex;
 }
-.wrapper header .logos .headerB i.fa-solid.fa-gear {
-  margin-right: 20px;
+.wrapper header .logos .headerB #kanri #logo,
+.wrapper header .logos .headerB #logo #logo {
+  height: 50px;
+  width: 50px;
+}
+.wrapper header .logos .headerB #kanri p,
+.wrapper header .logos .headerB #logo p {
+  font-weight: 24px;
 }
 .wrapper .maincontents {
   display: flex;
@@ -183,12 +179,39 @@ footer p {
   justify-content: start;
   padding-left: 1em;
 }
-.wrapper .maincontents .main1 #csvTable1 th:nth-child(1) {
+.wrapper .maincontents .main1 #th {
+  height: 3vh;
+  width: 100%;
+  background: lightblue;
+  margin-bottom: -10px;
+  border-bottom: solid 1px;
+  display: flex;
+}
+.wrapper .maincontents .main1 #th .td1 {
+  width: 8vw;
+  border-right: 1px solid;
+  text-align: center;
+}
+.wrapper .maincontents .main1 #th .td2 {
+  padding-left: 4vw;
+}
+.wrapper #csvTable1 td:nth-child(1) {
+  text-align: center;
+  width: 8vw;
+  position: relative;
+  border-right: solid 1px;
+}
+.wrapper #csvTable1 td:nth-child(2) {
+  padding-left: 3vw;
+  width: 100%;
+}
+
+.main2 #csvTable2 th:nth-child(1) {
   padding-left: 1.5vw;
   position: relative;
   width: 5vw;
 }
-.wrapper .maincontents .main1 #csvTable1 th:nth-child(1)::after {
+.main2 #csvTable2 th:nth-child(1)::after {
   content: "";
   display: inline-block;
   width: 0.5px;
@@ -198,15 +221,15 @@ footer p {
   top: -2px;
   right: 1px;
 }
-.wrapper .maincontents #csvTable1 th:nth-child(2) {
+.main2 #csvTable2 th:nth-child(2) {
   padding-left: 5vw;
 }
-.wrapper .maincontents #csvTable1 td:nth-child(1) {
+.main2 #csvTable2 td:nth-child(1) {
   padding-left: 2vw;
   position: relative;
   width: 50px;
 }
-.wrapper .maincontents #csvTable1 td:nth-child(1)::after {
+.main2 #csvTable2 td:nth-child(1)::after {
   content: "";
   display: inline-block;
   width: 0.5px;
@@ -216,51 +239,16 @@ footer p {
   top: -2px;
   right: 1px;
 }
-.wrapper .maincontents #csvTable1 td:nth-child(2) {
+.main2 #csvTable2 td:nth-child(2) {
   padding-left: 3vw;
 }
-.wrapper .main2 #csvTable2 th:nth-child(1) {
+
+.main3 #csvTable3 th:nth-child(1) {
   padding-left: 1.5vw;
   position: relative;
   width: 5vw;
 }
-.wrapper .main2 #csvTable2 th:nth-child(1)::after {
-  content: "";
-  display: inline-block;
-  width: 0.5px;
-  height: 150%;
-  background-color: black;
-  position: absolute;
-  top: -2px;
-  right: 1px;
-}
-.wrapper .main2 #csvTable2 th:nth-child(2) {
-  padding-left: 5vw;
-}
-.wrapper .main2 #csvTable2 td:nth-child(1) {
-  padding-left: 2vw;
-  position: relative;
-  width: 50px;
-}
-.wrapper .main2 #csvTable2 td:nth-child(1)::after {
-  content: "";
-  display: inline-block;
-  width: 0.5px;
-  height: 150%;
-  background-color: black;
-  position: absolute;
-  top: -2px;
-  right: 1px;
-}
-.wrapper .main2 #csvTable2 td:nth-child(2) {
-  padding-left: 3vw;
-}
-.wrapper .main3 #csvTable3 th:nth-child(1) {
-  padding-left: 1.5vw;
-  position: relative;
-  width: 5vw;
-}
-.wrapper .main3 #csvTable3 th:nth-child(1)::after {
+.main3 #csvTable3 th:nth-child(1)::after {
   content: "";
   display: inline-block;
   width: 0.5px;
@@ -270,18 +258,18 @@ footer p {
   top: 0px;
   right: 0px;
 }
-.wrapper .main3 #csvTable3 th:nth-child(2) {
+.main3 #csvTable3 th:nth-child(2) {
   padding-left: 5vw;
 }
-.wrapper .main3 #csvTable3 td:nth-child(1) {
+.main3 #csvTable3 td:nth-child(1) {
   /* margin-top: 20px;
-  	width: 80vw; */
+  			width: 80vw; */
   padding-left: 2vw;
   position: relative;
   width: 50px;
   /* border-right: solid 1px; */
 }
-.wrapper .main3 #csvTable3 td:nth-child(1)::after {
+.main3 #csvTable3 td:nth-child(1)::after {
   content: "";
   display: inline-block;
   width: 0.5px;
@@ -291,15 +279,16 @@ footer p {
   top: 0px;
   right: 0px;
 }
-.wrapper .main3 #csvTable3 td:nth-child(2) {
+.main3 #csvTable3 td:nth-child(2) {
   padding-left: 3vw;
 }
-.wrapper .main4 #csvTable4 th:nth-child(1) {
+
+.main4 #csvTable4 th:nth-child(1) {
   padding-left: 1.5vw;
   position: relative;
   width: 5vw;
 }
-.wrapper .main4 #csvTable4 th:nth-child(1)::after {
+.main4 #csvTable4 th:nth-child(1)::after {
   content: "";
   display: inline-block;
   width: 0.5px;
@@ -309,18 +298,18 @@ footer p {
   top: 0px;
   right: 0px;
 }
-.wrapper .main4 #csvTable4 th:nth-child(2) {
+.main4 #csvTable4 th:nth-child(2) {
   padding-left: 5vw;
 }
-.wrapper .main4 #csvTable4 td:nth-child(1) {
+.main4 #csvTable4 td:nth-child(1) {
   /* margin-top: 20px;
-  	width: 80vw; */
+  			width: 80vw; */
   padding-left: 2vw;
   position: relative;
   width: 50px;
   /* border-right: solid 1px; */
 }
-.wrapper .main4 #csvTable4 td:nth-child(1)::after {
+.main4 #csvTable4 td:nth-child(1)::after {
   content: "";
   display: inline-block;
   width: 0.5px;
@@ -330,15 +319,16 @@ footer p {
   top: 0px;
   right: 0px;
 }
-.wrapper .main4 #csvTable4 td:nth-child(2) {
+.main4 #csvTable4 td:nth-child(2) {
   padding-left: 3vw;
 }
-.wrapper #csvTable5 th:nth-child(1) {
+
+.main5 #csvTable5 th:nth-child(1) {
   padding-left: 1.5vw;
   position: relative;
   width: 5vw;
 }
-.wrapper #csvTable5 th:nth-child(1)::after {
+.main5 #csvTable5 th:nth-child(1)::after {
   content: "";
   display: inline-block;
   width: 0.5px;
@@ -348,18 +338,18 @@ footer p {
   top: 0px;
   right: 0px;
 }
-.wrapper #csvTable5 th:nth-child(2) {
+.main5 #csvTable5 th:nth-child(2) {
   padding-left: 5vw;
 }
-.wrapper #csvTable5 td:nth-child(1) {
+.main5 #csvTable5 td:nth-child(1) {
   /* margin-top: 20px;
-  	width: 80vw; */
+  			width: 80vw; */
   padding-left: 2vw;
   position: relative;
   width: 50px;
   /* border-right: solid 1px; */
 }
-.wrapper #csvTable5 td:nth-child(1)::after {
+.main5 #csvTable5 td:nth-child(1)::after {
   content: "";
   display: inline-block;
   width: 0.5px;
@@ -369,7 +359,7 @@ footer p {
   top: 0px;
   right: 0px;
 }
-.wrapper #csvTable5 td:nth-child(2) {
+.main5 #csvTable5 td:nth-child(2) {
   padding-left: 3vw;
 }
 

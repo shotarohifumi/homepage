@@ -1,8 +1,31 @@
-.arrow {
+/* .arrow {
     font-weight: bold;
     color: white;
-    /* border-left: 50px solid transparent;
+    border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     border-bottom: 100px solid red;
-    border-width: 5px; */
+    border-width: 5px;
+} */
+
+/* styles.css */
+#topic {
+    text-align: center;
+    margin: 4px auto;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    position: relative;
+}
+tr:nth-child(1) {
+    position: sticky;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
 }

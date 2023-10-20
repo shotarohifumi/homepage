@@ -19,6 +19,7 @@ $(document).ready(function () {
                 dataRows.push({
                     区分番号: line[0],
                     区分別番号: line[1],
+                    区分名: line[2],
                     ワード: line[3],
                     URL: line[4]
                 });
