@@ -23,6 +23,7 @@ $(function() {
 								$("#result").val(data).show();
                 $("#topic").show();
 								$("#saveButton").show();
+								$("#explanation").show();
             });
 							// 保存ボタンをクリックしたときの処理
 						$("#saveButton").on("click", function() {

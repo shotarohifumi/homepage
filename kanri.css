@@ -2,8 +2,14 @@
 
 /* styles.css */
 #topic {
-    text-align: center;
-    margin: 4px auto;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	margin: 4px auto;
+}
+#explanation {
+	text-align: end;
+	font-size: 1em;
 }
 /* #result {
     border-collapse: collapse;
@@ -28,10 +34,21 @@
 }
 
 #saveButton {
+	padding-right: 1.5em;
+	padding-left: 1.5em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	font-weight: bold;
+	font-size: 1em;
+	color: #ffff;
+	border: transparent;
+	background: #00c1fe;
+	border-radius: 5%;
+	text-align: center;
 	display: block; /* ボタンを表示 */
 	position: absolute;
-	bottom: 10px; /* 下端からの距離を調整 */
-	right: 10px; /* 右端からの距離を調整 */
+	bottom: 10px; /*下端からの距離を調整 */
+	right: 10px; /*右端からの距離を調整 */
 }
 
 
