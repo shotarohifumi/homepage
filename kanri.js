@@ -19,27 +19,52 @@ $(function() {
 
         if (passwordInput === "nebit-kanri") {
             // パスワードが一致する場合、CSVファイルを読み込んでHTMLテーブルに表示
-            $.get("edited.csv", function(data) {
-                var lines = data.split("\n");
-                var table = "<table>";
-                for (var i = 0; i < lines.length; i++) {
-                    var cells = lines[i].split(",");
-                    table += "<tr>";
-                    for (var j = 0; j < cells.length; j++) {
-                        table += "<td>" + cells[j] + "</td>";
-                    }
-                    table += "</tr>";
-                }
-                table += "</table>";
-                $("#result").html(table);
+            $.get("csvfile_trial.csv", function(data) {
+								$("#result").val(data).show();
                 $("#topic").show();
+								$("#saveButton").show();
             });
+							// 保存ボタンをクリックしたときの処理
+						$("#saveButton").on("click", function() {
+							const editedCSVData = $("#result").val();
+							// CSVデータをファイルとしてダウンロード
+							const blob = new Blob([editedCSVData], { type: "text/csv;charset=utf-8;" });
+							const url = URL.createObjectURL(blob);
+							const a = document.createElement("a");
+							a.href = url;
+							a.download = "edited.csv";
+							document.body.appendChild(a);
+							a.click();
+							document.body.removeChild(a);
+							URL.revokeObjectURL(url);
+					});
         } else {
             // パスワードが一致しない場合、エラーメッセージを表示
             alert("パスワードが正しくありません。");
         }
     });
 });
+// $(document).ready(function() {
+// 	// CSVデータを読み込み、エディターエリアに表示
+// 	$.get("csvfile_trial.csv", function(data) {
+// 			$("#result").val(data);
+// 	});
+
+// 	// 保存ボタンをクリックしたときの処理
+// 	$("#saveButton").on("click", function() {
+// 			const editedCSVData = $("#result").val();
+// 			// CSVデータをファイルとしてダウンロード
+// 			const blob = new Blob([editedCSVData], { type: "text/csv;charset=utf-8;" });
+// 			const url = URL.createObjectURL(blob);
+// 			const a = document.createElement("a");
+// 			a.href = url;
+// 			a.download = "edited.csv";
+// 			document.body.appendChild(a);
+// 			a.click();
+// 			document.body.removeChild(a);
+// 			URL.revokeObjectURL(url);
+// 	});
+// });
 
 
 
