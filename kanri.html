@@ -7,24 +7,34 @@
     <link rel="stylesheet" href="./kanri.css">
 </head>
 <body>
-    <div class="kanri">
-        <input type="password" id="password" required placeholder="パスワードを入力">
-        <button id="submit"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
-    </div>
-    <div class="backbtn">
-        <a href="./index.html">戻る</a>
-    </div>
-    <div id="result-container">
-        <div id="topic" style="display: none;">管理</div>
-				<div id="explanation" style="display: none;">
-					<p>*区分番号,区分別番号,区分名,ファイル名,URLの順に記入をお願いします。<br>
+	<div class="kanri">
+		<input type="password" id="password" required placeholder="パスワードを入力">
+		<button id="submit"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+</div>
+<div class="backbtn">
+		<a href="./index.html">戻る</a>
+</div>
+<div id="result-container">
+		<div id="topic" style="display: none;">管理</div>
+		<div id="explanation" style="display: none;">
+				<p>*区分番号,区分別番号,区分名,ファイル名,URLの順に記入をお願いします。<br>
 						*<区分番号>1:お知らせ 2:申請書 3:勤務時間報告書 4:就業規則等 5:その他
-					</p>
-				</div>
-        <textarea id="result" style="display:none;"></textarea>
-				<button id="saveButton" style="display: none;">保存</button>
-    </div>
-
+				</p>
+		</div>
+		<div id="result"></div> <!-- テーブルを表示 -->
+		<form id="addRowForm" style="display: none;">
+			<div class="nyuuryoku">
+				<input type="number" id="newData1" placeholder="区分番号">
+				<input type="number" id="newData2" placeholder="区分別番号">
+				<input type="text" id="newData3" placeholder="区分名">
+				<input type="text" id="newData4" placeholder="ファイル名">
+				<input type="url" id="newData5" placeholder="URL">
+			</div>
+			<button type="button" id="addRowButton">行を追加</button>
+	</form>
+	
+		<button id="saveButton" style="display: none;">保存</button>
+</div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
 	integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/aa41083d68.js" crossorigin="anonymous"></script>

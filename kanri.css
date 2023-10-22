@@ -1,6 +1,3 @@
-
-
-/* styles.css */
 #topic {
 	font-size: 1.5em;
 	font-weight: bold;
@@ -11,26 +8,31 @@
 	text-align: end;
 	font-size: 1em;
 }
-/* #result {
-    border-collapse: collapse;
-    width: 100%;
-		height: 50vh;
-    position: relative;
-}
-#saveButton {
-	text-align: center;	
-}
-
 #result-container {
 	position: relative;
-} */
-
+}
+table {
+	margin: 0 auto;
+}
+#addRowForm {
+	/* position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+#addRowButton {
+	margin: 8px auto;
+	width: 100px;
+}
 #result {
 	display: block; /* テキストエリアを表示 */
 	resize: both; /* テキストエリアのリサイズを許可 */
 	overflow: auto; /* テキストエリアのスクロールバーを表示 */
-	width: 100%; /* テキストエリアを親要素に合わせる */
-	height: 60vh; /* お好みの高さに設定 */
+	/* width: 100vw; テキストエリアを親要素に合わせる */
+	/* height: 60vh; お好みの高さに設定 */
 }
 
 #saveButton {
@@ -46,9 +48,7 @@
 	border-radius: 5%;
 	text-align: center;
 	display: block; /* ボタンを表示 */
-	position: absolute;
-	bottom: 10px; /*下端からの距離を調整 */
-	right: 10px; /*右端からの距離を調整 */
+	margin: 5px auto;
 }
 
 
