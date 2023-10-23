@@ -15,25 +15,29 @@ footer p {
 	padding-right: 15vw;
 	padding-left: 15vw;
 	position: relative;
+	display: flex;
+	flex-direction: column;
 
 	header {
 		background-color: transparent;
-		// display: flex;
-		height: 12vh;
-		padding-top: 10px;
+		display: flex;
+		flex-direction: column;
+		// height: 12vh;
+		padding-top: 12px;
 		transform: translateY(0deg);
-		position: relative;
+		// position: relative;
+
 
 		h1 {
 			font-size: 2em;
 			font-weight: bold;
-			// padding-top: 5vh;
-			position: absolute;
-			top: 60%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			-webkit-transform: translate(-50%, -50%);
-			-ms-transform: translate(-50%, -50%);
+			padding-top: 4vh;
+			// position: absolute;
+			// top: 60%;
+			// left: 50%;
+			// transform: translate(-50%, -50%);
+			// -webkit-transform: translate(-50%, -50%);
+			// -ms-transform: translate(-50%, -50%);
 		}
 
 		.logos {
@@ -67,25 +71,25 @@ footer p {
 				// }
 			}
 
-			.headerB {
-				display: flex;
-				position: absolute;
-				top: 8vh;
-				right: 0vh;
+			// .headerB {
+			// 	display: flex;
+			// 	position: absolute;
+			// 	top: 8vh;
+			// 	right: 0vh;
 
 				// transform: translate(812px, 46px);
-				#kanri,
-				#logo {
-					display: flex;
+				// #kanri,
+				// #logo {
+				// 	display: flex;
 
-					#logo {
-						height: 50px;
-						width: 50px;
-					}
+				// 	#logo {
+				// 		height: 50px;
+				// 		width: 50px;
+				// 	}
 
-					p {
-						font-weight: 24px;
-					}
+				// 	p {
+				// 		font-weight: 24px;
+				// 	}
 
 					// font-weight: normal;
 					// font-size: 24px;
@@ -95,10 +99,15 @@ footer p {
 				// i.fa-solid.fa-gear {
 				// 	margin-right: 20px;
 				// }
+			// }
+		}
+		.menu_bar {
+			ul {
+				display: flex;
+				justify-content: space-between;
+				margin: 12px;
 			}
 		}
-
-
 	}
 
 
@@ -117,6 +126,7 @@ footer p {
 			display: inline-block;
 			width: fit-content;
 			margin: 1em auto;
+			margin-top: 20px;
 		}
 
 		// .box {

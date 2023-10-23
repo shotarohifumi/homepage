@@ -14,22 +14,20 @@ footer p {
   padding-right: 15vw;
   padding-left: 15vw;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .wrapper header {
   background-color: transparent;
-  height: 12vh;
-  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
   transform: translateY(0deg);
-  position: relative;
 }
 .wrapper header h1 {
-  font-size: 28px;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 4vh;
 }
 .wrapper header .logos {
   display: flex;
@@ -39,24 +37,20 @@ footer p {
   height: 100px;
   width: 150px;
 }
-.wrapper header .logos .headerB {
-  display: flex;
-  position: absolute;
-  top: 8vh;
-  right: 0vh;
-}
-.wrapper header .logos .headerB #kanri,
-.wrapper header .logos .headerB #logo {
+.wrapper header .logos #logo {
   display: flex;
 }
-.wrapper header .logos .headerB #kanri #logo,
-.wrapper header .logos .headerB #logo #logo {
+.wrapper header .logos #logo #logo {
   height: 50px;
   width: 50px;
 }
-.wrapper header .logos .headerB #kanri p,
-.wrapper header .logos .headerB #logo p {
+.wrapper header .logos #logo p {
   font-weight: 24px;
+}
+.wrapper header .menu_bar ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px;
 }
 .wrapper .maincontents {
   display: flex;
@@ -68,6 +62,7 @@ footer p {
   width: -moz-fit-content;
   width: fit-content;
   margin: 1em auto;
+  margin-top: 20px;
 }
 .wrapper .maincontents .main1,
 .wrapper .maincontents .main2,
