@@ -21,12 +21,10 @@ table {
 	transform: translate(-50%, -50%); */
 	text-align: center;
 	display: flex;
-	flex-direction: column;
+	display: block;
+	/* flex-direction: column; */
 }
-#addRowButton {
-	margin: 8px auto;
-	width: 100px;
-}
+
 #result {
 	display: block; /* テキストエリアを表示 */
 	resize: both; /* テキストエリアのリサイズを許可 */
@@ -34,7 +32,12 @@ table {
 	/* width: 100vw; テキストエリアを親要素に合わせる */
 	/* height: 60vh; お好みの高さに設定 */
 }
-
+#addRowButton {
+	margin: 8px auto;
+	width: 100px;
+	text-align: center;
+	display: block;
+}
 #saveButton {
 	padding-right: 1.5em;
 	padding-left: 1.5em;
