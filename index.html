@@ -43,8 +43,6 @@
 					<li><i class="fa-regular fa-clock">勤務時間報告書</i></li>
 					<li><i class="fa-regular fa-heart">就業規則等</i></li>
 					<li><i class="fa-regular fa-folder">その他</i></li>
-					<a href="./kanri.html"><li><i class="fa-regular fa-keyboard">管理</i></li>
-					</a>
 				</ul>
 			</div>
 		</header>
@@ -57,10 +55,10 @@
 			<!-- お知らせ -->
 			<div class="main1">
 				<h2>お知らせ</h2>
-				<!-- <div id="th">
+				<div id="th">
 					<div class="td1">番号</div>
 					<div class="td2">項目</div>
-				</div> -->
+				</div>
 				<div class="box1">
 					<table id="csvTable1">
 						<!-- <input type="checkbox"> -->
@@ -71,19 +69,21 @@
 			<!-- 申請書 -->
 			<div class="main2">
 				<h2>申請書</h2>
-
-					<div class="applybtn">
-						<a href="https://nebit.co.jp/SyainSystem/kyutodoke/vacation.php?" class="button">
-							休暇申請 
-						</a>
-						<a href="https://nebit.co.jp/SyainSystem/zyusyo/zyusyo.php?" class="button">
-							住所変更
-						</a>
-						<a href="https://nebit.co.jp/SyainSystem/kouza/kouza.php?" class="button">
-							銀行口座
-						</a>
-					</div>
-				
+				<div class="applybtn">
+					<a href="https://nebit.co.jp/SyainSystem/kyutodoke/vacation.php?" class="button">
+						休暇申請 
+					</a>
+					<a href="https://nebit.co.jp/SyainSystem/zyusyo/zyusyo.php?" class="button">
+						住所変更
+					</a>
+					<a href="https://nebit.co.jp/SyainSystem/kouza/kouza.php?" class="button">
+						銀行口座
+					</a>
+				</div>
+				<div id="th">
+					<div class="td1">番号</div>
+					<div class="td2">項目</div>
+				</div>
 				<div class="box2">
 					<table id="csvTable2">
 						<!-- <input type="checkbox"> -->
@@ -95,6 +95,10 @@
 			<div class="main3">
 				<h2>勤務時間報告書</h2>
 				<!-- <img src="./pics/ダウンロードbtn.png" alt="dlbtn" id="dlbtn"> -->
+				<div id="th">
+					<div class="td1">番号</div>
+					<div class="td2">項目</div>
+				</div>
 				<div class="box3">
 					<table id="csvTable3">
 						<!-- <input type="checkbox"> -->
@@ -106,6 +110,10 @@
 			<div class="main4">
 				<h2>就業規則等</h2>
 				<!-- <img src="./pics/ダウンロードbtn.png" alt="dlbtn" id="dlbtn"> -->
+				<div id="th">
+					<div class="td1">番号</div>
+					<div class="td2">項目</div>
+				</div>
 				<div class="box4">
 					<table id="csvTable4">
 						<!-- <input type="checkbox"> -->
@@ -117,6 +125,10 @@
 			<div class="main5">
 				<h2>その他</h2>
 				<!-- <img src="./pics/ダウンロードbtn.png" alt="dlbtn" id="dlbtn"> -->
+				<div id="th">
+					<div class="td1">番号</div>
+					<div class="td2">項目</div>
+				</div>
 				<div class="box5">
 					<table id="csvTable5">
 						<!-- <input type="checkbox"> -->
@@ -133,26 +145,23 @@
 			<div id="items">
 				<img src="./pics/白会社ロゴ.png" alt="白会社ロゴ" class="btmlogo">
 				<p>株式会社ネビット (Nebit Co.Ltd) <br> 〒162-0066 東京都市谷台町7番地1 HAL21ビル</p>
-				<a href="https://www.nebit.co.jp/privacy-policy/" id="pmark">
-					<img src="./pics/プライバシーマーク.png" alt="プライバシーマーク">
+				<a href="https://www.nebit.co.jp/privacy-policy/">
+					<img src="./pics/プライバシーマーク.png" alt="プライバシーマーク" id="pmark">
 				</a>
 			</div>
+			<a href="./kanri.html" id="kanri"><i class="fa-regular fa-keyboard">管理</i></a>
 		</div>
 		<p>Coperight(c) Nebit Co.Ltd. All Rights Reserved</p>
 	</footer>
 
-	<!-- <input type="text" class="post">
-	<input type="button" value="送信" class="btn">
-	<div class="result">
 
-	<!-- jqueryuiのやーつ -->
-	<!-- <div class="test">ドラッグ</div> -->
+
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js" 
 	integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 	<!-- <script src="jquery.fittext.js"></script> -->
-	<!-- <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" 
-	crossorigin="anonymous"></script> -->
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" 
+	crossorigin="anonymous"></script>
 	<!-- <script src="./dropbox.js"></script> -->
 	<script src="https://kit.fontawesome.com/aa41083d68.js" crossorigin="anonymous"></script>
 	<script src="./script.js"></script>

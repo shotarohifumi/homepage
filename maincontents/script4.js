@@ -44,8 +44,8 @@ $(document).ready(function () {
         table.empty();
 
         // // ヘッダ行を追加
-        var headerRow = '<tr><th>番号</th><th>項目</th></tr>';
-        table.append(headerRow);
+        // var headerRow = '<tr><th>番号</th><th>項目</th></tr>';
+        // table.append(headerRow);
         // var headerRow = '<tr><th>区分番号</th><th>区分別番号</th><th>ワード</th><th>URL</th></tr>';
         // table.append(headerRow);
 

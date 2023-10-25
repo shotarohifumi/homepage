@@ -44,8 +44,8 @@ $(document).ready(function () {
         table.empty();
 
         // // ヘッダ行を追加
-        var headerRow = '<tr><th>番号</th><th>項目</th></tr>';
-        table.append(headerRow);
+        // var headerRow = '<tr><th>番号</th><th>項目</th></tr>';
+        // table.append(headerRow);
 
         // フィルタリングされたデータをテーブルに追加し、ワードをクリック可能なリンクとして表示
         for (var i = 0; i < data.length; i++) {

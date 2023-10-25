@@ -94,7 +94,7 @@ footer p {
 					// font-weight: normal;
 					// font-size: 24px;
 					// margin-right: 20px;
-				}
+				// }
 
 				// i.fa-solid.fa-gear {
 				// 	margin-right: 20px;
@@ -104,8 +104,11 @@ footer p {
 		.menu_bar {
 			ul {
 				display: flex;
-				justify-content: space-between;
+				justify-content: space-around;
 				margin: 12px;
+				li {
+					display: block;
+				}
 			}
 		}
 	}
@@ -147,28 +150,34 @@ footer p {
 			// 	cursor: pointer;
 			// 	position: absolute;
 			// }
-			.box1,
-			.box2,
+			.box1, .box2,
 			.box5 {
-				background: #deebff 50%;
-				margin-top: 10px;
-				// margin-left: 20vw;
-				// margin-right: 20vw;
-				height: 264px;
+				height: 240px;
 				overflow-y: scroll;
-				// border: solid;
-				// padding-top: 1em;
+				/* 奇数行 */
+				#csvTable1 tr:nth-child(odd), #csvTable2 tr:nth-child(odd),
+				#csvTable5 tr:nth-child(odd) {
+				background-color: #edf3fc; /* 奇数行の背景色 */
+				}
+				/* 偶数行 */
+				#csvTable1 tr:nth-child(even), #csvTable2 tr:nth-child(even),
+				#csvTable5 tr:nth-child(even) {
+				background-color: #ffffff; /* 偶数行の背景色 */
+				}
 			}
 
 			.box3,
 			.box4 {
-				background: #deebff 50%;
-				// margin-left: 20vw;
-				// margin-right: 20vw;
-				margin-top: 10px;
-				height: 144px;
+				height: 120px;
 				overflow-y: scroll;
-				// border: solid;
+				/* 奇数行 */
+				#csvTable3 tr:nth-child(odd), #csvTable4 tr:nth-child(odd) {
+				background-color: #edf3fc; /* 奇数行の背景色 */
+				}
+				/* 偶数行 */
+				#csvTable3 tr:nth-child(even), #csvTable4 tr:nth-child(even) {
+				background-color: #ffffff; /* 偶数行の背景色 */
+				}
 			}
 		}
 
@@ -248,273 +257,57 @@ footer p {
 			}
 		}
 
-		.main3 {
-			.box {
-				display: flex;
-				justify-content: start;
-				padding-left: 1em;
-			}
-		}
-
-		.main1 {
+		.main1, .main2, .main3, .main4, .main5 {
 			#th {
-				height: 3vh;
-				width: 100%;
-				background: lightblue;
-				margin-bottom: -10px;
-				border-bottom: solid 1px;
 				display: flex;
-				.td1 {
-					width: 8vw;
-					border-right: 1px solid;
-					text-align: center;
-				}
-				.td2 {
-					padding-left: 4vw;
-				}
+				width: 100%;
+				position: sticky;
+				top: 0;
+				background: #c8d5d9;
+				border-bottom: solid 1px white;
+			}
+		
+			.td1 {
+				width: 15%;
+				text-align: center;
+			}
+		
+			.td2 {
+				padding-left: 4vw;
+			}
+		
+		
+			.box1 #csvTable1, .box2 #csvTable2,
+			.box3 #csvTable3, .box4 #csvTable4,
+			.box5 #csvTable5 {
+				width: 100%;
+				border-collapse: collapse; 
+				/* セルの境界線を非表示 */
+			}
+			
+			.box1 #csvTable1 td:nth-child(1), .box2 #csvTable2 td:nth-child(1),
+			.box3 #csvTable3 td:nth-child(1), .box4 #csvTable4 td:nth-child(1),
+			.box5 #csvTable5 td:nth-child(1) {
+				border-right: 1px solid white; /* テーブル内の縦線 */
+				text-align: center;
+				width: 10vw;
+				// width: 25vw;
+			}
+			.box1 #csvTable1 td:nth-child(2), .box2 #csvTable2 td:nth-child(2),
+			.box3 #csvTable4 td:nth-child(2), .box3 #csvTable4 td:nth-child(2),
+			.box5 #csvTable5 td:nth-child(2) {
+				padding-left: 3vw;
 			}
 		}
-
-		// #csvTable1 th:nth-child(1) {
-		// 	padding-left: 1.5vw;
-		// 	position: relative;
-		// 	width: 5vw;
-
-		// 	// border-bottom: 1px solid;
-		// 	&::after {
-		// 		content: "";
-		// 		display: inline-block;
-		// 		width: 0.5px;
-		// 		height: 150%;
-		// 		background-color: black;
-		// 		position: absolute;
-		// 		top: -2px;
-		// 		right: 1px;
-		// 	}
-		// }
 	}
-	// #csvTable1 th:nth-child(2) {
-	// 	padding-left: 1.5vw;
-	// 	padding-right: 1.5vw;
-	// 	border-bottom: 1px solid;
-	// }
-
-	// #csvTable1 th:nth-child(3) {
-	// 	padding-left: 1vw;
-	// }
-
-	#csvTable1 td:nth-child(1) {
-		// padding-left: 2.9vw;
-		// padding-right: 2.9vw;
-		text-align: center;
-		width: 8vw;
-		position: relative;
-		border-right: solid 1px;
-	}
-
-	#csvTable1 td:nth-child(2) {
-		padding-left: 3vw;
-		width: 100%;
-	}
-
-	// #csvTable1 td:nth-child(3) {
-	// 	border-bottom: 1px black solid;
-	// }
-}
-
-
-.main2 {
-	#csvTable2 th:nth-child(1) {
-		padding-left: 1.5vw;
-		position: relative;
-		width: 5vw;
-
-		&::after {
-			content: "";
-			display: inline-block;
-			width: 0.5px;
-			height: 150%;
-			background-color: black;
-			position: absolute;
-			top: -2px;
-			right: 1px;
-		}
-	}
-
-	#csvTable2 th:nth-child(2) {
-		padding-left: 5vw;
-	}
-
-	#csvTable2 td:nth-child(1) {
-		padding-left: 2vw;
-		position: relative;
-		width: 50px;
-
-		&::after {
-			content: "";
-			display: inline-block;
-			width: 0.5px;
-			height: 150%;
-			background-color: black;
-			position: absolute;
-			top: -2px;
-			right: 1px;
-		}
-	}
-
-	#csvTable2 td:nth-child(2) {
-		padding-left: 3vw;
-	}
-}
-
-.main3 {
-	#csvTable3 th:nth-child(1) {
-		padding-left: 1.5vw;
-		position: relative;
-		width: 5vw;
-
-		&::after {
-			content: "";
-			display: inline-block;
-			width: 0.5px;
-			height: 150%;
-			background-color: black;
-			position: absolute;
-			top: 0px;
-			right: 0px;
-		}
-	}
-
-	#csvTable3 th:nth-child(2) {
-		padding-left: 5vw;
-	}
-
-	#csvTable3 td:nth-child(1) {
-		/* margin-top: 20px;
-					width: 80vw; */
-		padding-left: 2vw;
-		position: relative;
-		width: 50px;
-		/* border-right: solid 1px; */
-
-		&::after {
-			content: "";
-			display: inline-block;
-			width: 0.5px;
-			height: 200%;
-			background-color: black;
-			position: absolute;
-			top: 0px;
-			right: 0px;
-		}
-	}
-
-	#csvTable3 td:nth-child(2) {
-		padding-left: 3vw;
-	}
-}
-
-.main4 {
-	#csvTable4 th:nth-child(1) {
-		padding-left: 1.5vw;
-		position: relative;
-		width: 5vw;
-
-		&::after {
-			content: "";
-			display: inline-block;
-			width: 0.5px;
-			height: 150%;
-			background-color: black;
-			position: absolute;
-			top: 0px;
-			right: 0px;
-		}
-	}
-
-	#csvTable4 th:nth-child(2) {
-		padding-left: 5vw;
-	}
-
-	#csvTable4 td:nth-child(1) {
-		/* margin-top: 20px;
-					width: 80vw; */
-		padding-left: 2vw;
-		position: relative;
-		width: 50px;
-
-		/* border-right: solid 1px; */
-		&::after {
-			content: "";
-			display: inline-block;
-			width: 0.5px;
-			height: 500%;
-			background-color: black;
-			position: absolute;
-			top: 0px;
-			right: 0px;
-		}
-	}
-
-	#csvTable4 td:nth-child(2) {
-		padding-left: 3vw;
-	}
-}
-
-.main5 {
-	#csvTable5 th:nth-child(1) {
-		padding-left: 1.5vw;
-		position: relative;
-		width: 5vw;
-
-		&::after {
-			content: "";
-			display: inline-block;
-			width: 0.5px;
-			height: 150%;
-			background-color: black;
-			position: absolute;
-			top: 0px;
-			right: 0px;
-		}
-	}
-
-	#csvTable5 th:nth-child(2) {
-		padding-left: 5vw;
-	}
-
-	#csvTable5 td:nth-child(1) {
-		/* margin-top: 20px;
-					width: 80vw; */
-		padding-left: 2vw;
-		position: relative;
-		width: 50px;
-
-		/* border-right: solid 1px; */
-		&::after {
-			content: "";
-			display: inline-block;
-			width: 0.5px;
-			height: 100%;
-			background-color: black;
-			position: absolute;
-			top: 0px;
-			right: 0px;
-		}
-	}
-
-	#csvTable5 td:nth-child(2) {
-		padding-left: 3vw;
-	}
-}
-
+}		
 
 
 footer {
 	.content {
-		// height: 10vh;
+		height: 7vh;
 		background-color: #459BDB;
-
+		position: relative;
 		#items {
 			padding-left: 15vw;
 			padding-right: 15vw;
@@ -532,11 +325,15 @@ footer {
 				width: 100px;
 			}
 
-			a#pmark {
-				height: 56px;
-				width: 56px;
+			img #pmark {
 				padding-top: 4px;
 			}
+		}
+		#kanri {
+			position: absolute;
+			bottom: 16px;
+			right: 8px;
+			color: white;
 		}
 	}
 
@@ -546,11 +343,3 @@ footer {
 }
 
 
-// jqueryuiのやーつ
-// .test {
-// 	width: 100px;
-// 	color: darkblue;
-// 	text-align: center;
-// 	cursor: pointer;
-// 	background-color: yellow;
-// }
