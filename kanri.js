@@ -5,7 +5,7 @@ $(function() {
 	$("#submit").click(function() {
 			var passwordInput = $("#password").val();
 
-			if (passwordInput === "nebit-kanri") {
+			if (passwordInput === "nebit") {
 					$.get("csvfile_trial.csv", function(data) {
 							var tableHTML = displayCSVAsTable(data);
 							$("#result").html(tableHTML);
@@ -94,9 +94,10 @@ $(function() {
 
 			// フォームを非表示にする
 			// $("#addRowForm").hide();
-			} else {
-				alert("新しいデータを入力してください。");
-		}
+			} 
+		// 	else {
+		// 		alert("新しいデータを入力してください。");
+		// }
 	}
 
 	$("#addRowButton").on("click", function() {

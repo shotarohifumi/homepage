@@ -9,66 +9,63 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./assets/style.css">
-	<!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
-	<link rel="stylesheet" href="./assets/resp.css">
-	<!-- <link rel="stylesheet" href="./assets/css/resp.css"> -->
+	<!-- <link rel="stylesheet" href="./assets/style.css"> -->
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<!-- <link rel="stylesheet" href="./assets/resp.css"> -->
+	<link rel="stylesheet" href="./assets/css/resp.css">
 </head>
 <body>
-	<div class="wrapper">
 		<!-- ヘッダー -->
 		<header>
-
 			<!-- <h1>社員用専用ホームページ</h1> -->
 			<div class="logos">
 				<img src="./pics/会社ロゴ.png" alt="会社ロゴ" id="toplogo">
 				<h1>社員用専用ホームページ</h1>
-				<!-- <div class="headerB"> -->
-					<!-- <a href="./kanri.html" id="kanri">
-						<i class="fa-solid fa-gear" id="logo" style="color: #171717;" ></i>
-						<p>管理</p>
-					</a> -->
-					<a href="https://www.nebit.co.jp/" id="home">
-						<i class="las la-home">HOME</i>
-						
-						<!-- <img src="./pics/ホームボタン.png" alt="ホームボタン"> -->
-					</a>
+				<a href="https://www.nebit.co.jp/" id="home">
+					<i class="las la-home">HOME</i>
+				</a>
 				<!-- </div> -->
 			</div>
 
 			<div class="menu_bar">
 				<ul>
-					<li><i class="fa-regular fa-bell">お知らせ</i></li>
-					<li><i class="fa-regular fa-pen-to-square">申請書</i></li>
-					<li><i class="fa-regular fa-clock">勤務時間報告書</i></li>
-					<li><i class="fa-regular fa-heart">就業規則等</i></li>
-					<li><i class="fa-regular fa-folder">その他</i></li>
+					<button class="scroll-button" data-target="main1">
+						<li><i class="fa-regular fa-bell">お知らせ</i></li>
+					</button>
+					<button class="scroll-button" data-target="main2">
+						<li><i class="fa-regular fa-pen-to-square">申請書</i></li>
+					</button>
+					<button class="scroll-button" data-target="main3">
+						<li><i class="fa-regular fa-clock">勤務時間報告書</i></li>
+					</button>
+					<button class="scroll-button" data-target="main4">
+						<li><i class="fa-regular fa-heart">就業規則等</i></li>
+					</button>
+					<button class="scroll-button" data-target="main5">
+						<li><i class="fa-regular fa-folder">その他</i></li>
+					</button>
 				</ul>
 			</div>
 		</header>
-		<!-- 注意書き -->
-		<!-- <p class="caution">*複数まとめてダウンロードする際にはboxにチェックをお願いします。</p> -->
+		<div class="wrapper">
 		<div class="maincontents">
-			<!-- <p>Click the button to go to the dropbox folder:</p>
-			<button id="foler-link">Open Folder</button> -->
-
+			<button class="figtop arrow">&uarr;</button>
 			<!-- お知らせ -->
-			<div class="main1">
-				<h2>お知らせ</h2>
+			<div class="main1" id="main1">
+				<h2>お　知　ら　せ</h2>
 				<div id="th">
 					<div class="td1">番号</div>
 					<div class="td2">項目</div>
 				</div>
 				<div class="box1">
 					<table id="csvTable1">
-						<!-- <input type="checkbox"> -->
 						<!-- CSVデータを表示するためのテーブル -->
 					</table>
 				</div>
 			</div>
 			<!-- 申請書 -->
-			<div class="main2">
-				<h2>申請書</h2>
+			<div class="main2" id="main2">
+				<h2>申　　請　　書</h2>
 				<div class="applybtn">
 					<a href="https://nebit.co.jp/SyainSystem/kyutodoke/vacation.php?" class="button">
 						休暇申請 
@@ -92,7 +89,7 @@
 				</div>
 			</div>
 			<!-- 勤務時間報告書 -->
-			<div class="main3">
+			<div class="main3" id="main3">
 				<h2>勤務時間報告書</h2>
 				<!-- <img src="./pics/ダウンロードbtn.png" alt="dlbtn" id="dlbtn"> -->
 				<div id="th">
@@ -107,8 +104,8 @@
 				</div>
 			</div>
 			<!-- 就業規則等 -->
-			<div class="main4">
-				<h2>就業規則等</h2>
+			<div class="main4" id="main4">
+				<h2 style="letter-spacing: 0.5em;">就業規則等</h2>
 				<!-- <img src="./pics/ダウンロードbtn.png" alt="dlbtn" id="dlbtn"> -->
 				<div id="th">
 					<div class="td1">番号</div>
@@ -122,8 +119,8 @@
 				</div>
 			</div>
 			<!-- その他 -->
-			<div class="main5">
-				<h2>その他</h2>
+			<div class="main5" id="main5">
+				<h2>そ　　の　　他</h2>
 				<!-- <img src="./pics/ダウンロードbtn.png" alt="dlbtn" id="dlbtn"> -->
 				<div id="th">
 					<div class="td1">番号</div>

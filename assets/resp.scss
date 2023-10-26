@@ -2,33 +2,108 @@
     h2 {
         font-size: 1em;
     }
-    .wrapper {
-        padding: unset;
-        header {
-            height: 5vh;
-            justify-content: space-around;
-            h1 {
-            font-size: 16px;
-            padding-top: 2vh;
-            }
-            #toplogo {
-                height: 50px;
-                width: 100px;
-            }
-            a img {
-                height: 50px;
-                width: 75px;
-                padding-top: unset;
-            }
-        }
-        .maincontents h2 {
-            border-bottom: 2px solid;
-            margin-top: 20px;
-            margin-bottom: auto;
-        }
-        td, #td1, #td2 {
-            font-size: 0.8em;
-        }
+
+		header {
+			border-bottom: none;
+			padding-left: 5vw;
+			padding-right: 5vw;
+			
+			.logos {
+				flex-direction: column;
+				text-align: center;
+				justify-content: space-around;
+				padding-bottom: 80px;
+				h1 {
+						font-size: 1em;
+						padding-top: 2vh;
+					}
+					#toplogo {
+						margin: auto;
+						height: 56px;
+						width: 100px;
+					}
+					#home {
+						padding-top: 2vh;
+						i.las.la-home {
+							font-size: 0.8em;
+						}
+					}
+			}
+			.menu_bar {
+				margin: 0 auto;
+				ul {
+					display: flex;
+					flex-direction: column;
+					margin: 0px;
+					margin-bottom: 8px;
+					li {
+						font-size: 1em;
+					}
+					button {
+						margin-bottom: 1.5em;
+					}
+				}
+			}
+			
+		}
+		.wrapper {
+			padding-right: 6vw;		
+			padding-left: 6vw;		
+			.maincontents{ 
+				h2 {
+					border-bottom: 2px solid;
+					margin-top: 20px;
+					margin-bottom: 4px;
+					width: 114px;
+				}
+				.main1, .main2, .main3, .main4, .main5 {
+					#th, .td1, .td2, tr{
+						font-size: 0.8em;
+					}
+					
+					.td1 {
+						width: 10%;
+						line-height: 20px;
+					}
+					.td2 {
+						line-height: 20px;
+						padding-left: 3vh;
+					}
+					.box1 #csvTable1 td:nth-child(1), .box2 #csvTable2 td:nth-child(1),
+					.box3 #csvTable3 td:nth-child(1), .box4 #csvTable4 td:nth-child(1),
+					.box5 #csvTable5 td:nth-child(1) {
+						line-height: 30px;
+					}
+					.box1 #csvTable1 td:nth-child(2), .box2 #csvTable2 td:nth-child(2),
+					.box3 #csvTable3 td:nth-child(2), .box4 #csvTable4 td:nth-child(2),
+					.box5 #csvTable5 td:nth-child(2) {
+						line-height: 1.2;
+						white-space: normal;
+					}
+				}
+				.main1, .main2, .main5 {
+					.box1, .box2, .box5 {
+						height: 300px;
+					}
+				}
+				.main3, .main4 {
+					.box3, .box4 {
+						height: 150px;
+					}
+				}
+			
+				.main2 {
+					.applybtn {
+						justify-content: space-around;
+						flex-direction: column;
+						margin: 16px auto;
+						.button {
+							margin-right: 0rem;
+							margin-bottom: 1.5em;
+						}
+					}
+				}
+			}
     }
     footer {
         .content {
@@ -38,8 +113,9 @@
                 padding-right: 1vw;
                 justify-content: space-between;
                 img.btmlogo {
-                    height: 40px;
+                    height: 52px;
                     width: 72px;
+										padding-top: 1vh;
                     }
                 
                 p {
