@@ -8,4 +8,5 @@ $(function() {
             $(this).removeClass('hovered');
         });
     });
+    
 });
