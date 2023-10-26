@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "Inter", sans-serif;
 }
@@ -14,23 +15,20 @@ footer p {
   padding-right: 15vw;
   padding-left: 15vw;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .wrapper header {
   background-color: transparent;
-  height: 12vh;
-  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
   transform: translateY(0deg);
-  position: relative;
 }
 .wrapper header h1 {
   font-size: 2em;
   font-weight: bold;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  padding-top: 4vh;
 }
 .wrapper header .logos {
   display: flex;
@@ -40,24 +38,13 @@ footer p {
   height: 100px;
   width: 150px;
 }
-.wrapper header .logos .headerB {
+.wrapper header .menu_bar ul {
   display: flex;
-  position: absolute;
-  top: 8vh;
-  right: 0vh;
+  justify-content: space-around;
+  margin: 12px;
 }
-.wrapper header .logos .headerB #kanri,
-.wrapper header .logos .headerB #logo {
-  display: flex;
-}
-.wrapper header .logos .headerB #kanri #logo,
-.wrapper header .logos .headerB #logo #logo {
-  height: 50px;
-  width: 50px;
-}
-.wrapper header .logos .headerB #kanri p,
-.wrapper header .logos .headerB #logo p {
-  font-weight: 24px;
+.wrapper header .menu_bar ul li {
+  display: block;
 }
 .wrapper .maincontents {
   display: flex;
@@ -68,6 +55,7 @@ footer p {
   display: inline-block;
   width: fit-content;
   margin: 1em auto;
+  margin-top: 20px;
 }
 .wrapper .maincontents .main1,
 .wrapper .maincontents .main2,
@@ -76,8 +64,7 @@ footer p {
 .wrapper .maincontents .main5 {
   position: relative;
 }
-.wrapper .maincontents .main1 .box1,
-.wrapper .maincontents .main1 .box2,
+.wrapper .maincontents .main1 .box1, .wrapper .maincontents .main1 .box2,
 .wrapper .maincontents .main1 .box5,
 .wrapper .maincontents .main2 .box1,
 .wrapper .maincontents .main2 .box2,
@@ -91,10 +78,98 @@ footer p {
 .wrapper .maincontents .main5 .box1,
 .wrapper .maincontents .main5 .box2,
 .wrapper .maincontents .main5 .box5 {
-  background: #deebff 50%;
-  margin-top: 10px;
-  height: 264px;
+  height: 240px;
   overflow-y: scroll;
+  /* 奇数行 */
+  /* 偶数行 */
+}
+.wrapper .maincontents .main1 .box1 #csvTable1 tr:nth-child(odd), .wrapper .maincontents .main1 .box1 #csvTable2 tr:nth-child(odd),
+.wrapper .maincontents .main1 .box1 #csvTable5 tr:nth-child(odd), .wrapper .maincontents .main1 .box2 #csvTable1 tr:nth-child(odd), .wrapper .maincontents .main1 .box2 #csvTable2 tr:nth-child(odd),
+.wrapper .maincontents .main1 .box2 #csvTable5 tr:nth-child(odd),
+.wrapper .maincontents .main1 .box5 #csvTable1 tr:nth-child(odd),
+.wrapper .maincontents .main1 .box5 #csvTable2 tr:nth-child(odd),
+.wrapper .maincontents .main1 .box5 #csvTable5 tr:nth-child(odd),
+.wrapper .maincontents .main2 .box1 #csvTable1 tr:nth-child(odd),
+.wrapper .maincontents .main2 .box1 #csvTable2 tr:nth-child(odd),
+.wrapper .maincontents .main2 .box1 #csvTable5 tr:nth-child(odd),
+.wrapper .maincontents .main2 .box2 #csvTable1 tr:nth-child(odd),
+.wrapper .maincontents .main2 .box2 #csvTable2 tr:nth-child(odd),
+.wrapper .maincontents .main2 .box2 #csvTable5 tr:nth-child(odd),
+.wrapper .maincontents .main2 .box5 #csvTable1 tr:nth-child(odd),
+.wrapper .maincontents .main2 .box5 #csvTable2 tr:nth-child(odd),
+.wrapper .maincontents .main2 .box5 #csvTable5 tr:nth-child(odd),
+.wrapper .maincontents .main3 .box1 #csvTable1 tr:nth-child(odd),
+.wrapper .maincontents .main3 .box1 #csvTable2 tr:nth-child(odd),
+.wrapper .maincontents .main3 .box1 #csvTable5 tr:nth-child(odd),
+.wrapper .maincontents .main3 .box2 #csvTable1 tr:nth-child(odd),
+.wrapper .maincontents .main3 .box2 #csvTable2 tr:nth-child(odd),
+.wrapper .maincontents .main3 .box2 #csvTable5 tr:nth-child(odd),
+.wrapper .maincontents .main3 .box5 #csvTable1 tr:nth-child(odd),
+.wrapper .maincontents .main3 .box5 #csvTable2 tr:nth-child(odd),
+.wrapper .maincontents .main3 .box5 #csvTable5 tr:nth-child(odd),
+.wrapper .maincontents .main4 .box1 #csvTable1 tr:nth-child(odd),
+.wrapper .maincontents .main4 .box1 #csvTable2 tr:nth-child(odd),
+.wrapper .maincontents .main4 .box1 #csvTable5 tr:nth-child(odd),
+.wrapper .maincontents .main4 .box2 #csvTable1 tr:nth-child(odd),
+.wrapper .maincontents .main4 .box2 #csvTable2 tr:nth-child(odd),
+.wrapper .maincontents .main4 .box2 #csvTable5 tr:nth-child(odd),
+.wrapper .maincontents .main4 .box5 #csvTable1 tr:nth-child(odd),
+.wrapper .maincontents .main4 .box5 #csvTable2 tr:nth-child(odd),
+.wrapper .maincontents .main4 .box5 #csvTable5 tr:nth-child(odd),
+.wrapper .maincontents .main5 .box1 #csvTable1 tr:nth-child(odd),
+.wrapper .maincontents .main5 .box1 #csvTable2 tr:nth-child(odd),
+.wrapper .maincontents .main5 .box1 #csvTable5 tr:nth-child(odd),
+.wrapper .maincontents .main5 .box2 #csvTable1 tr:nth-child(odd),
+.wrapper .maincontents .main5 .box2 #csvTable2 tr:nth-child(odd),
+.wrapper .maincontents .main5 .box2 #csvTable5 tr:nth-child(odd),
+.wrapper .maincontents .main5 .box5 #csvTable1 tr:nth-child(odd),
+.wrapper .maincontents .main5 .box5 #csvTable2 tr:nth-child(odd),
+.wrapper .maincontents .main5 .box5 #csvTable5 tr:nth-child(odd) {
+  background-color: #edf3fc; /* 奇数行の背景色 */
+}
+.wrapper .maincontents .main1 .box1 #csvTable1 tr:nth-child(even), .wrapper .maincontents .main1 .box1 #csvTable2 tr:nth-child(even),
+.wrapper .maincontents .main1 .box1 #csvTable5 tr:nth-child(even), .wrapper .maincontents .main1 .box2 #csvTable1 tr:nth-child(even), .wrapper .maincontents .main1 .box2 #csvTable2 tr:nth-child(even),
+.wrapper .maincontents .main1 .box2 #csvTable5 tr:nth-child(even),
+.wrapper .maincontents .main1 .box5 #csvTable1 tr:nth-child(even),
+.wrapper .maincontents .main1 .box5 #csvTable2 tr:nth-child(even),
+.wrapper .maincontents .main1 .box5 #csvTable5 tr:nth-child(even),
+.wrapper .maincontents .main2 .box1 #csvTable1 tr:nth-child(even),
+.wrapper .maincontents .main2 .box1 #csvTable2 tr:nth-child(even),
+.wrapper .maincontents .main2 .box1 #csvTable5 tr:nth-child(even),
+.wrapper .maincontents .main2 .box2 #csvTable1 tr:nth-child(even),
+.wrapper .maincontents .main2 .box2 #csvTable2 tr:nth-child(even),
+.wrapper .maincontents .main2 .box2 #csvTable5 tr:nth-child(even),
+.wrapper .maincontents .main2 .box5 #csvTable1 tr:nth-child(even),
+.wrapper .maincontents .main2 .box5 #csvTable2 tr:nth-child(even),
+.wrapper .maincontents .main2 .box5 #csvTable5 tr:nth-child(even),
+.wrapper .maincontents .main3 .box1 #csvTable1 tr:nth-child(even),
+.wrapper .maincontents .main3 .box1 #csvTable2 tr:nth-child(even),
+.wrapper .maincontents .main3 .box1 #csvTable5 tr:nth-child(even),
+.wrapper .maincontents .main3 .box2 #csvTable1 tr:nth-child(even),
+.wrapper .maincontents .main3 .box2 #csvTable2 tr:nth-child(even),
+.wrapper .maincontents .main3 .box2 #csvTable5 tr:nth-child(even),
+.wrapper .maincontents .main3 .box5 #csvTable1 tr:nth-child(even),
+.wrapper .maincontents .main3 .box5 #csvTable2 tr:nth-child(even),
+.wrapper .maincontents .main3 .box5 #csvTable5 tr:nth-child(even),
+.wrapper .maincontents .main4 .box1 #csvTable1 tr:nth-child(even),
+.wrapper .maincontents .main4 .box1 #csvTable2 tr:nth-child(even),
+.wrapper .maincontents .main4 .box1 #csvTable5 tr:nth-child(even),
+.wrapper .maincontents .main4 .box2 #csvTable1 tr:nth-child(even),
+.wrapper .maincontents .main4 .box2 #csvTable2 tr:nth-child(even),
+.wrapper .maincontents .main4 .box2 #csvTable5 tr:nth-child(even),
+.wrapper .maincontents .main4 .box5 #csvTable1 tr:nth-child(even),
+.wrapper .maincontents .main4 .box5 #csvTable2 tr:nth-child(even),
+.wrapper .maincontents .main4 .box5 #csvTable5 tr:nth-child(even),
+.wrapper .maincontents .main5 .box1 #csvTable1 tr:nth-child(even),
+.wrapper .maincontents .main5 .box1 #csvTable2 tr:nth-child(even),
+.wrapper .maincontents .main5 .box1 #csvTable5 tr:nth-child(even),
+.wrapper .maincontents .main5 .box2 #csvTable1 tr:nth-child(even),
+.wrapper .maincontents .main5 .box2 #csvTable2 tr:nth-child(even),
+.wrapper .maincontents .main5 .box2 #csvTable5 tr:nth-child(even),
+.wrapper .maincontents .main5 .box5 #csvTable1 tr:nth-child(even),
+.wrapper .maincontents .main5 .box5 #csvTable2 tr:nth-child(even),
+.wrapper .maincontents .main5 .box5 #csvTable5 tr:nth-child(even) {
+  background-color: #ffffff; /* 偶数行の背景色 */
 }
 .wrapper .maincontents .main1 .box3,
 .wrapper .maincontents .main1 .box4,
@@ -106,10 +181,52 @@ footer p {
 .wrapper .maincontents .main4 .box4,
 .wrapper .maincontents .main5 .box3,
 .wrapper .maincontents .main5 .box4 {
-  background: #deebff 50%;
-  margin-top: 10px;
-  height: 144px;
+  height: 120px;
   overflow-y: scroll;
+  /* 奇数行 */
+  /* 偶数行 */
+}
+.wrapper .maincontents .main1 .box3 #csvTable3 tr:nth-child(odd), .wrapper .maincontents .main1 .box3 #csvTable4 tr:nth-child(odd),
+.wrapper .maincontents .main1 .box4 #csvTable3 tr:nth-child(odd),
+.wrapper .maincontents .main1 .box4 #csvTable4 tr:nth-child(odd),
+.wrapper .maincontents .main2 .box3 #csvTable3 tr:nth-child(odd),
+.wrapper .maincontents .main2 .box3 #csvTable4 tr:nth-child(odd),
+.wrapper .maincontents .main2 .box4 #csvTable3 tr:nth-child(odd),
+.wrapper .maincontents .main2 .box4 #csvTable4 tr:nth-child(odd),
+.wrapper .maincontents .main3 .box3 #csvTable3 tr:nth-child(odd),
+.wrapper .maincontents .main3 .box3 #csvTable4 tr:nth-child(odd),
+.wrapper .maincontents .main3 .box4 #csvTable3 tr:nth-child(odd),
+.wrapper .maincontents .main3 .box4 #csvTable4 tr:nth-child(odd),
+.wrapper .maincontents .main4 .box3 #csvTable3 tr:nth-child(odd),
+.wrapper .maincontents .main4 .box3 #csvTable4 tr:nth-child(odd),
+.wrapper .maincontents .main4 .box4 #csvTable3 tr:nth-child(odd),
+.wrapper .maincontents .main4 .box4 #csvTable4 tr:nth-child(odd),
+.wrapper .maincontents .main5 .box3 #csvTable3 tr:nth-child(odd),
+.wrapper .maincontents .main5 .box3 #csvTable4 tr:nth-child(odd),
+.wrapper .maincontents .main5 .box4 #csvTable3 tr:nth-child(odd),
+.wrapper .maincontents .main5 .box4 #csvTable4 tr:nth-child(odd) {
+  background-color: #edf3fc; /* 奇数行の背景色 */
+}
+.wrapper .maincontents .main1 .box3 #csvTable3 tr:nth-child(even), .wrapper .maincontents .main1 .box3 #csvTable4 tr:nth-child(even),
+.wrapper .maincontents .main1 .box4 #csvTable3 tr:nth-child(even),
+.wrapper .maincontents .main1 .box4 #csvTable4 tr:nth-child(even),
+.wrapper .maincontents .main2 .box3 #csvTable3 tr:nth-child(even),
+.wrapper .maincontents .main2 .box3 #csvTable4 tr:nth-child(even),
+.wrapper .maincontents .main2 .box4 #csvTable3 tr:nth-child(even),
+.wrapper .maincontents .main2 .box4 #csvTable4 tr:nth-child(even),
+.wrapper .maincontents .main3 .box3 #csvTable3 tr:nth-child(even),
+.wrapper .maincontents .main3 .box3 #csvTable4 tr:nth-child(even),
+.wrapper .maincontents .main3 .box4 #csvTable3 tr:nth-child(even),
+.wrapper .maincontents .main3 .box4 #csvTable4 tr:nth-child(even),
+.wrapper .maincontents .main4 .box3 #csvTable3 tr:nth-child(even),
+.wrapper .maincontents .main4 .box3 #csvTable4 tr:nth-child(even),
+.wrapper .maincontents .main4 .box4 #csvTable3 tr:nth-child(even),
+.wrapper .maincontents .main4 .box4 #csvTable4 tr:nth-child(even),
+.wrapper .maincontents .main5 .box3 #csvTable3 tr:nth-child(even),
+.wrapper .maincontents .main5 .box3 #csvTable4 tr:nth-child(even),
+.wrapper .maincontents .main5 .box4 #csvTable3 tr:nth-child(even),
+.wrapper .maincontents .main5 .box4 #csvTable4 tr:nth-child(even) {
+  background-color: #ffffff; /* 偶数行の背景色 */
 }
 .wrapper .maincontents .main1,
 .wrapper .maincontents .main3,
@@ -174,197 +291,69 @@ footer p {
     background: linear-gradient(to bottom, #00c1fe, #faf7f7);
   }
 }
-.wrapper .maincontents .main3 .box {
+.wrapper .maincontents .main1 #th, .wrapper .maincontents .main2 #th, .wrapper .maincontents .main3 #th, .wrapper .maincontents .main4 #th, .wrapper .maincontents .main5 #th {
   display: flex;
-  justify-content: start;
-  padding-left: 1em;
-}
-.wrapper .maincontents .main1 #th {
-  height: 3vh;
   width: 100%;
-  background: lightblue;
-  margin-bottom: -10px;
-  border-bottom: solid 1px;
-  display: flex;
+  position: sticky;
+  top: 0;
+  background: #c8d5d9;
+  border-bottom: solid 1px white;
 }
-.wrapper .maincontents .main1 #th .td1 {
-  width: 8vw;
-  border-right: 1px solid;
+.wrapper .maincontents .main1 .td1, .wrapper .maincontents .main2 .td1, .wrapper .maincontents .main3 .td1, .wrapper .maincontents .main4 .td1, .wrapper .maincontents .main5 .td1 {
+  width: 15%;
   text-align: center;
 }
-.wrapper .maincontents .main1 #th .td2 {
+.wrapper .maincontents .main1 .td2, .wrapper .maincontents .main2 .td2, .wrapper .maincontents .main3 .td2, .wrapper .maincontents .main4 .td2, .wrapper .maincontents .main5 .td2 {
   padding-left: 4vw;
 }
-.wrapper #csvTable1 td:nth-child(1) {
-  text-align: center;
-  width: 8vw;
-  position: relative;
-  border-right: solid 1px;
-}
-.wrapper #csvTable1 td:nth-child(2) {
-  padding-left: 3vw;
+.wrapper .maincontents .main1 .box1 #csvTable1, .wrapper .maincontents .main1 .box2 #csvTable2,
+.wrapper .maincontents .main1 .box3 #csvTable3, .wrapper .maincontents .main1 .box4 #csvTable4,
+.wrapper .maincontents .main1 .box5 #csvTable5, .wrapper .maincontents .main2 .box1 #csvTable1, .wrapper .maincontents .main2 .box2 #csvTable2,
+.wrapper .maincontents .main2 .box3 #csvTable3, .wrapper .maincontents .main2 .box4 #csvTable4,
+.wrapper .maincontents .main2 .box5 #csvTable5, .wrapper .maincontents .main3 .box1 #csvTable1, .wrapper .maincontents .main3 .box2 #csvTable2,
+.wrapper .maincontents .main3 .box3 #csvTable3, .wrapper .maincontents .main3 .box4 #csvTable4,
+.wrapper .maincontents .main3 .box5 #csvTable5, .wrapper .maincontents .main4 .box1 #csvTable1, .wrapper .maincontents .main4 .box2 #csvTable2,
+.wrapper .maincontents .main4 .box3 #csvTable3, .wrapper .maincontents .main4 .box4 #csvTable4,
+.wrapper .maincontents .main4 .box5 #csvTable5, .wrapper .maincontents .main5 .box1 #csvTable1, .wrapper .maincontents .main5 .box2 #csvTable2,
+.wrapper .maincontents .main5 .box3 #csvTable3, .wrapper .maincontents .main5 .box4 #csvTable4,
+.wrapper .maincontents .main5 .box5 #csvTable5 {
   width: 100%;
+  border-collapse: collapse;
+  /* セルの境界線を非表示 */
 }
-
-.main2 #csvTable2 th:nth-child(1) {
-  padding-left: 1.5vw;
-  position: relative;
-  width: 5vw;
+.wrapper .maincontents .main1 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main1 .box2 #csvTable2 td:nth-child(1),
+.wrapper .maincontents .main1 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main1 .box4 #csvTable4 td:nth-child(1),
+.wrapper .maincontents .main1 .box5 #csvTable5 td:nth-child(1), .wrapper .maincontents .main2 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main2 .box2 #csvTable2 td:nth-child(1),
+.wrapper .maincontents .main2 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main2 .box4 #csvTable4 td:nth-child(1),
+.wrapper .maincontents .main2 .box5 #csvTable5 td:nth-child(1), .wrapper .maincontents .main3 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main3 .box2 #csvTable2 td:nth-child(1),
+.wrapper .maincontents .main3 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main3 .box4 #csvTable4 td:nth-child(1),
+.wrapper .maincontents .main3 .box5 #csvTable5 td:nth-child(1), .wrapper .maincontents .main4 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main4 .box2 #csvTable2 td:nth-child(1),
+.wrapper .maincontents .main4 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main4 .box4 #csvTable4 td:nth-child(1),
+.wrapper .maincontents .main4 .box5 #csvTable5 td:nth-child(1), .wrapper .maincontents .main5 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main5 .box2 #csvTable2 td:nth-child(1),
+.wrapper .maincontents .main5 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main5 .box4 #csvTable4 td:nth-child(1),
+.wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(1) {
+  border-right: 1px solid white; /* テーブル内の縦線 */
+  text-align: center;
+  width: 10vw;
 }
-.main2 #csvTable2 th:nth-child(1)::after {
-  content: "";
-  display: inline-block;
-  width: 0.5px;
-  height: 150%;
-  background-color: black;
-  position: absolute;
-  top: -2px;
-  right: 1px;
-}
-.main2 #csvTable2 th:nth-child(2) {
-  padding-left: 5vw;
-}
-.main2 #csvTable2 td:nth-child(1) {
-  padding-left: 2vw;
-  position: relative;
-  width: 50px;
-}
-.main2 #csvTable2 td:nth-child(1)::after {
-  content: "";
-  display: inline-block;
-  width: 0.5px;
-  height: 150%;
-  background-color: black;
-  position: absolute;
-  top: -2px;
-  right: 1px;
-}
-.main2 #csvTable2 td:nth-child(2) {
-  padding-left: 3vw;
-}
-
-.main3 #csvTable3 th:nth-child(1) {
-  padding-left: 1.5vw;
-  position: relative;
-  width: 5vw;
-}
-.main3 #csvTable3 th:nth-child(1)::after {
-  content: "";
-  display: inline-block;
-  width: 0.5px;
-  height: 150%;
-  background-color: black;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-.main3 #csvTable3 th:nth-child(2) {
-  padding-left: 5vw;
-}
-.main3 #csvTable3 td:nth-child(1) {
-  /* margin-top: 20px;
-  			width: 80vw; */
-  padding-left: 2vw;
-  position: relative;
-  width: 50px;
-  /* border-right: solid 1px; */
-}
-.main3 #csvTable3 td:nth-child(1)::after {
-  content: "";
-  display: inline-block;
-  width: 0.5px;
-  height: 200%;
-  background-color: black;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-.main3 #csvTable3 td:nth-child(2) {
-  padding-left: 3vw;
-}
-
-.main4 #csvTable4 th:nth-child(1) {
-  padding-left: 1.5vw;
-  position: relative;
-  width: 5vw;
-}
-.main4 #csvTable4 th:nth-child(1)::after {
-  content: "";
-  display: inline-block;
-  width: 0.5px;
-  height: 150%;
-  background-color: black;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-.main4 #csvTable4 th:nth-child(2) {
-  padding-left: 5vw;
-}
-.main4 #csvTable4 td:nth-child(1) {
-  /* margin-top: 20px;
-  			width: 80vw; */
-  padding-left: 2vw;
-  position: relative;
-  width: 50px;
-  /* border-right: solid 1px; */
-}
-.main4 #csvTable4 td:nth-child(1)::after {
-  content: "";
-  display: inline-block;
-  width: 0.5px;
-  height: 500%;
-  background-color: black;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-.main4 #csvTable4 td:nth-child(2) {
-  padding-left: 3vw;
-}
-
-.main5 #csvTable5 th:nth-child(1) {
-  padding-left: 1.5vw;
-  position: relative;
-  width: 5vw;
-}
-.main5 #csvTable5 th:nth-child(1)::after {
-  content: "";
-  display: inline-block;
-  width: 0.5px;
-  height: 150%;
-  background-color: black;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-.main5 #csvTable5 th:nth-child(2) {
-  padding-left: 5vw;
-}
-.main5 #csvTable5 td:nth-child(1) {
-  /* margin-top: 20px;
-  			width: 80vw; */
-  padding-left: 2vw;
-  position: relative;
-  width: 50px;
-  /* border-right: solid 1px; */
-}
-.main5 #csvTable5 td:nth-child(1)::after {
-  content: "";
-  display: inline-block;
-  width: 0.5px;
-  height: 100%;
-  background-color: black;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-.main5 #csvTable5 td:nth-child(2) {
+.wrapper .maincontents .main1 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main1 .box2 #csvTable2 td:nth-child(2),
+.wrapper .maincontents .main1 .box3 #csvTable4 td:nth-child(2), .wrapper .maincontents .main1 .box3 #csvTable4 td:nth-child(2),
+.wrapper .maincontents .main1 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main2 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main2 .box2 #csvTable2 td:nth-child(2),
+.wrapper .maincontents .main2 .box3 #csvTable4 td:nth-child(2), .wrapper .maincontents .main2 .box3 #csvTable4 td:nth-child(2),
+.wrapper .maincontents .main2 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main3 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main3 .box2 #csvTable2 td:nth-child(2),
+.wrapper .maincontents .main3 .box3 #csvTable4 td:nth-child(2), .wrapper .maincontents .main3 .box3 #csvTable4 td:nth-child(2),
+.wrapper .maincontents .main3 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main4 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main4 .box2 #csvTable2 td:nth-child(2),
+.wrapper .maincontents .main4 .box3 #csvTable4 td:nth-child(2), .wrapper .maincontents .main4 .box3 #csvTable4 td:nth-child(2),
+.wrapper .maincontents .main4 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main5 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main5 .box2 #csvTable2 td:nth-child(2),
+.wrapper .maincontents .main5 .box3 #csvTable4 td:nth-child(2), .wrapper .maincontents .main5 .box3 #csvTable4 td:nth-child(2),
+.wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(2) {
   padding-left: 3vw;
 }
 
 footer .content {
+  height: 7vh;
   background-color: #459BDB;
+  position: relative;
 }
 footer .content #items {
   padding-left: 15vw;
@@ -381,10 +370,14 @@ footer .content #items img.btmlogo {
   height: 64px;
   width: 100px;
 }
-footer .content #items a#pmark {
-  height: 56px;
-  width: 56px;
+footer .content #items img #pmark {
   padding-top: 4px;
+}
+footer .content #kanri {
+  position: absolute;
+  bottom: 16px;
+  right: 8px;
+  color: white;
 }
 footer p {
   text-align: center;
