@@ -129,16 +129,18 @@ header {
     // to-the-topボタン 
 		.figtop {
 			position: fixed;
-			bottom: 50px;
-			right: 50px;
+			bottom: 85px;
+			right: 0px;
 			border-radius: 10%;
 			border: transparent;
-			background-color: yellow;
+			background-color: black;
 			cursor: pointer;
 			opacity: 0.5;
-			padding: 15px 20px;
+			padding: 10px 15px;
 			border-radius: 30%;
 			z-index: 1;
+			color: white;
+			font-size: 24px;
 		}
 		.figtop:hover{
 				opacity:1;
@@ -228,7 +230,7 @@ header {
 					// height: 40px;
 					padding-top: 12px;
 					transition: transform 0.3s, background 0.3s, color 0.3s;
-					color: #0a0a0a;
+					color: whitesmoke;
 					/* background: linear-gradient(180deg, #3498db, #a3d9ee); */
 					background: linear-gradient(to bottom, #a8e1f2, #0094fe );
 					margin-right: 1rem;

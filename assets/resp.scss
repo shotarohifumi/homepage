@@ -4,18 +4,23 @@
     }
 
 		header {
+			border-bottom: none;
 			padding-left: 5vw;
 			padding-right: 5vw;
+			
 			.logos {
+				flex-direction: column;
+				text-align: center;
 				justify-content: space-around;
-				padding-bottom: 8px;
+				padding-bottom: 80px;
 				h1 {
 						font-size: 1em;
 						padding-top: 2vh;
 					}
 					#toplogo {
-						height: 48px;
-						width: 92px;
+						margin: auto;
+						height: 56px;
+						width: 100px;
 					}
 					#home {
 						padding-top: 2vh;
@@ -25,11 +30,17 @@
 					}
 			}
 			.menu_bar {
+				margin: 0 auto;
 				ul {
+					display: flex;
+					flex-direction: column;
 					margin: 0px;
 					margin-bottom: 8px;
 					li {
-						font-size: 0.8em;
+						font-size: 1em;
+					}
+					button {
+						margin-bottom: 1.5em;
 					}
 				}
 			}
@@ -84,10 +95,11 @@
 				.main2 {
 					.applybtn {
 						justify-content: space-around;
-						margin-top: 0.5rem;
-						margin-bottom: 0.5rem;
+						flex-direction: column;
+						margin: 16px auto;
 						.button {
 							margin-right: 0rem;
+							margin-bottom: 1.5em;
 						}
 					}
 				}

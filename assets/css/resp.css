@@ -3,20 +3,24 @@
     font-size: 1em;
   }
   header {
+    border-bottom: none;
     padding-left: 5vw;
     padding-right: 5vw;
   }
   header .logos {
+    flex-direction: column;
+    text-align: center;
     justify-content: space-around;
-    padding-bottom: 8px;
+    padding-bottom: 80px;
   }
   header .logos h1 {
     font-size: 1em;
     padding-top: 2vh;
   }
   header .logos #toplogo {
-    height: 48px;
-    width: 92px;
+    margin: auto;
+    height: 56px;
+    width: 100px;
   }
   header .logos #home {
     padding-top: 2vh;
@@ -24,12 +28,20 @@
   header .logos #home i.las.la-home {
     font-size: 0.8em;
   }
+  header .menu_bar {
+    margin: 0 auto;
+  }
   header .menu_bar ul {
+    display: flex;
+    flex-direction: column;
     margin: 0px;
     margin-bottom: 8px;
   }
   header .menu_bar ul li {
-    font-size: 0.8em;
+    font-size: 1em;
+  }
+  header .menu_bar ul button {
+    margin-bottom: 1.5em;
   }
   .wrapper {
     padding-right: 6vw;
@@ -87,11 +99,12 @@
   }
   .wrapper .maincontents .main2 .applybtn {
     justify-content: space-around;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    flex-direction: column;
+    margin: 16px auto;
   }
   .wrapper .maincontents .main2 .applybtn .button {
     margin-right: 0rem;
+    margin-bottom: 1.5em;
   }
   footer .content {
     height: unset;
