@@ -1,4 +1,5 @@
 $(function() {
+		// ボタン色味変化
     $(document).ready(function () {
         $('.button').mouseenter(function () {
             $(this).addClass('hovered');
@@ -8,7 +9,8 @@ $(function() {
             $(this).removeClass('hovered');
         });
     });
-		// スクロール
+
+		// to-the-topボタン
 		$(window).on("scroll", function () {
 			let btn = $(".figtop").offset().top;
 
@@ -17,7 +19,7 @@ $(function() {
 			if (position >= btn) {
 					$(".figtop").removeClass("topbtn");
 			}
-			//console.log(position);
+
 			if (position == 0) {
 					$(".figtop").addClass("topbtn");
 			}
@@ -27,4 +29,14 @@ $(function() {
         $("body,html").animate({ scrollTop: 0 }, 500);
     });
 
+		// メニューバーからのスクロール
+		$(document).ready(function() {
+			$(".scroll-button").click(function() {
+				var target = "#" + $(this).data("target");
+				$('html, body').animate({
+					scrollTop: $(target).offset().top
+				}, 1000); // スクロールのアニメーション時間（ミリ秒）
+			});
+		});
+		
 });

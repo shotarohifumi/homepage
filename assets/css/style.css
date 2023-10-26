@@ -11,6 +11,57 @@ footer p {
   font-size: 16px;
 }
 
+header {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+  transform: translateY(0deg);
+  border-bottom: 1px solid;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+header h1 {
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 4vh;
+}
+header .logos {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+}
+header .logos #toplogo {
+  height: 80px;
+  width: 120px;
+}
+header .logos #home {
+  padding-top: 6vh;
+}
+header .logos #home i.las.la-home {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+header .menu_bar ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 12px;
+}
+header .menu_bar ul li {
+  display: block;
+  cursor: pointer;
+  font-size: 1.25em;
+}
+header .menu_bar ul button.scroll-button {
+  background-color: transparent;
+  border-radius: 5%;
+  color: black;
+}
+header .menu_bar ul button.scroll-button:hover {
+  background-color: #00c1fe;
+  color: white;
+}
+
 .wrapper {
   padding-right: 15vw;
   padding-left: 15vw;
@@ -18,44 +69,17 @@ footer p {
   display: flex;
   flex-direction: column;
 }
-.wrapper header {
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
-  padding-top: 12px;
-  transform: translateY(0deg);
-}
-.wrapper header h1 {
-  font-size: 2em;
-  font-weight: bold;
-  padding-top: 4vh;
-}
-.wrapper header .logos {
-  display: flex;
-  justify-content: space-between;
-}
-.wrapper header .logos #toplogo {
-  height: 100px;
-  width: 150px;
-}
-.wrapper header .menu_bar ul {
-  display: flex;
-  justify-content: space-around;
-  margin: 12px;
-}
-.wrapper header .menu_bar ul li {
-  display: block;
-}
 .wrapper .maincontents {
   display: flex;
   flex-direction: column;
 }
 .wrapper .maincontents h2 {
-  border-bottom: 4px solid;
+  text-decoration-skip-ink: none;
+  border-bottom: 3px solid;
   display: inline-block;
-  width: fit-content;
+  width: 156px;
   margin: 1em auto;
-  margin-top: 20px;
+  white-space: nowrap;
 }
 .wrapper .maincontents .figtop {
   position: fixed;
@@ -313,7 +337,6 @@ footer p {
 .wrapper .maincontents .main1 #th, .wrapper .maincontents .main2 #th, .wrapper .maincontents .main3 #th, .wrapper .maincontents .main4 #th, .wrapper .maincontents .main5 #th {
   display: flex;
   width: 100%;
-  position: sticky;
   top: 0;
   background: #c8d5d9;
   border-bottom: solid 1px white;
@@ -356,15 +379,15 @@ footer p {
   width: 10vw;
 }
 .wrapper .maincontents .main1 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main1 .box2 #csvTable2 td:nth-child(2),
-.wrapper .maincontents .main1 .box3 #csvTable4 td:nth-child(2), .wrapper .maincontents .main1 .box3 #csvTable4 td:nth-child(2),
+.wrapper .maincontents .main1 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main1 .box4 #csvTable4 td:nth-child(2),
 .wrapper .maincontents .main1 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main2 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main2 .box2 #csvTable2 td:nth-child(2),
-.wrapper .maincontents .main2 .box3 #csvTable4 td:nth-child(2), .wrapper .maincontents .main2 .box3 #csvTable4 td:nth-child(2),
+.wrapper .maincontents .main2 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main2 .box4 #csvTable4 td:nth-child(2),
 .wrapper .maincontents .main2 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main3 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main3 .box2 #csvTable2 td:nth-child(2),
-.wrapper .maincontents .main3 .box3 #csvTable4 td:nth-child(2), .wrapper .maincontents .main3 .box3 #csvTable4 td:nth-child(2),
+.wrapper .maincontents .main3 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main3 .box4 #csvTable4 td:nth-child(2),
 .wrapper .maincontents .main3 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main4 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main4 .box2 #csvTable2 td:nth-child(2),
-.wrapper .maincontents .main4 .box3 #csvTable4 td:nth-child(2), .wrapper .maincontents .main4 .box3 #csvTable4 td:nth-child(2),
+.wrapper .maincontents .main4 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main4 .box4 #csvTable4 td:nth-child(2),
 .wrapper .maincontents .main4 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main5 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main5 .box2 #csvTable2 td:nth-child(2),
-.wrapper .maincontents .main5 .box3 #csvTable4 td:nth-child(2), .wrapper .maincontents .main5 .box3 #csvTable4 td:nth-child(2),
+.wrapper .maincontents .main5 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main5 .box4 #csvTable4 td:nth-child(2),
 .wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(2) {
   padding-left: 3vw;
 }
