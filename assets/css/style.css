@@ -1,6 +1,6 @@
 @charset "UTF-8";
 * {
-  font-family: "Inter", sans-serif;
+  font-family: "Noto Sans Gothic", sans-serif;
 }
 
 h2 {
@@ -39,8 +39,7 @@ header .logos #home {
   padding-top: 6vh;
 }
 header .logos #home i.las.la-home {
-  font-size: 1.25em;
-  font-weight: 600;
+  font-size: 1em;
 }
 header .menu_bar ul {
   display: flex;
@@ -83,6 +82,7 @@ header .menu_bar ul button.scroll-button:hover {
   margin-top: 2em;
   margin-bottom: 1em;
   white-space: nowrap;
+  font-weight: 600;
 }
 .wrapper .maincontents .figtop {
   position: fixed;
@@ -304,11 +304,11 @@ header .menu_bar ul button.scroll-button:hover {
   transition: transform 0.3s, background 0.3s, color 0.3s;
   color: #0a0a0a;
   /* background: linear-gradient(180deg, #3498db, #a3d9ee); */
-  background: linear-gradient(to bottom, #a8e1f2, #00c1fe);
+  background: linear-gradient(to bottom, #a8e1f2, #0094fe);
   margin-right: 1rem;
   position: relative;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10%;
+  border-radius: 5%;
 }
 .wrapper .maincontents .main2 .applybtn .hovered {
   animation: pulse 2s infinite;
@@ -316,7 +316,7 @@ header .menu_bar ul button.scroll-button:hover {
 @keyframes pulse {
   0% {
     transform: scale(1);
-    background: linear-gradient(to bottom, #a8e1f2, #00c1fe);
+    background: linear-gradient(to bottom, #a8e1f2, #0094fe);
     color: whitesmoke;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
   }
@@ -328,7 +328,7 @@ header .menu_bar ul button.scroll-button:hover {
   }
   50% {
     transform: scale(1);
-    background: linear-gradient(to bottom, #a8e1f2, #00c1fe);
+    background: linear-gradient(to bottom, #a8e1f2, #0094fe);
     color: whitesmoke;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
   }
@@ -340,7 +340,7 @@ header .menu_bar ul button.scroll-button:hover {
   }
   100% {
     transform: scale(1);
-    background: linear-gradient(to bottom, #a8e1f2, #00c1fe);
+    background: linear-gradient(to bottom, #a8e1f2, #0094fe);
     color: whitesmoke;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
   }
@@ -349,7 +349,7 @@ header .menu_bar ul button.scroll-button:hover {
   display: flex;
   width: 100%;
   top: 0;
-  background: #c8d5d9;
+  background: #dbe8ec;
   border-bottom: solid 1px white;
 }
 .wrapper .maincontents .main1 .td1, .wrapper .maincontents .main2 .td1, .wrapper .maincontents .main3 .td1, .wrapper .maincontents .main4 .td1, .wrapper .maincontents .main5 .td1 {

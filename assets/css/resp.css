@@ -2,33 +2,96 @@
   h2 {
     font-size: 1em;
   }
-  .wrapper {
-    padding: unset;
+  header {
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
-  .wrapper header {
-    height: 5vh;
+  header .logos {
     justify-content: space-around;
+    padding-bottom: 8px;
   }
-  .wrapper header h1 {
-    font-size: 16px;
+  header .logos h1 {
+    font-size: 1em;
     padding-top: 2vh;
   }
-  .wrapper header #toplogo {
-    height: 50px;
-    width: 100px;
+  header .logos #toplogo {
+    height: 48px;
+    width: 92px;
   }
-  .wrapper header a img {
-    height: 50px;
-    width: 75px;
-    padding-top: unset;
+  header .logos #home {
+    padding-top: 2vh;
+  }
+  header .logos #home i.las.la-home {
+    font-size: 0.8em;
+  }
+  header .menu_bar ul {
+    margin: 0px;
+    margin-bottom: 8px;
+  }
+  header .menu_bar ul li {
+    font-size: 0.8em;
+  }
+  .wrapper {
+    padding-right: 6vw;
+    padding-left: 6vw;
   }
   .wrapper .maincontents h2 {
     border-bottom: 2px solid;
     margin-top: 20px;
-    margin-bottom: auto;
+    margin-bottom: 4px;
+    width: 114px;
   }
-  .wrapper td, .wrapper #td1, .wrapper #td2 {
+  .wrapper .maincontents .main1 #th, .wrapper .maincontents .main1 .td1, .wrapper .maincontents .main1 .td2, .wrapper .maincontents .main1 tr, .wrapper .maincontents .main2 #th, .wrapper .maincontents .main2 .td1, .wrapper .maincontents .main2 .td2, .wrapper .maincontents .main2 tr, .wrapper .maincontents .main3 #th, .wrapper .maincontents .main3 .td1, .wrapper .maincontents .main3 .td2, .wrapper .maincontents .main3 tr, .wrapper .maincontents .main4 #th, .wrapper .maincontents .main4 .td1, .wrapper .maincontents .main4 .td2, .wrapper .maincontents .main4 tr, .wrapper .maincontents .main5 #th, .wrapper .maincontents .main5 .td1, .wrapper .maincontents .main5 .td2, .wrapper .maincontents .main5 tr {
     font-size: 0.8em;
+  }
+  .wrapper .maincontents .main1 .td1, .wrapper .maincontents .main2 .td1, .wrapper .maincontents .main3 .td1, .wrapper .maincontents .main4 .td1, .wrapper .maincontents .main5 .td1 {
+    width: 10%;
+    line-height: 20px;
+  }
+  .wrapper .maincontents .main1 .td2, .wrapper .maincontents .main2 .td2, .wrapper .maincontents .main3 .td2, .wrapper .maincontents .main4 .td2, .wrapper .maincontents .main5 .td2 {
+    line-height: 20px;
+    padding-left: 3vh;
+  }
+  .wrapper .maincontents .main1 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main1 .box2 #csvTable2 td:nth-child(1),
+  .wrapper .maincontents .main1 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main1 .box4 #csvTable4 td:nth-child(1),
+  .wrapper .maincontents .main1 .box5 #csvTable5 td:nth-child(1), .wrapper .maincontents .main2 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main2 .box2 #csvTable2 td:nth-child(1),
+  .wrapper .maincontents .main2 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main2 .box4 #csvTable4 td:nth-child(1),
+  .wrapper .maincontents .main2 .box5 #csvTable5 td:nth-child(1), .wrapper .maincontents .main3 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main3 .box2 #csvTable2 td:nth-child(1),
+  .wrapper .maincontents .main3 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main3 .box4 #csvTable4 td:nth-child(1),
+  .wrapper .maincontents .main3 .box5 #csvTable5 td:nth-child(1), .wrapper .maincontents .main4 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main4 .box2 #csvTable2 td:nth-child(1),
+  .wrapper .maincontents .main4 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main4 .box4 #csvTable4 td:nth-child(1),
+  .wrapper .maincontents .main4 .box5 #csvTable5 td:nth-child(1), .wrapper .maincontents .main5 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main5 .box2 #csvTable2 td:nth-child(1),
+  .wrapper .maincontents .main5 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main5 .box4 #csvTable4 td:nth-child(1),
+  .wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(1) {
+    line-height: 30px;
+  }
+  .wrapper .maincontents .main1 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main1 .box2 #csvTable2 td:nth-child(2),
+  .wrapper .maincontents .main1 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main1 .box4 #csvTable4 td:nth-child(2),
+  .wrapper .maincontents .main1 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main2 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main2 .box2 #csvTable2 td:nth-child(2),
+  .wrapper .maincontents .main2 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main2 .box4 #csvTable4 td:nth-child(2),
+  .wrapper .maincontents .main2 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main3 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main3 .box2 #csvTable2 td:nth-child(2),
+  .wrapper .maincontents .main3 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main3 .box4 #csvTable4 td:nth-child(2),
+  .wrapper .maincontents .main3 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main4 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main4 .box2 #csvTable2 td:nth-child(2),
+  .wrapper .maincontents .main4 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main4 .box4 #csvTable4 td:nth-child(2),
+  .wrapper .maincontents .main4 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main5 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main5 .box2 #csvTable2 td:nth-child(2),
+  .wrapper .maincontents .main5 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main5 .box4 #csvTable4 td:nth-child(2),
+  .wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(2) {
+    line-height: 1.2;
+    white-space: normal;
+  }
+  .wrapper .maincontents .main1 .box1, .wrapper .maincontents .main1 .box2, .wrapper .maincontents .main1 .box5, .wrapper .maincontents .main2 .box1, .wrapper .maincontents .main2 .box2, .wrapper .maincontents .main2 .box5, .wrapper .maincontents .main5 .box1, .wrapper .maincontents .main5 .box2, .wrapper .maincontents .main5 .box5 {
+    height: 300px;
+  }
+  .wrapper .maincontents .main3 .box3, .wrapper .maincontents .main3 .box4, .wrapper .maincontents .main4 .box3, .wrapper .maincontents .main4 .box4 {
+    height: 150px;
+  }
+  .wrapper .maincontents .main2 .applybtn {
+    justify-content: space-around;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .wrapper .maincontents .main2 .applybtn .button {
+    margin-right: 0rem;
   }
   footer .content {
     height: unset;
@@ -39,8 +102,9 @@
     justify-content: space-between;
   }
   footer .content #items img.btmlogo {
-    height: 40px;
+    height: 52px;
     width: 72px;
+    padding-top: 1vh;
   }
   footer .content #items p {
     font-size: 0.6em;
