@@ -57,6 +57,25 @@ footer p {
   margin: 1em auto;
   margin-top: 20px;
 }
+.wrapper .maincontents .figtop {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 10%;
+  border: transparent;
+  background-color: yellow;
+  cursor: pointer;
+  opacity: 0.5;
+  padding: 15px 20px;
+  border-radius: 30%;
+  z-index: 1;
+}
+.wrapper .maincontents .figtop:hover {
+  opacity: 1;
+}
+.wrapper .maincontents .topbtn {
+  display: none;
+}
 .wrapper .maincontents .main1,
 .wrapper .maincontents .main2,
 .wrapper .maincontents .main3,

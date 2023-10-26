@@ -132,6 +132,27 @@ footer p {
 			margin-top: 20px;
 		}
 
+    // to-the-topボタン 
+		.figtop {
+			position: fixed;
+			bottom: 50px;
+			right: 50px;
+			border-radius: 10%;
+			border: transparent;
+			background-color: yellow;
+			cursor: pointer;
+			opacity: 0.5;
+			padding: 15px 20px;
+			border-radius: 30%;
+			z-index: 1;
+		}
+		.figtop:hover{
+				opacity:1;
+		}
+		.topbtn{
+				display: none;
+		}
+		
 		// .box {
 		// 	height: fit-content;
 		// 	padding-top: 1em;
