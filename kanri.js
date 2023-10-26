@@ -94,9 +94,10 @@ $(function() {
 
 			// フォームを非表示にする
 			// $("#addRowForm").hide();
-			} else {
-				alert("新しいデータを入力してください。");
-		}
+			} 
+		// 	else {
+		// 		alert("新しいデータを入力してください。");
+		// }
 	}
 
 	$("#addRowButton").on("click", function() {

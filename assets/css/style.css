@@ -56,6 +56,7 @@ header .menu_bar ul button.scroll-button {
   background-color: transparent;
   border-radius: 5%;
   color: black;
+  transition: 0.5s;
 }
 header .menu_bar ul button.scroll-button:hover {
   background-color: #00c1fe;
@@ -78,7 +79,9 @@ header .menu_bar ul button.scroll-button:hover {
   border-bottom: 3px solid;
   display: inline-block;
   width: 156px;
-  margin: 1em auto;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 1em;
   white-space: nowrap;
 }
 .wrapper .maincontents .figtop {
@@ -301,10 +304,10 @@ header .menu_bar ul button.scroll-button:hover {
   transition: transform 0.3s, background 0.3s, color 0.3s;
   color: #0a0a0a;
   /* background: linear-gradient(180deg, #3498db, #a3d9ee); */
-  background: linear-gradient(to bottom, #00c1fe 5%, #faf7f7);
+  background: linear-gradient(to bottom, #a8e1f2, #00c1fe);
   margin-right: 1rem;
   position: relative;
-  box-shadow: 2px 2px 1px 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10%;
 }
 .wrapper .maincontents .main2 .applybtn .hovered {
@@ -313,25 +316,33 @@ header .menu_bar ul button.scroll-button:hover {
 @keyframes pulse {
   0% {
     transform: scale(1);
-    background: linear-gradient(to bottom, #00c1fe, #faf7f7);
+    background: linear-gradient(to bottom, #a8e1f2, #00c1fe);
+    color: whitesmoke;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
   }
   25% {
     transform: scale(1.1);
-    background: linear-gradient(to bottom, #0061ff 50%, #cccccc);
+    background: linear-gradient(to bottom, #6ed5f5, #0061ff);
     color: whitesmoke;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   50% {
     transform: scale(1);
-    background: linear-gradient(to bottom, #00c1fe, #faf7f7);
+    background: linear-gradient(to bottom, #a8e1f2, #00c1fe);
+    color: whitesmoke;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
   }
   75% {
     transform: scale(1.1);
-    background: linear-gradient(to bottom, #0061ff, #cccccc);
+    background: linear-gradient(to bottom, #6ed5f5, #0061ff);
     color: whitesmoke;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   100% {
     transform: scale(1);
-    background: linear-gradient(to bottom, #00c1fe, #faf7f7);
+    background: linear-gradient(to bottom, #a8e1f2, #00c1fe);
+    color: whitesmoke;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
   }
 }
 .wrapper .maincontents .main1 #th, .wrapper .maincontents .main2 #th, .wrapper .maincontents .main3 #th, .wrapper .maincontents .main4 #th, .wrapper .maincontents .main5 #th {
@@ -393,7 +404,7 @@ header .menu_bar ul button.scroll-button:hover {
 }
 
 footer .content {
-  height: 7vh;
+  height: 8vh;
   background-color: #459BDB;
   position: relative;
 }
@@ -412,8 +423,8 @@ footer .content #items img.btmlogo {
   height: 64px;
   width: 100px;
 }
-footer .content #items img #pmark {
-  padding-top: 4px;
+footer .content #items img#pmark {
+  padding-top: 2px;
 }
 footer .content #kanri {
   position: absolute;
