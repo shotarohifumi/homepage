@@ -29,10 +29,10 @@ $(document).ready(function () {
                 return item.区分番号 === targetKubun;
             });
 
-            // // データを区分別番号の大きい順にソート
-            // filteredData.sort(function (a, b) {
-            //     return b.区分別番号 - a.区分別番号;
-            // });
+            // データを区分別番号の小さい順にソート
+            filteredData.sort(function (a, b) {
+                return a.区分別番号 - b.区分別番号;
+            });
 
             // フィルタリングされたデータをテーブルに追加
             displayFilteredData(filteredData);

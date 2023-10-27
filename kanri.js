@@ -29,7 +29,7 @@ $(function() {
 	function showResultContainer() {
 		$("#result-container").show();
 	}
-
+	// kokonihennkouwokuwaeru-----1027
 	function displayCSVAsTable(csvData) {
 		var rows = csvData.split("\n");
 		var table = "<table>";
@@ -107,6 +107,10 @@ $(function() {
 		// 新しい行をCSVデータに追加
 		var updatedCSVData = updateCSVData();
 		// ここで新しいCSVデータを保存または送信する処理を追加
+		// tuika--------1027
+		$.post("update_csv.php", { newDataRow: newRow, updatedCSVData: updatedCSVData }, function(response) {
+			alert(response);
+		});
 		// alert("新しい行がCSVデータに追加されました。");
 
 	});
