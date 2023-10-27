@@ -69,7 +69,7 @@ header {
 		}
 
 	}
-	 
+
 	.menu_bar{
 		display: flex;
 		justify-content: space-around;
@@ -82,11 +82,22 @@ header {
 		button.scroll-button {
 			background-color: transparent;
 			position: relative;
-			border-bottom: 3px solid transparent;
+			border-bottom: none;
 			color: black;
-			// transition: 0.5s;
-			&:hover {
-				border-bottom: 3px solid #00c1fe;
+			transition: ease-in-out;
+			&::after {
+				content: "";
+				position: absolute;
+				width: 0;
+				height: 5px;
+				border-bottom: #459BDB thick double;
+				bottom: 0;
+				left: 0;
+				transition: width 0.5s ease-in-out;
+			}
+			&:hover::after {
+				width: 100%;
+				left: 0;
 			}
 		}
 	}
@@ -105,8 +116,8 @@ header {
 		flex-direction: column;
 
 		h2 {
-			text-decoration-skip-ink: none;
-			border-bottom: 3px solid;
+			// text-decoration: underline 5px #459BDB;
+			border-bottom: 5px double #459BDB;
 			display: inline-block;
 			width: 156px;
 			margin: 0 auto;
@@ -152,6 +163,7 @@ header {
 			
 			.box1, .box2,
 			.box5 {
+				width: 100%;
 				height: 240px;
 				overflow-y: scroll;
 				/* 奇数行 */
@@ -168,6 +180,7 @@ header {
 
 			.box3,
 			.box4 {
+				width: 100%;
 				height: 120px;
 				overflow-y: scroll;
 				/* 奇数行 */
@@ -213,7 +226,8 @@ header {
 					padding-top: 12px;
 					transition: transform 0.3s, background 0.3s, color 0.3s;
 					color: whitesmoke;
-					background: linear-gradient(to bottom, #a8e1f2, #0094fe );
+					// background: linear-gradient(to bottom, #a8e1f2, #0094fe );
+					background: linear-gradient(to bottom, #a8e1f2, #459BDB );
 					margin-right: 1rem;
 					position: relative;
 					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -295,7 +309,8 @@ header {
 			.box1 #csvTable1 td:nth-child(1), .box2 #csvTable2 td:nth-child(1),
 			.box3 #csvTable3 td:nth-child(1), .box4 #csvTable4 td:nth-child(1),
 			.box5 #csvTable5 td:nth-child(1) {
-				border-right: 1px solid white; /* テーブル内の縦線 */
+				border-right: 1px solid white; 
+				/* テーブル内の縦線 */
 				text-align: center;
 				width: 136px;
 				line-height: 36px;
@@ -334,7 +349,7 @@ footer {
 			margin-top: 1rem;
 
 			p {
-				padding-top: 1vh;
+				padding-top: 8px;
 			}
 
 			img.btmlogo {

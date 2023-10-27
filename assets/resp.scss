@@ -103,6 +103,7 @@
 			}
 			.main1, .main2, .main5 {
 				.box1, .box2, .box5 {
+					width: 100%;
 					height: 600px;
 					scrollbar-width: none;
 					&::-webkit-scrollbar {
@@ -118,6 +119,7 @@
 			}
 			.main3, .main4 {
 				.box3, .box4 {
+					width: 100%;
 					height: 300px;
 					scrollbar-width: none;
 					&::-webkit-scrollbar {
@@ -153,17 +155,17 @@
 							padding-right: 1vw;
 							justify-content: space-around;
 							img.btmlogo {
-									height: 52px;
-									width: 72px;
-									padding-top: 1vh;
+									height: 56px;
+									width: 76px;
+									padding-top: 12px;
 									}
 							
 							p {
-									font-size: 0.6em;
-									padding-top: 3vh;
+									font-size: 0.8em;
+									padding-top: 16px;
 							}
 							img#pmark {
-								padding-top: 4px;
+								padding-top: 6px;
 							}
 						}
 					#kanri {
@@ -282,6 +284,7 @@
 			}
 			.main1, .main2, .main5 {
 				.box1, .box2, .box5 {
+					width: 100%;
 					height: 600px;
 					scrollbar-width: none;
 					&::-webkit-scrollbar {
@@ -297,6 +300,7 @@
 			}
 			.main3, .main4 {
 				.box3, .box4 {
+					width: 100%;
 					height: 300px;
 					scrollbar-width: none;
 					&::-webkit-scrollbar {
@@ -332,17 +336,17 @@
                 padding-right: 1vw;
                 justify-content: space-around;
 					img.btmlogo {
-						height: 52px;
+						height: 56px;
 						width: 72px;
-											padding-top: 1vh;
+						padding-top: 12px;
 						}
 					
 					p {
 						font-size: 0.6em;
-						padding-top: 3vh;
+						padding-top: 20px;
 					}
 					img#pmark {
-						padding-top: 4px;
+						padding-top: 5px;
 					}
 				}
             #kanri {
@@ -354,8 +358,3 @@
         }
     }
 }
-
-
-
-
-	

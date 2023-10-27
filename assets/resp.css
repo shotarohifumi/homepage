@@ -105,6 +105,7 @@
     white-space: normal;
   }
   .wrapper .maincontents .main1 .box1, .wrapper .maincontents .main1 .box2, .wrapper .maincontents .main1 .box5, .wrapper .maincontents .main2 .box1, .wrapper .maincontents .main2 .box2, .wrapper .maincontents .main2 .box5, .wrapper .maincontents .main5 .box1, .wrapper .maincontents .main5 .box2, .wrapper .maincontents .main5 .box5 {
+    width: 100%;
     height: 600px;
     scrollbar-width: none;
   }
@@ -118,6 +119,7 @@
     background: transparent;
   }
   .wrapper .maincontents .main3 .box3, .wrapper .maincontents .main3 .box4, .wrapper .maincontents .main4 .box3, .wrapper .maincontents .main4 .box4 {
+    width: 100%;
     height: 300px;
     scrollbar-width: none;
   }
@@ -148,16 +150,16 @@
     justify-content: space-around;
   }
   footer .content #items img.btmlogo {
-    height: 52px;
-    width: 72px;
-    padding-top: 1vh;
+    height: 56px;
+    width: 76px;
+    padding-top: 12px;
   }
   footer .content #items p {
-    font-size: 0.6em;
-    padding-top: 3vh;
+    font-size: 0.8em;
+    padding-top: 16px;
   }
   footer .content #items img#pmark {
-    padding-top: 4px;
+    padding-top: 6px;
   }
   footer .content #kanri {
     display: none;
@@ -274,6 +276,7 @@
     white-space: normal;
   }
   .wrapper .maincontents .main1 .box1, .wrapper .maincontents .main1 .box2, .wrapper .maincontents .main1 .box5, .wrapper .maincontents .main2 .box1, .wrapper .maincontents .main2 .box2, .wrapper .maincontents .main2 .box5, .wrapper .maincontents .main5 .box1, .wrapper .maincontents .main5 .box2, .wrapper .maincontents .main5 .box5 {
+    width: 100%;
     height: 600px;
     scrollbar-width: none;
   }
@@ -287,6 +290,7 @@
     background: transparent;
   }
   .wrapper .maincontents .main3 .box3, .wrapper .maincontents .main3 .box4, .wrapper .maincontents .main4 .box3, .wrapper .maincontents .main4 .box4 {
+    width: 100%;
     height: 300px;
     scrollbar-width: none;
   }
@@ -317,16 +321,16 @@
     justify-content: space-around;
   }
   footer .content #items img.btmlogo {
-    height: 52px;
+    height: 56px;
     width: 72px;
-    padding-top: 1vh;
+    padding-top: 12px;
   }
   footer .content #items p {
     font-size: 0.6em;
-    padding-top: 3vh;
+    padding-top: 20px;
   }
   footer .content #items img#pmark {
-    padding-top: 4px;
+    padding-top: 5px;
   }
   footer .content #kanri {
     display: none;

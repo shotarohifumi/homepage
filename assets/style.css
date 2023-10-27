@@ -53,11 +53,23 @@ header .menu_bar li {
 header .menu_bar button.scroll-button {
   background-color: transparent;
   position: relative;
-  border-bottom: 3px solid transparent;
+  border-bottom: none;
   color: black;
+  transition: ease-in-out;
 }
-header .menu_bar button.scroll-button:hover {
-  border-bottom: 3px solid #00c1fe;
+header .menu_bar button.scroll-button::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 5px;
+  border-bottom: #459BDB thick double;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s ease-in-out;
+}
+header .menu_bar button.scroll-button:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .wrapper {
@@ -72,9 +84,7 @@ header .menu_bar button.scroll-button:hover {
   flex-direction: column;
 }
 .wrapper .maincontents h2 {
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
-  border-bottom: 3px solid;
+  border-bottom: 5px double #459BDB;
   display: inline-block;
   width: 156px;
   margin: 0 auto;
@@ -125,6 +135,7 @@ header .menu_bar button.scroll-button:hover {
 .wrapper .maincontents .main5 .box1,
 .wrapper .maincontents .main5 .box2,
 .wrapper .maincontents .main5 .box5 {
+  width: 100%;
   height: 240px;
   overflow-y: scroll;
   /* 奇数行 */
@@ -228,6 +239,7 @@ header .menu_bar button.scroll-button:hover {
 .wrapper .maincontents .main4 .box4,
 .wrapper .maincontents .main5 .box3,
 .wrapper .maincontents .main5 .box4 {
+  width: 100%;
   height: 120px;
   overflow-y: scroll;
   /* 奇数行 */
@@ -305,7 +317,7 @@ header .menu_bar button.scroll-button:hover {
   padding-top: 12px;
   transition: transform 0.3s, background 0.3s, color 0.3s;
   color: whitesmoke;
-  background: linear-gradient(to bottom, #a8e1f2, #0094fe);
+  background: linear-gradient(to bottom, #a8e1f2, #459BDB);
   margin-right: 1rem;
   position: relative;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -389,7 +401,8 @@ header .menu_bar button.scroll-button:hover {
 .wrapper .maincontents .main4 .box5 #csvTable5 td:nth-child(1), .wrapper .maincontents .main5 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main5 .box2 #csvTable2 td:nth-child(1),
 .wrapper .maincontents .main5 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main5 .box4 #csvTable4 td:nth-child(1),
 .wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(1) {
-  border-right: 1px solid white; /* テーブル内の縦線 */
+  border-right: 1px solid white;
+  /* テーブル内の縦線 */
   text-align: center;
   width: 136px;
   line-height: 36px;
@@ -428,7 +441,7 @@ footer .content #items {
   margin-top: 1rem;
 }
 footer .content #items p {
-  padding-top: 1vh;
+  padding-top: 8px;
 }
 footer .content #items img.btmlogo {
   height: 64px;
