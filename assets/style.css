@@ -434,7 +434,7 @@ footer .content #items img.btmlogo {
   width: 100px;
 }
 footer .content #items img#pmark {
-  padding-top: 2px;
+  vertical-align: middle;
 }
 footer .content #kanri {
   position: absolute;
