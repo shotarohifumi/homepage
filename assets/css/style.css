@@ -413,7 +413,7 @@ header .menu_bar ul button.scroll-button:hover {
 }
 
 footer .content {
-  height: 8vh;
+  height: 64px;
   background-color: #459BDB;
   position: relative;
 }
@@ -433,7 +433,7 @@ footer .content #items img.btmlogo {
   width: 100px;
 }
 footer .content #items img#pmark {
-  padding-top: 0.25vh;
+  padding-top: 4px;
 }
 footer .content #kanri {
   position: absolute;
