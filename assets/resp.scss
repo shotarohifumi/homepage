@@ -1,4 +1,5 @@
-@media screen and (max-width:767px){
+// ケータイサイズ
+@media screen and (max-width:515px){
     h2 {
         font-size: 1.15em;
     }
@@ -9,7 +10,7 @@
 			padding-right: 5vw;
 			
 			.logos {
-				flex-direction: column;
+				flex-wrap: wrap;
 				text-align: center;
 				justify-content: space-around;
 				padding-bottom: 48px;
@@ -20,12 +21,11 @@
 						order: 3;
 					}
 					#toplogo {
-						margin: auto;
 						height: 64px;
 						width: 100px;
 					}
 					#home {
-						padding-top: 2vh;
+						padding-top: 3vh;
 						i.las.la-home {
 							font-size: 1.25em;
 						}
@@ -137,4 +137,39 @@
             font-size: 0.6em;
         }
     }
+}
+// タブレットサイズ
+@media screen and (max-width:776px){
+	// h2 {
+	// 		font-size: 1.15em;
+	// }
+
+	header {
+		border-bottom: none;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		
+		.logos {
+			// flex-wrap: wrap;
+			text-align: center;
+			justify-content: space-around;
+			padding-bottom: 48px;
+			h1 {
+					font-size: 1.5em;
+					padding-top: 2vh;
+					// 要素を下に移動
+					// order: 3;
+				}
+				#toplogo {
+					height: 64px;
+					width: 100px;
+				}
+				#home {
+					padding-top: 3vh;
+					i.las.la-home {
+						font-size: 1.25em;
+					}
+				}
+		}
+	}
 }

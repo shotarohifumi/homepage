@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 515px) {
   h2 {
     font-size: 1.15em;
   }
@@ -8,7 +8,7 @@
     padding-right: 5vw;
   }
   header .logos {
-    flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: space-around;
     padding-bottom: 48px;
@@ -19,12 +19,11 @@
     order: 3;
   }
   header .logos #toplogo {
-    margin: auto;
     height: 64px;
     width: 100px;
   }
   header .logos #home {
-    padding-top: 2vh;
+    padding-top: 3vh;
   }
   header .logos #home i.las.la-home {
     font-size: 1.25em;
@@ -133,5 +132,31 @@
   }
   footer p {
     font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 776px) {
+  header {
+    border-bottom: none;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  header .logos {
+    text-align: center;
+    justify-content: space-around;
+    padding-bottom: 48px;
+  }
+  header .logos h1 {
+    font-size: 1.5em;
+    padding-top: 2vh;
+  }
+  header .logos #toplogo {
+    height: 64px;
+    width: 100px;
+  }
+  header .logos #home {
+    padding-top: 3vh;
+  }
+  header .logos #home i.las.la-home {
+    font-size: 1.25em;
   }
 }/*# sourceMappingURL=resp.css.map */
