@@ -5,8 +5,12 @@
 	margin: 4px auto;
 }
 #explanation {
-	text-align: end;
+	text-align: center;
 	font-size: 1em;
+	position: sticky;
+	top: 30px;
+	font-weight: bold;
+	color: coral;
 }
 #result-container {
 	position: relative;
