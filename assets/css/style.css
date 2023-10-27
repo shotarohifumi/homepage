@@ -304,7 +304,6 @@ header .menu_bar ul button.scroll-button:hover {
   padding-top: 12px;
   transition: transform 0.3s, background 0.3s, color 0.3s;
   color: whitesmoke;
-  /* background: linear-gradient(180deg, #3498db, #a3d9ee); */
   background: linear-gradient(to bottom, #a8e1f2, #0094fe);
   margin-right: 1rem;
   position: relative;
@@ -374,8 +373,8 @@ header .menu_bar ul button.scroll-button:hover {
 .wrapper .maincontents .main5 .box3 #csvTable3, .wrapper .maincontents .main5 .box4 #csvTable4,
 .wrapper .maincontents .main5 .box5 #csvTable5 {
   width: 100%;
-  border-collapse: collapse;
   /* セルの境界線を非表示 */
+  border-collapse: collapse;
 }
 .wrapper .maincontents .main1 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main1 .box2 #csvTable2 td:nth-child(1),
 .wrapper .maincontents .main1 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main1 .box4 #csvTable4 td:nth-child(1),

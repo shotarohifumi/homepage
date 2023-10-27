@@ -6,7 +6,7 @@ $(function() {
 			var passwordInput = $("#password").val();
 
 			if (passwordInput === "nebit") {
-					$.get("csvfile_trial.csv", function(data) {
+					$.get("showfile.csv", function(data) {
 							var tableHTML = displayCSVAsTable(data);
 							$("#result").html(tableHTML);
 					// 		$("#topic").show();

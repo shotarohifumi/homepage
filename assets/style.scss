@@ -1,6 +1,4 @@
 * {
-	// font-family: 'Inter', sans-serif;
-	// font-family: 'Noto Serif JP', serif;
 	font-family: 'Noto Sans Gothic', sans-serif;
 }
 
@@ -19,7 +17,6 @@ header {
 	background-color: transparent;
 	display: flex;
 	flex-direction: column;
-	// height: 12vh;
 	padding-top: 12px;
 	// transform: translateY(0deg);
 	// position: relative;
@@ -40,6 +37,7 @@ header {
 		#toplogo {
 			height: 80px;
 			width: 120px;
+			// アニメーション
 			// animation-name: rotateY;
 			// animation-duration: 3s;
 			// animation-delay: 2s;
@@ -85,17 +83,10 @@ header {
 				background-color: transparent;
 				position: relative;
 				border-bottom: 3px solid transparent;
-				// text-decoration: none;
-				// border-radius: 5%;
 				color: black;
 				// transition: 0.5s;
-				// border: none;
 				&:hover {
-					// text-decoration: 2px solid #00c1fe;
 					border-bottom: 3px solid #00c1fe;
-					// background-color: #00c1fe;
-					// color: white;
-					// border: 1px solid;
 				}
 			}
 		}
@@ -112,16 +103,10 @@ header {
 	.maincontents {
 		display: flex;
 		flex-direction: column;
-		// text-align: center;
-
-		// input[type="checkbox"] {
-		// 	all: revert;
-		// }
 
 		h2 {
 			text-decoration-skip-ink: none;
 			border-bottom: 3px solid;
-			// text-decoration: underline 3px solid;
 			display: inline-block;
 			width: 156px;
 			margin: 0 auto;
@@ -154,24 +139,12 @@ header {
 				display: none;
 		}
 		
-		// .box {
-		// 	height: fit-content;
-		// 	padding-top: 1em;
-		// 	padding-bottom: 1em;
-		// 	width: auto;
-		// 	background: #deebff85;
-		// }
 		.main1,
 		.main2,
 		.main3,
 		.main4,
 		.main5 {
 			position: relative;
-
-			// #dlbtn {
-			// 	cursor: pointer;
-			// 	position: absolute;
-			// }
 			.box1, .box2,
 			.box5 {
 				height: 240px;
@@ -232,12 +205,9 @@ header {
 					font-size: 1.25em;
 					height: 48px;
 					width: 120px;
-					// width: 100px;
-					// height: 40px;
 					padding-top: 12px;
 					transition: transform 0.3s, background 0.3s, color 0.3s;
 					color: whitesmoke;
-					/* background: linear-gradient(180deg, #3498db, #a3d9ee); */
 					background: linear-gradient(to bottom, #a8e1f2, #0094fe );
 					margin-right: 1rem;
 					position: relative;
@@ -291,7 +261,6 @@ header {
 			#th {
 				display: flex;
 				width: 100%;
-				// position: sticky;
 				top: 0;
 				background: #dbe8ec;
 				border-bottom: solid 1px white;
@@ -313,8 +282,8 @@ header {
 			.box3 #csvTable3, .box4 #csvTable4,
 			.box5 #csvTable5 {
 				width: 100%;
-				border-collapse: collapse; 
 				/* セルの境界線を非表示 */
+				border-collapse: collapse; 
 			}
 			
 			.box1 #csvTable1 td:nth-child(1), .box2 #csvTable2 td:nth-child(1),
@@ -324,7 +293,6 @@ header {
 				text-align: center;
 				width: 10vw;
 				line-height: 36px;
-				// width: 25vw;
 			}
 			.box1 #csvTable1 td:nth-child(2), .box2 #csvTable2 td:nth-child(2),
 			.box3 #csvTable3 td:nth-child(2), .box4 #csvTable4 td:nth-child(2),

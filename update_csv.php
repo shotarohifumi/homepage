@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	// 新しい行をCSVデータに追加
 	$updatedCSVData .= $newDataRow;
 	// CSVデータをファイルに保存（上書き）
-	file_put_contents('csvfile_trial.csv', $updatedCSVData);
+	file_put_contents('showfile.csv', $updatedCSVData);
 	echo "新しい行がCSVデータに追加されました。";
 }
 ?>

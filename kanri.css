@@ -29,8 +29,6 @@ table {
 	display: block; /* テキストエリアを表示 */
 	resize: both; /* テキストエリアのリサイズを許可 */
 	overflow: auto; /* テキストエリアのスクロールバーを表示 */
-	/* width: 100vw; テキストエリアを親要素に合わせる */
-	/* height: 60vh; お好みの高さに設定 */
 }
 #addRowButton {
 	margin: 8px auto;
@@ -53,19 +51,3 @@ table {
 	display: block; /* ボタンを表示 */
 	margin: 5px auto;
 }
-
-
-
-
-/* tr:nth-child(1) {
-    position: sticky;
-}
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
-} */
