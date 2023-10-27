@@ -360,7 +360,7 @@ header .menu_bar button.scroll-button:hover::after {
   }
 }
 .wrapper .maincontents .main2 .applybtn span#caution {
-  position: fixed;
+  position: absolute;
   top: 35px;
   right: 264px;
 }
