@@ -316,7 +316,7 @@ header {
 
 footer {
 	.content {
-		height: 8vh;
+		height: 64px;
 		background-color: #459BDB;
 		position: relative;
 		#items {
@@ -337,7 +337,7 @@ footer {
 			}
 
 			img#pmark {
-				padding-top: 0.25vh;
+				padding-top: 4px;
 			}
 		}
 		#kanri {
