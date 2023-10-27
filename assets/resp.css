@@ -1,4 +1,5 @@
-@media screen and (max-width: 515px) {
+@charset "UTF-8";
+@media screen and (max-width: 776px) {
   h2 {
     font-size: 1.15em;
   }
@@ -8,15 +9,13 @@
     padding-right: 5vw;
   }
   header .logos {
-    flex-wrap: wrap;
     text-align: center;
     justify-content: space-around;
-    padding-bottom: 48px;
+    padding-bottom: 40px;
   }
   header .logos h1 {
     font-size: 1.5em;
     padding-top: 2vh;
-    order: 3;
   }
   header .logos #toplogo {
     height: 64px;
@@ -29,19 +28,31 @@
     font-size: 1.25em;
   }
   header .menu_bar {
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px; /* グリッドアイテム間の間隔を調整 */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0px auto;
   }
-  header .menu_bar ul {
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    margin-bottom: 8px;
+  header .menu_bar #main1 {
+    display: none;
   }
-  header .menu_bar ul li {
+  header .menu_bar li {
     font-size: 1.25em;
   }
-  header .menu_bar ul button {
+  header .menu_bar button.scroll-button {
+    background-color: transparent;
+    position: relative;
+    border-bottom: 3px solid transparent;
+    color: black;
     margin-bottom: 1.5em;
+  }
+  header .menu_bar button.scroll-button:hover {
+    border-bottom: 3px solid #00c1fe;
+  }
+  header .menu_bar button.scroll-button:nth-child(1) {
+    display: none;
   }
   .wrapper {
     padding-right: 6vw;
@@ -57,7 +68,7 @@
     font-size: 1em;
   }
   .wrapper .maincontents .main1 .td1, .wrapper .maincontents .main2 .td1, .wrapper .maincontents .main3 .td1, .wrapper .maincontents .main4 .td1, .wrapper .maincontents .main5 .td1 {
-    width: 10%;
+    width: 100px;
     line-height: 28px;
   }
   .wrapper .maincontents .main1 .td2, .wrapper .maincontents .main2 .td2, .wrapper .maincontents .main3 .td2, .wrapper .maincontents .main4 .td2, .wrapper .maincontents .main5 .td2 {
@@ -76,6 +87,7 @@
   .wrapper .maincontents .main5 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main5 .box4 #csvTable4 td:nth-child(1),
   .wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(1) {
     line-height: 60px;
+    width: 100px;
   }
   .wrapper .maincontents .main1 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main1 .box2 #csvTable2 td:nth-child(2),
   .wrapper .maincontents .main1 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main1 .box4 #csvTable4 td:nth-child(2),
@@ -94,9 +106,29 @@
   }
   .wrapper .maincontents .main1 .box1, .wrapper .maincontents .main1 .box2, .wrapper .maincontents .main1 .box5, .wrapper .maincontents .main2 .box1, .wrapper .maincontents .main2 .box2, .wrapper .maincontents .main2 .box5, .wrapper .maincontents .main5 .box1, .wrapper .maincontents .main5 .box2, .wrapper .maincontents .main5 .box5 {
     height: 600px;
+    scrollbar-width: none;
+  }
+  .wrapper .maincontents .main1 .box1::-webkit-scrollbar, .wrapper .maincontents .main1 .box2::-webkit-scrollbar, .wrapper .maincontents .main1 .box5::-webkit-scrollbar, .wrapper .maincontents .main2 .box1::-webkit-scrollbar, .wrapper .maincontents .main2 .box2::-webkit-scrollbar, .wrapper .maincontents .main2 .box5::-webkit-scrollbar, .wrapper .maincontents .main5 .box1::-webkit-scrollbar, .wrapper .maincontents .main5 .box2::-webkit-scrollbar, .wrapper .maincontents .main5 .box5::-webkit-scrollbar {
+    width: 0;
+  }
+  .wrapper .maincontents .main1 .box1::-webkit-scrollbar-thumb, .wrapper .maincontents .main1 .box2::-webkit-scrollbar-thumb, .wrapper .maincontents .main1 .box5::-webkit-scrollbar-thumb, .wrapper .maincontents .main2 .box1::-webkit-scrollbar-thumb, .wrapper .maincontents .main2 .box2::-webkit-scrollbar-thumb, .wrapper .maincontents .main2 .box5::-webkit-scrollbar-thumb, .wrapper .maincontents .main5 .box1::-webkit-scrollbar-thumb, .wrapper .maincontents .main5 .box2::-webkit-scrollbar-thumb, .wrapper .maincontents .main5 .box5::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  .wrapper .maincontents .main1 .box1::-webkit-scrollbar-track, .wrapper .maincontents .main1 .box2::-webkit-scrollbar-track, .wrapper .maincontents .main1 .box5::-webkit-scrollbar-track, .wrapper .maincontents .main2 .box1::-webkit-scrollbar-track, .wrapper .maincontents .main2 .box2::-webkit-scrollbar-track, .wrapper .maincontents .main2 .box5::-webkit-scrollbar-track, .wrapper .maincontents .main5 .box1::-webkit-scrollbar-track, .wrapper .maincontents .main5 .box2::-webkit-scrollbar-track, .wrapper .maincontents .main5 .box5::-webkit-scrollbar-track {
+    background: transparent;
   }
   .wrapper .maincontents .main3 .box3, .wrapper .maincontents .main3 .box4, .wrapper .maincontents .main4 .box3, .wrapper .maincontents .main4 .box4 {
     height: 300px;
+    scrollbar-width: none;
+  }
+  .wrapper .maincontents .main3 .box3::-webkit-scrollbar, .wrapper .maincontents .main3 .box4::-webkit-scrollbar, .wrapper .maincontents .main4 .box3::-webkit-scrollbar, .wrapper .maincontents .main4 .box4::-webkit-scrollbar {
+    width: 0;
+  }
+  .wrapper .maincontents .main3 .box3::-webkit-scrollbar-thumb, .wrapper .maincontents .main3 .box4::-webkit-scrollbar-thumb, .wrapper .maincontents .main4 .box3::-webkit-scrollbar-thumb, .wrapper .maincontents .main4 .box4::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  .wrapper .maincontents .main3 .box3::-webkit-scrollbar-track, .wrapper .maincontents .main3 .box4::-webkit-scrollbar-track, .wrapper .maincontents .main4 .box3::-webkit-scrollbar-track, .wrapper .maincontents .main4 .box4::-webkit-scrollbar-track {
+    background: transparent;
   }
   .wrapper .maincontents .main2 .applybtn {
     justify-content: space-around;
@@ -134,13 +166,17 @@
     font-size: 0.6em;
   }
 }
-@media screen and (max-width: 776px) {
+@media screen and (max-width: 515px) {
+  h2 {
+    font-size: 1.15em;
+  }
   header {
     border-bottom: none;
     padding-left: 5vw;
     padding-right: 5vw;
   }
   header .logos {
+    flex-wrap: wrap;
     text-align: center;
     justify-content: space-around;
     padding-bottom: 48px;
@@ -148,6 +184,7 @@
   header .logos h1 {
     font-size: 1.5em;
     padding-top: 2vh;
+    order: 3;
   }
   header .logos #toplogo {
     height: 64px;
@@ -160,19 +197,31 @@
     font-size: 1.25em;
   }
   header .menu_bar {
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px; /* グリッドアイテム間の間隔を調整 */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0px auto;
   }
-  header .menu_bar ul {
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    margin-bottom: 8px;
+  header .menu_bar #main1 {
+    display: none;
   }
-  header .menu_bar ul li {
+  header .menu_bar li {
     font-size: 1.25em;
   }
-  header .menu_bar ul button {
+  header .menu_bar button.scroll-button {
+    background-color: transparent;
+    position: relative;
+    border-bottom: 3px solid transparent;
+    color: black;
     margin-bottom: 1.5em;
+  }
+  header .menu_bar button.scroll-button:hover {
+    border-bottom: 3px solid #00c1fe;
+  }
+  header .menu_bar button.scroll-button:nth-child(1) {
+    display: none;
   }
   .wrapper {
     padding-right: 6vw;
@@ -188,7 +237,7 @@
     font-size: 1em;
   }
   .wrapper .maincontents .main1 .td1, .wrapper .maincontents .main2 .td1, .wrapper .maincontents .main3 .td1, .wrapper .maincontents .main4 .td1, .wrapper .maincontents .main5 .td1 {
-    width: 10%;
+    width: 60px;
     line-height: 28px;
   }
   .wrapper .maincontents .main1 .td2, .wrapper .maincontents .main2 .td2, .wrapper .maincontents .main3 .td2, .wrapper .maincontents .main4 .td2, .wrapper .maincontents .main5 .td2 {
@@ -207,6 +256,7 @@
   .wrapper .maincontents .main5 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main5 .box4 #csvTable4 td:nth-child(1),
   .wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(1) {
     line-height: 60px;
+    width: 60px;
   }
   .wrapper .maincontents .main1 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main1 .box2 #csvTable2 td:nth-child(2),
   .wrapper .maincontents .main1 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main1 .box4 #csvTable4 td:nth-child(2),
@@ -225,9 +275,29 @@
   }
   .wrapper .maincontents .main1 .box1, .wrapper .maincontents .main1 .box2, .wrapper .maincontents .main1 .box5, .wrapper .maincontents .main2 .box1, .wrapper .maincontents .main2 .box2, .wrapper .maincontents .main2 .box5, .wrapper .maincontents .main5 .box1, .wrapper .maincontents .main5 .box2, .wrapper .maincontents .main5 .box5 {
     height: 600px;
+    scrollbar-width: none;
+  }
+  .wrapper .maincontents .main1 .box1::-webkit-scrollbar, .wrapper .maincontents .main1 .box2::-webkit-scrollbar, .wrapper .maincontents .main1 .box5::-webkit-scrollbar, .wrapper .maincontents .main2 .box1::-webkit-scrollbar, .wrapper .maincontents .main2 .box2::-webkit-scrollbar, .wrapper .maincontents .main2 .box5::-webkit-scrollbar, .wrapper .maincontents .main5 .box1::-webkit-scrollbar, .wrapper .maincontents .main5 .box2::-webkit-scrollbar, .wrapper .maincontents .main5 .box5::-webkit-scrollbar {
+    width: 0;
+  }
+  .wrapper .maincontents .main1 .box1::-webkit-scrollbar-thumb, .wrapper .maincontents .main1 .box2::-webkit-scrollbar-thumb, .wrapper .maincontents .main1 .box5::-webkit-scrollbar-thumb, .wrapper .maincontents .main2 .box1::-webkit-scrollbar-thumb, .wrapper .maincontents .main2 .box2::-webkit-scrollbar-thumb, .wrapper .maincontents .main2 .box5::-webkit-scrollbar-thumb, .wrapper .maincontents .main5 .box1::-webkit-scrollbar-thumb, .wrapper .maincontents .main5 .box2::-webkit-scrollbar-thumb, .wrapper .maincontents .main5 .box5::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  .wrapper .maincontents .main1 .box1::-webkit-scrollbar-track, .wrapper .maincontents .main1 .box2::-webkit-scrollbar-track, .wrapper .maincontents .main1 .box5::-webkit-scrollbar-track, .wrapper .maincontents .main2 .box1::-webkit-scrollbar-track, .wrapper .maincontents .main2 .box2::-webkit-scrollbar-track, .wrapper .maincontents .main2 .box5::-webkit-scrollbar-track, .wrapper .maincontents .main5 .box1::-webkit-scrollbar-track, .wrapper .maincontents .main5 .box2::-webkit-scrollbar-track, .wrapper .maincontents .main5 .box5::-webkit-scrollbar-track {
+    background: transparent;
   }
   .wrapper .maincontents .main3 .box3, .wrapper .maincontents .main3 .box4, .wrapper .maincontents .main4 .box3, .wrapper .maincontents .main4 .box4 {
     height: 300px;
+    scrollbar-width: none;
+  }
+  .wrapper .maincontents .main3 .box3::-webkit-scrollbar, .wrapper .maincontents .main3 .box4::-webkit-scrollbar, .wrapper .maincontents .main4 .box3::-webkit-scrollbar, .wrapper .maincontents .main4 .box4::-webkit-scrollbar {
+    width: 0;
+  }
+  .wrapper .maincontents .main3 .box3::-webkit-scrollbar-thumb, .wrapper .maincontents .main3 .box4::-webkit-scrollbar-thumb, .wrapper .maincontents .main4 .box3::-webkit-scrollbar-thumb, .wrapper .maincontents .main4 .box4::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  .wrapper .maincontents .main3 .box3::-webkit-scrollbar-track, .wrapper .maincontents .main3 .box4::-webkit-scrollbar-track, .wrapper .maincontents .main4 .box3::-webkit-scrollbar-track, .wrapper .maincontents .main4 .box4::-webkit-scrollbar-track {
+    background: transparent;
   }
   .wrapper .maincontents .main2 .applybtn {
     justify-content: space-around;

@@ -1,143 +1,3 @@
-// ケータイサイズ
-@media screen and (max-width:515px){
-    h2 {
-        font-size: 1.15em;
-    }
-
-		header {
-			border-bottom: none;
-			padding-left: 5vw;
-			padding-right: 5vw;
-			
-			.logos {
-				flex-wrap: wrap;
-				text-align: center;
-				justify-content: space-around;
-				padding-bottom: 48px;
-				h1 {
-						font-size: 1.5em;
-						padding-top: 2vh;
-						// 要素を下に移動
-						order: 3;
-					}
-					#toplogo {
-						height: 64px;
-						width: 100px;
-					}
-					#home {
-						padding-top: 3vh;
-						i.las.la-home {
-							font-size: 1.25em;
-						}
-					}
-			}
-			.menu_bar {
-				margin: 0 auto;
-				ul {
-					display: flex;
-					flex-direction: column;
-					margin: 0px;
-					margin-bottom: 8px;
-					li {
-						font-size: 1.25em;
-					}
-					button {
-						margin-bottom: 1.5em;
-					}
-				}
-			}
-			
-		}
-		.wrapper {
-			padding-right: 6vw;		
-			padding-left: 6vw;		
-			.maincontents{ 
-				h2 {
-					border-bottom: 2px solid;
-					margin-top: 24px;
-					margin-bottom: 12px;
-					width: 128px;
-				}
-				.main1, .main2, .main3, .main4, .main5 {
-					#th, .td1, .td2, tr{
-						font-size: 1em;
-					}
-					
-					.td1 {
-						width: 10%;
-						line-height: 28px;
-					}
-					.td2 {
-						line-height: 28px;
-						padding-left: 3vh;
-					}
-					.box1 #csvTable1 td:nth-child(1), .box2 #csvTable2 td:nth-child(1),
-					.box3 #csvTable3 td:nth-child(1), .box4 #csvTable4 td:nth-child(1),
-					.box5 #csvTable5 td:nth-child(1) {
-						line-height: 60px;
-					}
-					.box1 #csvTable1 td:nth-child(2), .box2 #csvTable2 td:nth-child(2),
-					.box3 #csvTable3 td:nth-child(2), .box4 #csvTable4 td:nth-child(2),
-					.box5 #csvTable5 td:nth-child(2) {
-						text-align: start;
-						vertical-align: middle;
-						white-space: normal;
-					}
-				}
-				.main1, .main2, .main5 {
-					.box1, .box2, .box5 {
-						height: 600px;
-					}
-				}
-				.main3, .main4 {
-					.box3, .box4 {
-						height: 300px;
-					}
-				}
-			
-				.main2 {
-					.applybtn {
-						justify-content: space-around;
-						flex-direction: column;
-						margin: 16px auto;
-						.button {
-							margin-right: 0rem;
-							margin-bottom: 1.5em;
-						}
-					}
-				}
-			}
-    }
-    footer {
-        .content {
-            height: unset;
-            #items {
-                padding-left: 1vw;
-                padding-right: 1vw;
-                justify-content: space-around;
-                img.btmlogo {
-                    height: 52px;
-                    width: 72px;
-										padding-top: 1vh;
-                    }
-                
-                p {
-                    font-size: 0.6em;
-                    padding-top: 3vh;
-                }
-								img#pmark {
-									padding-top: 4px;
-								}
-							}
-            #kanri {
-                display: none;
-            }
-        }
-        p {
-            font-size: 0.6em;
-        }
-    }
-}
 // タブレットサイズ
 @media screen and (max-width:776px){
 	h2 {
@@ -153,7 +13,7 @@
 			// flex-wrap: wrap;
 			text-align: center;
 			justify-content: space-around;
-			padding-bottom: 48px;
+			padding-bottom: 40px;
 			h1 {
 					font-size: 1.5em;
 					padding-top: 2vh;
@@ -171,22 +31,37 @@
 					}
 				}
 		}
-		// 以下はケータイサイズと同じ
+
 		.menu_bar {
-			margin: 0 auto;
-			ul {
-				display: flex;
-				flex-direction: column;
-				margin: 0px;
-				margin-bottom: 8px;
-				li {
-					font-size: 1.25em;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+  			grid-gap: 16px; /* グリッドアイテム間の間隔を調整 */
+			// flex-direction: column;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			margin: 0px auto;
+			#main1 {
+				display: none;
+			}
+			li {
+				font-size: 1.25em;
+			}
+			button.scroll-button {
+				background-color: transparent;
+				position: relative;
+				border-bottom: 3px solid transparent;
+				color: black;
+				margin-bottom: 1.5em;
+				// transition: 0.5s;
+				&:hover {
+					border-bottom: 3px solid #00c1fe;
 				}
-				button {
-					margin-bottom: 1.5em;
+				&:nth-child(1){
+					display: none;
 				}
 			}
 		}
+		
 		
 	}
 	.wrapper {
@@ -205,7 +80,7 @@
 				}
 				
 				.td1 {
-					width: 10%;
+					width: 100px;
 					line-height: 28px;
 				}
 				.td2 {
@@ -216,6 +91,7 @@
 				.box3 #csvTable3 td:nth-child(1), .box4 #csvTable4 td:nth-child(1),
 				.box5 #csvTable5 td:nth-child(1) {
 					line-height: 60px;
+					width: 100px;
 				}
 				.box1 #csvTable1 td:nth-child(2), .box2 #csvTable2 td:nth-child(2),
 				.box3 #csvTable3 td:nth-child(2), .box4 #csvTable4 td:nth-child(2),
@@ -228,11 +104,31 @@
 			.main1, .main2, .main5 {
 				.box1, .box2, .box5 {
 					height: 600px;
+					scrollbar-width: none;
+					&::-webkit-scrollbar {
+						width: 0;
+					}
+					&::-webkit-scrollbar-thumb {
+						background: transparent;
+					}
+					&::-webkit-scrollbar-track {
+						background: transparent;
+					}
 				}
 			}
 			.main3, .main4 {
 				.box3, .box4 {
 					height: 300px;
+					scrollbar-width: none;
+					&::-webkit-scrollbar {
+						width: 0;
+					}
+					&::-webkit-scrollbar-thumb {
+						background: transparent;
+					}
+					&::-webkit-scrollbar-track {
+						background: transparent;
+					}
 				}
 			}
 		
@@ -279,5 +175,187 @@
 			}
 	}
 }
+
+
+// ケータイサイズ
+@media screen and (max-width:515px){
+    h2 {
+        font-size: 1.15em;
+    }
+
+	header {
+		border-bottom: none;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		
+		.logos {
+			flex-wrap: wrap;
+			text-align: center;
+			justify-content: space-around;
+			padding-bottom: 48px;
+			h1 {
+					font-size: 1.5em;
+					padding-top: 2vh;
+					// 要素を下に移動
+					order: 3;
+				}
+				#toplogo {
+					height: 64px;
+					width: 100px;
+				}
+				#home {
+					padding-top: 3vh;
+					i.las.la-home {
+						font-size: 1.25em;
+					}
+				}
+		}
+			
+		.menu_bar {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 16px; /* グリッドアイテム間の間隔を調整 */
+			// flex-direction: column;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			margin: 0px auto;
+			#main1 {
+				display: none;
+			}
+			li {
+				font-size: 1.25em;
+			}
+			button.scroll-button {
+				background-color: transparent;
+				position: relative;
+				border-bottom: 3px solid transparent;
+				color: black;
+				margin-bottom: 1.5em;
+				// transition: 0.5s;
+				&:hover {
+					border-bottom: 3px solid #00c1fe;
+				}
+				&:nth-child(1){
+					display: none;
+				}
+			}
+		}
+		
+		
+	}
+	.wrapper {
+		padding-right: 6vw;		
+		padding-left: 6vw;		
+		.maincontents{ 
+			h2 {
+				border-bottom: 2px solid;
+				margin-top: 24px;
+				margin-bottom: 12px;
+				width: 128px;
+			}
+			.main1, .main2, .main3, .main4, .main5 {
+				#th, .td1, .td2, tr{
+					font-size: 1em;
+				}
+				
+				.td1 {
+					width: 60px;
+					line-height: 28px;
+				}
+				.td2 {
+					line-height: 28px;
+					padding-left: 3vh;
+				}
+				.box1 #csvTable1 td:nth-child(1), .box2 #csvTable2 td:nth-child(1),
+				.box3 #csvTable3 td:nth-child(1), .box4 #csvTable4 td:nth-child(1),
+				.box5 #csvTable5 td:nth-child(1) {
+					line-height: 60px;
+					width: 60px;
+				}
+				.box1 #csvTable1 td:nth-child(2), .box2 #csvTable2 td:nth-child(2),
+				.box3 #csvTable3 td:nth-child(2), .box4 #csvTable4 td:nth-child(2),
+				.box5 #csvTable5 td:nth-child(2) {
+					text-align: start;
+					vertical-align: middle;
+					white-space: normal;
+				}
+			}
+			.main1, .main2, .main5 {
+				.box1, .box2, .box5 {
+					height: 600px;
+					scrollbar-width: none;
+					&::-webkit-scrollbar {
+						width: 0;
+					}
+					&::-webkit-scrollbar-thumb {
+						background: transparent;
+					}
+					&::-webkit-scrollbar-track {
+						background: transparent;
+					}
+				}
+			}
+			.main3, .main4 {
+				.box3, .box4 {
+					height: 300px;
+					scrollbar-width: none;
+					&::-webkit-scrollbar {
+						width: 0;
+					}
+					&::-webkit-scrollbar-thumb {
+						background: transparent;
+					}
+					&::-webkit-scrollbar-track {
+						background: transparent;
+					}
+				}
+			}
+		
+			.main2 {
+				.applybtn {
+					justify-content: space-around;
+					flex-direction: column;
+					margin: 16px auto;
+					.button {
+						margin-right: 0rem;
+						margin-bottom: 1.5em;
+					}
+				}
+			}
+		}
+    }
+    footer {
+        .content {
+            height: unset;
+            #items {
+                padding-left: 1vw;
+                padding-right: 1vw;
+                justify-content: space-around;
+					img.btmlogo {
+						height: 52px;
+						width: 72px;
+											padding-top: 1vh;
+						}
+					
+					p {
+						font-size: 0.6em;
+						padding-top: 3vh;
+					}
+					img#pmark {
+						padding-top: 4px;
+					}
+				}
+            #kanri {
+                display: none;
+            }
+        }
+        p {
+            font-size: 0.6em;
+        }
+    }
+}
+
+
+
 
 	
