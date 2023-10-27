@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {
   h2 {
-    font-size: 1em;
+    font-size: 1.15em;
   }
   header {
     border-bottom: none;
@@ -11,22 +11,23 @@
     flex-direction: column;
     text-align: center;
     justify-content: space-around;
-    padding-bottom: 80px;
+    padding-bottom: 48px;
   }
   header .logos h1 {
-    font-size: 1em;
+    font-size: 1.5em;
     padding-top: 2vh;
+    order: 3;
   }
   header .logos #toplogo {
     margin: auto;
-    height: 56px;
+    height: 64px;
     width: 100px;
   }
   header .logos #home {
     padding-top: 2vh;
   }
   header .logos #home i.las.la-home {
-    font-size: 0.8em;
+    font-size: 1.25em;
   }
   header .menu_bar {
     margin: 0 auto;
@@ -38,7 +39,7 @@
     margin-bottom: 8px;
   }
   header .menu_bar ul li {
-    font-size: 1em;
+    font-size: 1.25em;
   }
   header .menu_bar ul button {
     margin-bottom: 1.5em;
@@ -49,19 +50,19 @@
   }
   .wrapper .maincontents h2 {
     border-bottom: 2px solid;
-    margin-top: 20px;
-    margin-bottom: 4px;
-    width: 114px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    width: 128px;
   }
   .wrapper .maincontents .main1 #th, .wrapper .maincontents .main1 .td1, .wrapper .maincontents .main1 .td2, .wrapper .maincontents .main1 tr, .wrapper .maincontents .main2 #th, .wrapper .maincontents .main2 .td1, .wrapper .maincontents .main2 .td2, .wrapper .maincontents .main2 tr, .wrapper .maincontents .main3 #th, .wrapper .maincontents .main3 .td1, .wrapper .maincontents .main3 .td2, .wrapper .maincontents .main3 tr, .wrapper .maincontents .main4 #th, .wrapper .maincontents .main4 .td1, .wrapper .maincontents .main4 .td2, .wrapper .maincontents .main4 tr, .wrapper .maincontents .main5 #th, .wrapper .maincontents .main5 .td1, .wrapper .maincontents .main5 .td2, .wrapper .maincontents .main5 tr {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .wrapper .maincontents .main1 .td1, .wrapper .maincontents .main2 .td1, .wrapper .maincontents .main3 .td1, .wrapper .maincontents .main4 .td1, .wrapper .maincontents .main5 .td1 {
     width: 10%;
-    line-height: 20px;
+    line-height: 28px;
   }
   .wrapper .maincontents .main1 .td2, .wrapper .maincontents .main2 .td2, .wrapper .maincontents .main3 .td2, .wrapper .maincontents .main4 .td2, .wrapper .maincontents .main5 .td2 {
-    line-height: 20px;
+    line-height: 28px;
     padding-left: 3vh;
   }
   .wrapper .maincontents .main1 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main1 .box2 #csvTable2 td:nth-child(1),
@@ -75,7 +76,7 @@
   .wrapper .maincontents .main4 .box5 #csvTable5 td:nth-child(1), .wrapper .maincontents .main5 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main5 .box2 #csvTable2 td:nth-child(1),
   .wrapper .maincontents .main5 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main5 .box4 #csvTable4 td:nth-child(1),
   .wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(1) {
-    line-height: 30px;
+    line-height: 60px;
   }
   .wrapper .maincontents .main1 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main1 .box2 #csvTable2 td:nth-child(2),
   .wrapper .maincontents .main1 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main1 .box4 #csvTable4 td:nth-child(2),
@@ -88,14 +89,15 @@
   .wrapper .maincontents .main4 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main5 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main5 .box2 #csvTable2 td:nth-child(2),
   .wrapper .maincontents .main5 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main5 .box4 #csvTable4 td:nth-child(2),
   .wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(2) {
-    line-height: 1.2;
+    text-align: start;
+    vertical-align: middle;
     white-space: normal;
   }
   .wrapper .maincontents .main1 .box1, .wrapper .maincontents .main1 .box2, .wrapper .maincontents .main1 .box5, .wrapper .maincontents .main2 .box1, .wrapper .maincontents .main2 .box2, .wrapper .maincontents .main2 .box5, .wrapper .maincontents .main5 .box1, .wrapper .maincontents .main5 .box2, .wrapper .maincontents .main5 .box5 {
-    height: 300px;
+    height: 600px;
   }
   .wrapper .maincontents .main3 .box3, .wrapper .maincontents .main3 .box4, .wrapper .maincontents .main4 .box3, .wrapper .maincontents .main4 .box4 {
-    height: 150px;
+    height: 300px;
   }
   .wrapper .maincontents .main2 .applybtn {
     justify-content: space-around;
@@ -112,7 +114,7 @@
   footer .content #items {
     padding-left: 1vw;
     padding-right: 1vw;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   footer .content #items img.btmlogo {
     height: 52px;
@@ -121,7 +123,10 @@
   }
   footer .content #items p {
     font-size: 0.6em;
-    padding-top: 2vh;
+    padding-top: 3vh;
+  }
+  footer .content #items img#pmark {
+    padding-top: 4px;
   }
   footer .content #kanri {
     display: none;

@@ -16,7 +16,6 @@ header {
   display: flex;
   flex-direction: column;
   padding-top: 12px;
-  transform: translateY(0deg);
   border-bottom: 1px solid;
   padding-left: 15vw;
   padding-right: 15vw;
@@ -39,7 +38,7 @@ header .logos #home {
   padding-top: 6vh;
 }
 header .logos #home i.las.la-home {
-  font-size: 1em;
+  font-size: 1.25em;
 }
 header .menu_bar ul {
   display: flex;
@@ -53,13 +52,12 @@ header .menu_bar ul li {
 }
 header .menu_bar ul button.scroll-button {
   background-color: transparent;
-  border-radius: 5%;
+  position: relative;
+  border-bottom: 3px solid transparent;
   color: black;
-  transition: 0.5s;
 }
 header .menu_bar ul button.scroll-button:hover {
-  background-color: #00c1fe;
-  color: white;
+  border-bottom: 3px solid #00c1fe;
 }
 
 .wrapper {
@@ -300,6 +298,7 @@ header .menu_bar ul button.scroll-button:hover {
 }
 .wrapper .maincontents .main2 .applybtn .button {
   text-align: center;
+  font-size: 1.25em;
   height: 48px;
   width: 120px;
   padding-top: 12px;
@@ -357,8 +356,10 @@ header .menu_bar ul button.scroll-button:hover {
 .wrapper .maincontents .main1 .td1, .wrapper .maincontents .main2 .td1, .wrapper .maincontents .main3 .td1, .wrapper .maincontents .main4 .td1, .wrapper .maincontents .main5 .td1 {
   width: 15%;
   text-align: center;
+  line-height: 28px;
 }
 .wrapper .maincontents .main1 .td2, .wrapper .maincontents .main2 .td2, .wrapper .maincontents .main3 .td2, .wrapper .maincontents .main4 .td2, .wrapper .maincontents .main5 .td2 {
+  line-height: 28px;
   padding-left: 4vw;
 }
 .wrapper .maincontents .main1 .box1 #csvTable1, .wrapper .maincontents .main1 .box2 #csvTable2,
@@ -390,6 +391,7 @@ header .menu_bar ul button.scroll-button:hover {
   border-right: 1px solid white; /* テーブル内の縦線 */
   text-align: center;
   width: 10vw;
+  line-height: 36px;
 }
 .wrapper .maincontents .main1 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main1 .box2 #csvTable2 td:nth-child(2),
 .wrapper .maincontents .main1 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main1 .box4 #csvTable4 td:nth-child(2),
@@ -403,6 +405,12 @@ header .menu_bar ul button.scroll-button:hover {
 .wrapper .maincontents .main5 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main5 .box4 #csvTable4 td:nth-child(2),
 .wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(2) {
   padding-left: 3vw;
+}
+.wrapper .maincontents .main1 .box1, .wrapper .maincontents .main1 .box2, .wrapper .maincontents .main1 .box5, .wrapper .maincontents .main2 .box1, .wrapper .maincontents .main2 .box2, .wrapper .maincontents .main2 .box5, .wrapper .maincontents .main5 .box1, .wrapper .maincontents .main5 .box2, .wrapper .maincontents .main5 .box5 {
+  height: 360px;
+}
+.wrapper .maincontents .main3 .box3, .wrapper .maincontents .main3 .box4, .wrapper .maincontents .main4 .box3, .wrapper .maincontents .main4 .box4 {
+  height: 180px;
 }
 
 footer .content {

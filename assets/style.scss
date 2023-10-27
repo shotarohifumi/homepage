@@ -21,7 +21,7 @@ header {
 	flex-direction: column;
 	// height: 12vh;
 	padding-top: 12px;
-	transform: translateY(0deg);
+	// transform: translateY(0deg);
 	// position: relative;
 	border-bottom: 1px solid;
 	padding-left: 15vw;
@@ -66,7 +66,7 @@ header {
 		#home {
 			padding-top: 6vh;
 			i.las.la-home {
-				font-size: 1em;
+				font-size: 1.25em;
 			}
 		}
 
@@ -83,13 +83,18 @@ header {
 			}
 			button.scroll-button {
 				background-color: transparent;
-				border-radius: 5%;
+				position: relative;
+				border-bottom: 3px solid transparent;
+				// text-decoration: none;
+				// border-radius: 5%;
 				color: black;
-				transition: 0.5s;
+				// transition: 0.5s;
 				// border: none;
 				&:hover {
-					background-color: #00c1fe;
-					color: white;
+					// text-decoration: 2px solid #00c1fe;
+					border-bottom: 3px solid #00c1fe;
+					// background-color: #00c1fe;
+					// color: white;
 					// border: 1px solid;
 				}
 			}
@@ -224,6 +229,7 @@ header {
 
 				.button {
 					text-align: center;
+					font-size: 1.25em;
 					height: 48px;
 					width: 120px;
 					// width: 100px;
@@ -235,7 +241,6 @@ header {
 					background: linear-gradient(to bottom, #a8e1f2, #0094fe );
 					margin-right: 1rem;
 					position: relative;
-					// box-shadow: 2px 2px 1px 0px;
 					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 					border-radius: 5%;
 				}
@@ -249,7 +254,6 @@ header {
 						transform: scale(1);
 						background: linear-gradient(to bottom, #a8e1f2, #0094fe);
 						color: whitesmoke;
-						// box-shadow: 2px 2px 1px 0px;
 						box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
 					}
 
@@ -257,7 +261,6 @@ header {
 						transform: scale(1.1);
 						background: linear-gradient(to bottom, #6ed5f5, #0061ff);
 						color: whitesmoke;
-						// box-shadow: 2px 2px 1px 0px;
 						box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 					}
 
@@ -265,14 +268,12 @@ header {
 						transform: scale(1);
 						background: linear-gradient(to bottom, #a8e1f2, #0094fe);
 						color: whitesmoke;
-						// box-shadow: 2px 2px 1px 0px;
 						box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
 					}
 					75% {
 						transform: scale(1.1);
 						background: linear-gradient(to bottom, #6ed5f5, #0061ff);
 						color: whitesmoke;
-						// box-shadow: 2px 2px 1px 0px;
 						box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 					}
 
@@ -280,7 +281,6 @@ header {
 						transform: scale(1);
 						background: linear-gradient(to bottom, #a8e1f2, #0094fe);
 						color: whitesmoke;
-						// box-shadow: 2px 2px 1px 0px;
 						box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
 					}
 				}
@@ -300,9 +300,11 @@ header {
 			.td1 {
 				width: 15%;
 				text-align: center;
+				line-height: 28px;
 			}
 		
 			.td2 {
+				line-height: 28px;
 				padding-left: 4vw;
 			}
 		
@@ -321,12 +323,23 @@ header {
 				border-right: 1px solid white; /* テーブル内の縦線 */
 				text-align: center;
 				width: 10vw;
+				line-height: 36px;
 				// width: 25vw;
 			}
 			.box1 #csvTable1 td:nth-child(2), .box2 #csvTable2 td:nth-child(2),
 			.box3 #csvTable3 td:nth-child(2), .box4 #csvTable4 td:nth-child(2),
 			.box5 #csvTable5 td:nth-child(2) {
 				padding-left: 3vw;
+			}
+		}
+		.main1, .main2, .main5 {
+			.box1, .box2, .box5 {
+				height: 360px;
+			}
+		}
+		.main3, .main4 {
+			.box3, .box4 {
+				height: 180px;
 			}
 		}
 	}
