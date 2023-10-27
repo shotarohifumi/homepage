@@ -135,6 +135,9 @@
   }
 }
 @media screen and (max-width: 776px) {
+  h2 {
+    font-size: 1.15em;
+  }
   header {
     border-bottom: none;
     padding-left: 5vw;
