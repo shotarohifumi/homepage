@@ -24,17 +24,17 @@ header {
 	padding-left: 15vw;
 	padding-right: 15vw;
 
-	h1 {
-		font-size: 2em;
-		font-weight: bold;
-		padding-top: 4vh;
-	}
+	
 
 	.logos {
-		display: flex;
-		justify-content: space-between;
-		padding-bottom: 12px;
+		// width: 100vw;
+		// display: flex;
+		// justify-content: space-between;
+		position: relative;
+		padding-bottom: 16px;
 		#toplogo {
+			position: absolute;
+			justify-content: flex-start;
 			height: 80px;
 			width: 120px;
 			// アニメーション
@@ -60,6 +60,15 @@ header {
 			// 		transform: rotateY(360deg);
 			// 	}
 			// }
+		}
+		#hpname {
+			// justify-content: center;
+			font-size: 2em;
+			font-weight: bold;
+			padding-top: 4vh;
+			text-align: center;
+			// width: 100vw;
+			margin: 0 auto;
 		}
 		#home {
 			padding-top: 6vh;
@@ -130,7 +139,7 @@ header {
     // to-the-topボタン 
 		.figtop {
 			position: fixed;
-			bottom: 85px;
+			bottom: 88px;
 			right: 0px;
 			border-radius: 10%;
 			border: transparent;
@@ -274,9 +283,8 @@ header {
 					}
 				}
 				span#caution{
-					position: absolute;
+					position: relative;
 					top: 35px;
-					right: 264px;
 				}
 			}
 		}

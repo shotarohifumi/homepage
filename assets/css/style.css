@@ -20,19 +20,22 @@ header {
   padding-left: 15vw;
   padding-right: 15vw;
 }
-header h1 {
+header .logos {
+  position: relative;
+  padding-bottom: 16px;
+}
+header .logos #toplogo {
+  position: absolute;
+  justify-content: flex-start;
+  height: 80px;
+  width: 120px;
+}
+header .logos #hpname {
   font-size: 2em;
   font-weight: bold;
   padding-top: 4vh;
-}
-header .logos {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 12px;
-}
-header .logos #toplogo {
-  height: 80px;
-  width: 120px;
+  text-align: center;
+  margin: 0 auto;
 }
 header .logos #home {
   padding-top: 6vh;
@@ -95,7 +98,7 @@ header .menu_bar button.scroll-button:hover::after {
 }
 .wrapper .maincontents .figtop {
   position: fixed;
-  bottom: 85px;
+  bottom: 88px;
   right: 0px;
   border-radius: 10%;
   border: transparent;
@@ -360,9 +363,8 @@ header .menu_bar button.scroll-button:hover::after {
   }
 }
 .wrapper .maincontents .main2 .applybtn span#caution {
-  position: absolute;
+  position: relative;
   top: 35px;
-  right: 264px;
 }
 .wrapper .maincontents .main1 #th, .wrapper .maincontents .main2 #th, .wrapper .maincontents .main3 #th, .wrapper .maincontents .main4 #th, .wrapper .maincontents .main5 #th {
   display: flex;

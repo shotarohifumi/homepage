@@ -35,7 +35,7 @@
 		.menu_bar {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
-  			grid-gap: 16px; /* グリッドアイテム間の間隔を調整 */
+  		grid-gap: 16px; /* グリッドアイテム間の間隔を調整 */
 			// flex-direction: column;
 			justify-content: space-around;
 			flex-wrap: wrap;

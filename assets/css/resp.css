@@ -1,3 +1,173 @@
+@charset "UTF-8";
+@media screen and (max-width: 776px) {
+  h2 {
+    font-size: 1.15em;
+  }
+  header {
+    border-bottom: none;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  header .logos {
+    text-align: center;
+    justify-content: space-around;
+    padding-bottom: 40px;
+  }
+  header .logos h1 {
+    font-size: 1.5em;
+    padding-top: 2vh;
+  }
+  header .logos #toplogo {
+    height: 64px;
+    width: 100px;
+  }
+  header .logos #home {
+    padding-top: 3vh;
+  }
+  header .logos #home i.las.la-home {
+    font-size: 1.25em;
+  }
+  header .menu_bar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px; /* グリッドアイテム間の間隔を調整 */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0px auto;
+  }
+  header .menu_bar #main1 {
+    display: none;
+  }
+  header .menu_bar li {
+    font-size: 1.25em;
+  }
+  header .menu_bar button.scroll-button {
+    background-color: transparent;
+    position: relative;
+    border-bottom: 3px solid transparent;
+    color: black;
+    margin-bottom: 1.5em;
+  }
+  header .menu_bar button.scroll-button:hover {
+    border-bottom: 3px solid #00c1fe;
+  }
+  header .menu_bar button.scroll-button:nth-child(1) {
+    display: none;
+  }
+  .wrapper {
+    padding-right: 6vw;
+    padding-left: 6vw;
+  }
+  .wrapper .maincontents h2 {
+    border-bottom: 2px solid;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    width: 128px;
+  }
+  .wrapper .maincontents .main1 #th, .wrapper .maincontents .main1 .td1, .wrapper .maincontents .main1 .td2, .wrapper .maincontents .main1 tr, .wrapper .maincontents .main2 #th, .wrapper .maincontents .main2 .td1, .wrapper .maincontents .main2 .td2, .wrapper .maincontents .main2 tr, .wrapper .maincontents .main3 #th, .wrapper .maincontents .main3 .td1, .wrapper .maincontents .main3 .td2, .wrapper .maincontents .main3 tr, .wrapper .maincontents .main4 #th, .wrapper .maincontents .main4 .td1, .wrapper .maincontents .main4 .td2, .wrapper .maincontents .main4 tr, .wrapper .maincontents .main5 #th, .wrapper .maincontents .main5 .td1, .wrapper .maincontents .main5 .td2, .wrapper .maincontents .main5 tr {
+    font-size: 1em;
+  }
+  .wrapper .maincontents .main1 .td1, .wrapper .maincontents .main2 .td1, .wrapper .maincontents .main3 .td1, .wrapper .maincontents .main4 .td1, .wrapper .maincontents .main5 .td1 {
+    width: 100px;
+    line-height: 28px;
+  }
+  .wrapper .maincontents .main1 .td2, .wrapper .maincontents .main2 .td2, .wrapper .maincontents .main3 .td2, .wrapper .maincontents .main4 .td2, .wrapper .maincontents .main5 .td2 {
+    line-height: 28px;
+    padding-left: 3vh;
+  }
+  .wrapper .maincontents .main1 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main1 .box2 #csvTable2 td:nth-child(1),
+  .wrapper .maincontents .main1 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main1 .box4 #csvTable4 td:nth-child(1),
+  .wrapper .maincontents .main1 .box5 #csvTable5 td:nth-child(1), .wrapper .maincontents .main2 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main2 .box2 #csvTable2 td:nth-child(1),
+  .wrapper .maincontents .main2 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main2 .box4 #csvTable4 td:nth-child(1),
+  .wrapper .maincontents .main2 .box5 #csvTable5 td:nth-child(1), .wrapper .maincontents .main3 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main3 .box2 #csvTable2 td:nth-child(1),
+  .wrapper .maincontents .main3 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main3 .box4 #csvTable4 td:nth-child(1),
+  .wrapper .maincontents .main3 .box5 #csvTable5 td:nth-child(1), .wrapper .maincontents .main4 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main4 .box2 #csvTable2 td:nth-child(1),
+  .wrapper .maincontents .main4 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main4 .box4 #csvTable4 td:nth-child(1),
+  .wrapper .maincontents .main4 .box5 #csvTable5 td:nth-child(1), .wrapper .maincontents .main5 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main5 .box2 #csvTable2 td:nth-child(1),
+  .wrapper .maincontents .main5 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main5 .box4 #csvTable4 td:nth-child(1),
+  .wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(1) {
+    line-height: 60px;
+    width: 100px;
+  }
+  .wrapper .maincontents .main1 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main1 .box2 #csvTable2 td:nth-child(2),
+  .wrapper .maincontents .main1 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main1 .box4 #csvTable4 td:nth-child(2),
+  .wrapper .maincontents .main1 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main2 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main2 .box2 #csvTable2 td:nth-child(2),
+  .wrapper .maincontents .main2 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main2 .box4 #csvTable4 td:nth-child(2),
+  .wrapper .maincontents .main2 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main3 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main3 .box2 #csvTable2 td:nth-child(2),
+  .wrapper .maincontents .main3 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main3 .box4 #csvTable4 td:nth-child(2),
+  .wrapper .maincontents .main3 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main4 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main4 .box2 #csvTable2 td:nth-child(2),
+  .wrapper .maincontents .main4 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main4 .box4 #csvTable4 td:nth-child(2),
+  .wrapper .maincontents .main4 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main5 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main5 .box2 #csvTable2 td:nth-child(2),
+  .wrapper .maincontents .main5 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main5 .box4 #csvTable4 td:nth-child(2),
+  .wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(2) {
+    text-align: start;
+    vertical-align: middle;
+    white-space: normal;
+  }
+  .wrapper .maincontents .main1 .box1, .wrapper .maincontents .main1 .box2, .wrapper .maincontents .main1 .box5, .wrapper .maincontents .main2 .box1, .wrapper .maincontents .main2 .box2, .wrapper .maincontents .main2 .box5, .wrapper .maincontents .main5 .box1, .wrapper .maincontents .main5 .box2, .wrapper .maincontents .main5 .box5 {
+    width: 100%;
+    height: 600px;
+    scrollbar-width: none;
+  }
+  .wrapper .maincontents .main1 .box1::-webkit-scrollbar, .wrapper .maincontents .main1 .box2::-webkit-scrollbar, .wrapper .maincontents .main1 .box5::-webkit-scrollbar, .wrapper .maincontents .main2 .box1::-webkit-scrollbar, .wrapper .maincontents .main2 .box2::-webkit-scrollbar, .wrapper .maincontents .main2 .box5::-webkit-scrollbar, .wrapper .maincontents .main5 .box1::-webkit-scrollbar, .wrapper .maincontents .main5 .box2::-webkit-scrollbar, .wrapper .maincontents .main5 .box5::-webkit-scrollbar {
+    width: 0;
+  }
+  .wrapper .maincontents .main1 .box1::-webkit-scrollbar-thumb, .wrapper .maincontents .main1 .box2::-webkit-scrollbar-thumb, .wrapper .maincontents .main1 .box5::-webkit-scrollbar-thumb, .wrapper .maincontents .main2 .box1::-webkit-scrollbar-thumb, .wrapper .maincontents .main2 .box2::-webkit-scrollbar-thumb, .wrapper .maincontents .main2 .box5::-webkit-scrollbar-thumb, .wrapper .maincontents .main5 .box1::-webkit-scrollbar-thumb, .wrapper .maincontents .main5 .box2::-webkit-scrollbar-thumb, .wrapper .maincontents .main5 .box5::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  .wrapper .maincontents .main1 .box1::-webkit-scrollbar-track, .wrapper .maincontents .main1 .box2::-webkit-scrollbar-track, .wrapper .maincontents .main1 .box5::-webkit-scrollbar-track, .wrapper .maincontents .main2 .box1::-webkit-scrollbar-track, .wrapper .maincontents .main2 .box2::-webkit-scrollbar-track, .wrapper .maincontents .main2 .box5::-webkit-scrollbar-track, .wrapper .maincontents .main5 .box1::-webkit-scrollbar-track, .wrapper .maincontents .main5 .box2::-webkit-scrollbar-track, .wrapper .maincontents .main5 .box5::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .wrapper .maincontents .main3 .box3, .wrapper .maincontents .main3 .box4, .wrapper .maincontents .main4 .box3, .wrapper .maincontents .main4 .box4 {
+    width: 100%;
+    height: 300px;
+    scrollbar-width: none;
+  }
+  .wrapper .maincontents .main3 .box3::-webkit-scrollbar, .wrapper .maincontents .main3 .box4::-webkit-scrollbar, .wrapper .maincontents .main4 .box3::-webkit-scrollbar, .wrapper .maincontents .main4 .box4::-webkit-scrollbar {
+    width: 0;
+  }
+  .wrapper .maincontents .main3 .box3::-webkit-scrollbar-thumb, .wrapper .maincontents .main3 .box4::-webkit-scrollbar-thumb, .wrapper .maincontents .main4 .box3::-webkit-scrollbar-thumb, .wrapper .maincontents .main4 .box4::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  .wrapper .maincontents .main3 .box3::-webkit-scrollbar-track, .wrapper .maincontents .main3 .box4::-webkit-scrollbar-track, .wrapper .maincontents .main4 .box3::-webkit-scrollbar-track, .wrapper .maincontents .main4 .box4::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .wrapper .maincontents .main2 .applybtn {
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 16px auto;
+  }
+  .wrapper .maincontents .main2 .applybtn .button {
+    margin-right: 0rem;
+    margin-bottom: 1.5em;
+  }
+  footer .content {
+    height: unset;
+  }
+  footer .content #items {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    justify-content: space-around;
+  }
+  footer .content #items img.btmlogo {
+    height: 56px;
+    width: 76px;
+    padding-top: 12px;
+  }
+  footer .content #items p {
+    font-size: 0.8em;
+    padding-top: 16px;
+  }
+  footer .content #items img#pmark {
+    padding-top: 6px;
+  }
+  footer .content #kanri {
+    display: none;
+  }
+  footer p {
+    font-size: 0.6em;
+  }
+}
 @media screen and (max-width: 515px) {
   h2 {
     font-size: 1.15em;
@@ -29,153 +199,31 @@
     font-size: 1.25em;
   }
   header .menu_bar {
-    margin: 0 auto;
-  }
-  header .menu_bar ul {
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    margin-bottom: 8px;
-  }
-  header .menu_bar ul li {
-    font-size: 1.25em;
-  }
-  header .menu_bar ul button {
-    margin-bottom: 1.5em;
-  }
-  .wrapper {
-    padding-right: 6vw;
-    padding-left: 6vw;
-  }
-  .wrapper .maincontents h2 {
-    border-bottom: 2px solid;
-    margin-top: 24px;
-    margin-bottom: 12px;
-    width: 128px;
-  }
-  .wrapper .maincontents .main1 #th, .wrapper .maincontents .main1 .td1, .wrapper .maincontents .main1 .td2, .wrapper .maincontents .main1 tr, .wrapper .maincontents .main2 #th, .wrapper .maincontents .main2 .td1, .wrapper .maincontents .main2 .td2, .wrapper .maincontents .main2 tr, .wrapper .maincontents .main3 #th, .wrapper .maincontents .main3 .td1, .wrapper .maincontents .main3 .td2, .wrapper .maincontents .main3 tr, .wrapper .maincontents .main4 #th, .wrapper .maincontents .main4 .td1, .wrapper .maincontents .main4 .td2, .wrapper .maincontents .main4 tr, .wrapper .maincontents .main5 #th, .wrapper .maincontents .main5 .td1, .wrapper .maincontents .main5 .td2, .wrapper .maincontents .main5 tr {
-    font-size: 1em;
-  }
-  .wrapper .maincontents .main1 .td1, .wrapper .maincontents .main2 .td1, .wrapper .maincontents .main3 .td1, .wrapper .maincontents .main4 .td1, .wrapper .maincontents .main5 .td1 {
-    width: 10%;
-    line-height: 28px;
-  }
-  .wrapper .maincontents .main1 .td2, .wrapper .maincontents .main2 .td2, .wrapper .maincontents .main3 .td2, .wrapper .maincontents .main4 .td2, .wrapper .maincontents .main5 .td2 {
-    line-height: 28px;
-    padding-left: 3vh;
-  }
-  .wrapper .maincontents .main1 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main1 .box2 #csvTable2 td:nth-child(1),
-  .wrapper .maincontents .main1 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main1 .box4 #csvTable4 td:nth-child(1),
-  .wrapper .maincontents .main1 .box5 #csvTable5 td:nth-child(1), .wrapper .maincontents .main2 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main2 .box2 #csvTable2 td:nth-child(1),
-  .wrapper .maincontents .main2 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main2 .box4 #csvTable4 td:nth-child(1),
-  .wrapper .maincontents .main2 .box5 #csvTable5 td:nth-child(1), .wrapper .maincontents .main3 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main3 .box2 #csvTable2 td:nth-child(1),
-  .wrapper .maincontents .main3 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main3 .box4 #csvTable4 td:nth-child(1),
-  .wrapper .maincontents .main3 .box5 #csvTable5 td:nth-child(1), .wrapper .maincontents .main4 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main4 .box2 #csvTable2 td:nth-child(1),
-  .wrapper .maincontents .main4 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main4 .box4 #csvTable4 td:nth-child(1),
-  .wrapper .maincontents .main4 .box5 #csvTable5 td:nth-child(1), .wrapper .maincontents .main5 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main5 .box2 #csvTable2 td:nth-child(1),
-  .wrapper .maincontents .main5 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main5 .box4 #csvTable4 td:nth-child(1),
-  .wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(1) {
-    line-height: 60px;
-  }
-  .wrapper .maincontents .main1 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main1 .box2 #csvTable2 td:nth-child(2),
-  .wrapper .maincontents .main1 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main1 .box4 #csvTable4 td:nth-child(2),
-  .wrapper .maincontents .main1 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main2 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main2 .box2 #csvTable2 td:nth-child(2),
-  .wrapper .maincontents .main2 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main2 .box4 #csvTable4 td:nth-child(2),
-  .wrapper .maincontents .main2 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main3 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main3 .box2 #csvTable2 td:nth-child(2),
-  .wrapper .maincontents .main3 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main3 .box4 #csvTable4 td:nth-child(2),
-  .wrapper .maincontents .main3 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main4 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main4 .box2 #csvTable2 td:nth-child(2),
-  .wrapper .maincontents .main4 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main4 .box4 #csvTable4 td:nth-child(2),
-  .wrapper .maincontents .main4 .box5 #csvTable5 td:nth-child(2), .wrapper .maincontents .main5 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main5 .box2 #csvTable2 td:nth-child(2),
-  .wrapper .maincontents .main5 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main5 .box4 #csvTable4 td:nth-child(2),
-  .wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(2) {
-    text-align: start;
-    vertical-align: middle;
-    white-space: normal;
-  }
-  .wrapper .maincontents .main1 .box1, .wrapper .maincontents .main1 .box2, .wrapper .maincontents .main1 .box5, .wrapper .maincontents .main2 .box1, .wrapper .maincontents .main2 .box2, .wrapper .maincontents .main2 .box5, .wrapper .maincontents .main5 .box1, .wrapper .maincontents .main5 .box2, .wrapper .maincontents .main5 .box5 {
-    height: 600px;
-  }
-  .wrapper .maincontents .main3 .box3, .wrapper .maincontents .main3 .box4, .wrapper .maincontents .main4 .box3, .wrapper .maincontents .main4 .box4 {
-    height: 300px;
-  }
-  .wrapper .maincontents .main2 .applybtn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px; /* グリッドアイテム間の間隔を調整 */
     justify-content: space-around;
-    flex-direction: column;
-    margin: 16px auto;
+    flex-wrap: wrap;
+    margin: 0px auto;
   }
-  .wrapper .maincontents .main2 .applybtn .button {
-    margin-right: 0rem;
-    margin-bottom: 1.5em;
-  }
-  footer .content {
-    height: unset;
-  }
-  footer .content #items {
-    padding-left: 1vw;
-    padding-right: 1vw;
-    justify-content: space-around;
-  }
-  footer .content #items img.btmlogo {
-    height: 52px;
-    width: 72px;
-    padding-top: 1vh;
-  }
-  footer .content #items p {
-    font-size: 0.6em;
-    padding-top: 3vh;
-  }
-  footer .content #items img#pmark {
-    padding-top: 4px;
-  }
-  footer .content #kanri {
+  header .menu_bar #main1 {
     display: none;
   }
-  footer p {
-    font-size: 0.6em;
-  }
-}
-@media screen and (max-width: 776px) {
-  h2 {
-    font-size: 1.15em;
-  }
-  header {
-    border-bottom: none;
-    padding-left: 5vw;
-    padding-right: 5vw;
-  }
-  header .logos {
-    text-align: center;
-    justify-content: space-around;
-    padding-bottom: 48px;
-  }
-  header .logos h1 {
-    font-size: 1.5em;
-    padding-top: 2vh;
-  }
-  header .logos #toplogo {
-    height: 64px;
-    width: 100px;
-  }
-  header .logos #home {
-    padding-top: 3vh;
-  }
-  header .logos #home i.las.la-home {
+  header .menu_bar li {
     font-size: 1.25em;
   }
-  header .menu_bar {
-    margin: 0 auto;
-  }
-  header .menu_bar ul {
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    margin-bottom: 8px;
-  }
-  header .menu_bar ul li {
-    font-size: 1.25em;
-  }
-  header .menu_bar ul button {
+  header .menu_bar button.scroll-button {
+    background-color: transparent;
+    position: relative;
+    border-bottom: 3px solid transparent;
+    color: black;
     margin-bottom: 1.5em;
+  }
+  header .menu_bar button.scroll-button:hover {
+    border-bottom: 3px solid #00c1fe;
+  }
+  header .menu_bar button.scroll-button:nth-child(1) {
+    display: none;
   }
   .wrapper {
     padding-right: 6vw;
@@ -191,7 +239,7 @@
     font-size: 1em;
   }
   .wrapper .maincontents .main1 .td1, .wrapper .maincontents .main2 .td1, .wrapper .maincontents .main3 .td1, .wrapper .maincontents .main4 .td1, .wrapper .maincontents .main5 .td1 {
-    width: 10%;
+    width: 60px;
     line-height: 28px;
   }
   .wrapper .maincontents .main1 .td2, .wrapper .maincontents .main2 .td2, .wrapper .maincontents .main3 .td2, .wrapper .maincontents .main4 .td2, .wrapper .maincontents .main5 .td2 {
@@ -210,6 +258,7 @@
   .wrapper .maincontents .main5 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main5 .box4 #csvTable4 td:nth-child(1),
   .wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(1) {
     line-height: 60px;
+    width: 60px;
   }
   .wrapper .maincontents .main1 .box1 #csvTable1 td:nth-child(2), .wrapper .maincontents .main1 .box2 #csvTable2 td:nth-child(2),
   .wrapper .maincontents .main1 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main1 .box4 #csvTable4 td:nth-child(2),
@@ -227,10 +276,32 @@
     white-space: normal;
   }
   .wrapper .maincontents .main1 .box1, .wrapper .maincontents .main1 .box2, .wrapper .maincontents .main1 .box5, .wrapper .maincontents .main2 .box1, .wrapper .maincontents .main2 .box2, .wrapper .maincontents .main2 .box5, .wrapper .maincontents .main5 .box1, .wrapper .maincontents .main5 .box2, .wrapper .maincontents .main5 .box5 {
+    width: 100%;
     height: 600px;
+    scrollbar-width: none;
+  }
+  .wrapper .maincontents .main1 .box1::-webkit-scrollbar, .wrapper .maincontents .main1 .box2::-webkit-scrollbar, .wrapper .maincontents .main1 .box5::-webkit-scrollbar, .wrapper .maincontents .main2 .box1::-webkit-scrollbar, .wrapper .maincontents .main2 .box2::-webkit-scrollbar, .wrapper .maincontents .main2 .box5::-webkit-scrollbar, .wrapper .maincontents .main5 .box1::-webkit-scrollbar, .wrapper .maincontents .main5 .box2::-webkit-scrollbar, .wrapper .maincontents .main5 .box5::-webkit-scrollbar {
+    width: 0;
+  }
+  .wrapper .maincontents .main1 .box1::-webkit-scrollbar-thumb, .wrapper .maincontents .main1 .box2::-webkit-scrollbar-thumb, .wrapper .maincontents .main1 .box5::-webkit-scrollbar-thumb, .wrapper .maincontents .main2 .box1::-webkit-scrollbar-thumb, .wrapper .maincontents .main2 .box2::-webkit-scrollbar-thumb, .wrapper .maincontents .main2 .box5::-webkit-scrollbar-thumb, .wrapper .maincontents .main5 .box1::-webkit-scrollbar-thumb, .wrapper .maincontents .main5 .box2::-webkit-scrollbar-thumb, .wrapper .maincontents .main5 .box5::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  .wrapper .maincontents .main1 .box1::-webkit-scrollbar-track, .wrapper .maincontents .main1 .box2::-webkit-scrollbar-track, .wrapper .maincontents .main1 .box5::-webkit-scrollbar-track, .wrapper .maincontents .main2 .box1::-webkit-scrollbar-track, .wrapper .maincontents .main2 .box2::-webkit-scrollbar-track, .wrapper .maincontents .main2 .box5::-webkit-scrollbar-track, .wrapper .maincontents .main5 .box1::-webkit-scrollbar-track, .wrapper .maincontents .main5 .box2::-webkit-scrollbar-track, .wrapper .maincontents .main5 .box5::-webkit-scrollbar-track {
+    background: transparent;
   }
   .wrapper .maincontents .main3 .box3, .wrapper .maincontents .main3 .box4, .wrapper .maincontents .main4 .box3, .wrapper .maincontents .main4 .box4 {
+    width: 100%;
     height: 300px;
+    scrollbar-width: none;
+  }
+  .wrapper .maincontents .main3 .box3::-webkit-scrollbar, .wrapper .maincontents .main3 .box4::-webkit-scrollbar, .wrapper .maincontents .main4 .box3::-webkit-scrollbar, .wrapper .maincontents .main4 .box4::-webkit-scrollbar {
+    width: 0;
+  }
+  .wrapper .maincontents .main3 .box3::-webkit-scrollbar-thumb, .wrapper .maincontents .main3 .box4::-webkit-scrollbar-thumb, .wrapper .maincontents .main4 .box3::-webkit-scrollbar-thumb, .wrapper .maincontents .main4 .box4::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  .wrapper .maincontents .main3 .box3::-webkit-scrollbar-track, .wrapper .maincontents .main3 .box4::-webkit-scrollbar-track, .wrapper .maincontents .main4 .box3::-webkit-scrollbar-track, .wrapper .maincontents .main4 .box4::-webkit-scrollbar-track {
+    background: transparent;
   }
   .wrapper .maincontents .main2 .applybtn {
     justify-content: space-around;
@@ -250,16 +321,16 @@
     justify-content: space-around;
   }
   footer .content #items img.btmlogo {
-    height: 52px;
+    height: 56px;
     width: 72px;
-    padding-top: 1vh;
+    padding-top: 12px;
   }
   footer .content #items p {
     font-size: 0.6em;
-    padding-top: 3vh;
+    padding-top: 20px;
   }
   footer .content #items img#pmark {
-    padding-top: 4px;
+    padding-top: 5px;
   }
   footer .content #kanri {
     display: none;
