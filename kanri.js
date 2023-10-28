@@ -23,33 +23,40 @@ $(function() {
 			} else {
 					alert("パスワードが正しくありません。");
 			}
+
+
+		// 結果コンテナを表示
+		function showResultContainer() {
+			$("#result-container").show();
+		}
+	
+		function displayCSVAsTable(csvData) {
+			var rows = csvData.split("\n");
+			var table = "<table>";
+
+			for (var i = 0; i < rows.length; i++) {
+					var cells = rows[i].split(",");
+					// 未入力の行をスキップ
+					if (cells[0] || cells[1] || cells[2] || cells[3] || cells[4]) {
+						table += "<tr>";
+
+						for (var j = 0; j < cells.length; j++) {
+								table += "<td><input type='text' value='" + cells[j] + "'></td>";
+						}
+
+						table += "</tr>\n";
+				}
+			}
+			table += "</table>";
+			return table;
+		}
 	});
 
-	// 結果コンテナを表示
-	function showResultContainer() {
-		$("#result-container").show();
-	}
-	// kokonihennkouwokuwaeru-----1027
-	function displayCSVAsTable(csvData) {
-		var rows = csvData.split("\n");
-		var table = "<table>";
+	//フォームの追加 
+	$("#addRowButton").on("click", function() {
+		$("#addRowForm").show();
+	});
 
-		for (var i = 0; i < rows.length; i++) {
-				var cells = rows[i].split(",");
-				// 未入力の行をスキップ
-				if (cells[0] || cells[1] || cells[2] || cells[3] || cells[4]) {
-					table += "<tr>";
-
-					for (var j = 0; j < cells.length; j++) {
-							table += "<td><input type='text' value='" + cells[j] + "'></td>";
-					}
-
-					table += "</tr>\n";
-			}
-		}
-		table += "</table>";
-		return table;
-	}
 	// セーブボタン⇩
 	$("#saveButton").on("click", function() {
 		if (isLoggedIn) {
@@ -66,69 +73,57 @@ $(function() {
 				hideResultContainer();
 			});
 		}
+	
+		// 表示を非表示にする
+		function hideResultContainer() {
+			$("#result-container").hide();
+			isLoggedIn = false;
+		}
+
+		function addNewRow() {
+			var newData1 = $("#newData1").val();
+			var newData2 = $("#newData2").val();
+			var newData3 = $("#newData3").val();
+			var newData4 = $("#newData4").val();
+			var newData5 = $("#newData5").val();
+
+			// フォーム内の入力フィールドをクリア
+			// $("#newData1").val("");
+			// $("#newData2").val("");
+			// $("#newData3").val("");
+			// $("#newData4").val("");
+			// $("#newData5").val("");
+			
+			// 新しい行をテーブルに追加
+			if (newData1 !== "" && newData2 !== "" && newData3 !== "" && newData4 !== "" && newData5 !== "") {
+				var newRow = "<tr><td><input type='number' value='" + newData1 + "'></td><td><input type='number' value='" + newData2 + "'></td><td><input type='text' value='" + newData3 + "'></td><td><input type='text' value='" + newData4 + "'></td><td><input type='url' value='" + newData5 + "'></td></tr>";
+				$("#result table").append(newRow);
+
+				// フォームを非表示にする
+				// $("#addRowForm").hide();
+				} 
+			// 	else {
+			// 		alert("新しいデータを入力してください。");
+			// }
+		}
+
+		function updateCSVData() {
+			var updatedCSVData = "";
+			$("#result table tr").each(function() {
+					var row = $(this);
+					var rowData = [];
+					row.find("input").each(function() {
+						rowData.push($(this).val());
+					});
+					var rowCSV = rowData.join(",");
+					updatedCSVData += rowCSV + "\n";
+					// var cell1 = row.find("td:eq(0) input").val();
+					// var cell2 = row.find("td:eq(1) input").val();
+					// updatedCSVData += cell1 + "," + cell2 + "\n";
+			});
+			return updatedCSVData;
+		}
 	});
-	// 表示を非表示にする
-	function hideResultContainer() {
-		$("#result-container").hide();
-		isLoggedIn = false;
-	}
 
-	function addNewRow() {
-		var newData1 = $("#newData1").val();
-		var newData2 = $("#newData2").val();
-		var newData3 = $("#newData3").val();
-		var newData4 = $("#newData4").val();
-		var newData5 = $("#newData5").val();
 
-		// フォーム内の入力フィールドをクリア
-		$("#newData1").val("");
-		$("#newData2").val("");
-		$("#newData3").val("");
-		$("#newData4").val("");
-		$("#newData5").val("");
-		
-		// 新しい行をテーブルに追加
-		if (newData1 !== "" && newData2 !== "" && newData3 !== "" && newData4 !== "" && newData5 !== "") {
-			var newRow = "<tr><td><input type='number' value='" + newData1 + "'></td><td><input type='number' value='" + newData2 + "'></td><td><input type='text' value='" + newData3 + "'></td><td><input type='text' value='" + newData4 + "'></td><td><input type='url' value='" + newData5 + "'></td></tr>";
-			$("#result table").append(newRow);
-
-			// フォームを非表示にする
-			// $("#addRowForm").hide();
-			} 
-		// 	else {
-		// 		alert("新しいデータを入力してください。");
-		// }
-	}
-
-	$("#addRowButton").on("click", function() {
-		
-		$("#addRowForm").show();
-		
-		// 新しい行をCSVデータに追加
-		var updatedCSVData = updateCSVData();
-		// ここで新しいCSVデータを保存または送信する処理を追加
-		// tuika--------1027
-		$.post("update_csv.php", { newDataRow: newRow, updatedCSVData: updatedCSVData }, function(response) {
-			alert(response);
-		});
-		// alert("新しい行がCSVデータに追加されました。");
-
-	});
-
-	function updateCSVData() {
-		var updatedCSVData = "";
-		$("#result table tr").each(function() {
-				var row = $(this);
-				var rowData = [];
-				row.find("input").each(function() {
-					rowData.push($(this).val());
-				});
-				var rowCSV = rowData.join(",");
-				updatedCSVData += rowCSV + "\n";
-				// var cell1 = row.find("td:eq(0) input").val();
-				// var cell2 = row.find("td:eq(1) input").val();
-				// updatedCSVData += cell1 + "," + cell2 + "\n";
-		});
-		return updatedCSVData;
-	}
 });

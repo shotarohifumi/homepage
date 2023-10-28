@@ -3,6 +3,8 @@
 	font-weight: bold;
 	text-align: center;
 	margin: 4px auto;
+	position: sticky;
+	top: 0;
 }
 #explanation {
 	text-align: center;
@@ -24,8 +26,9 @@ table {
 	left: 50%;
 	transform: translate(-50%, -50%); */
 	text-align: center;
-	display: flex;
-	display: block;
+	/* display: flex; */
+	width: 100%;
+	/* display: block; */
 	/* flex-direction: column; */
 }
 
@@ -33,7 +36,21 @@ table {
 	display: block; /* テキストエリアを表示 */
 	resize: both; /* テキストエリアのリサイズを許可 */
 	overflow: auto; /* テキストエリアのスクロールバーを表示 */
+	height: 72vh;
+	scrollbar-width: none;
+	position: sticky;
+	top: 76px;
 }
+#result::-webkit-scrollbar {
+		width: 0;
+}
+#result::-webkit-scrollbar-thumb {
+		background: transparent;
+}
+#result::-webkit-scrollbar-track {
+	background: transparent;
+}
+
 #addRowButton {
 	margin: 8px auto;
 	width: 100px;
