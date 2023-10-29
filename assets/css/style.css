@@ -138,7 +138,7 @@ header .menu_bar button.scroll-button:hover::after {
 .wrapper .maincontents .main5 .box2,
 .wrapper .maincontents .main5 .box5 {
   width: 100%;
-  max-height: 360px;
+  max-height: 389px;
   overflow-y: scroll;
   /* 奇数行 */
   /* 偶数行 */
@@ -231,6 +231,22 @@ header .menu_bar button.scroll-button:hover::after {
 .wrapper .maincontents .main5 .box5 #csvTable5 tr:nth-child(even) {
   background-color: #ffffff; /* 偶数行の背景色 */
 }
+.wrapper .maincontents .main1 .box1:hover, .wrapper .maincontents .main1 .box2:hover,
+.wrapper .maincontents .main1 .box5:hover,
+.wrapper .maincontents .main2 .box1:hover,
+.wrapper .maincontents .main2 .box2:hover,
+.wrapper .maincontents .main2 .box5:hover,
+.wrapper .maincontents .main3 .box1:hover,
+.wrapper .maincontents .main3 .box2:hover,
+.wrapper .maincontents .main3 .box5:hover,
+.wrapper .maincontents .main4 .box1:hover,
+.wrapper .maincontents .main4 .box2:hover,
+.wrapper .maincontents .main4 .box5:hover,
+.wrapper .maincontents .main5 .box1:hover,
+.wrapper .maincontents .main5 .box2:hover,
+.wrapper .maincontents .main5 .box5:hover {
+  box-shadow: 0 10px 8px 0 #b2d2ea;
+}
 .wrapper .maincontents .main1 .box3,
 .wrapper .maincontents .main1 .box4,
 .wrapper .maincontents .main2 .box3,
@@ -242,7 +258,7 @@ header .menu_bar button.scroll-button:hover::after {
 .wrapper .maincontents .main5 .box3,
 .wrapper .maincontents .main5 .box4 {
   width: 100%;
-  max-height: 180px;
+  max-height: 209px;
   overflow-y: scroll;
   /* 奇数行 */
   /* 偶数行 */
@@ -288,6 +304,18 @@ header .menu_bar button.scroll-button:hover::after {
 .wrapper .maincontents .main5 .box4 #csvTable3 tr:nth-child(even),
 .wrapper .maincontents .main5 .box4 #csvTable4 tr:nth-child(even) {
   background-color: #ffffff; /* 偶数行の背景色 */
+}
+.wrapper .maincontents .main1 .box3:hover,
+.wrapper .maincontents .main1 .box4:hover,
+.wrapper .maincontents .main2 .box3:hover,
+.wrapper .maincontents .main2 .box4:hover,
+.wrapper .maincontents .main3 .box3:hover,
+.wrapper .maincontents .main3 .box4:hover,
+.wrapper .maincontents .main4 .box3:hover,
+.wrapper .maincontents .main4 .box4:hover,
+.wrapper .maincontents .main5 .box3:hover,
+.wrapper .maincontents .main5 .box4:hover {
+  box-shadow: 0 10px 8px 0 #b2d2ea;
 }
 .wrapper .maincontents .main1,
 .wrapper .maincontents .main3,
@@ -371,6 +399,7 @@ header .menu_bar button.scroll-button:hover::after {
   top: 0;
   background: #dbe8ec;
   border-bottom: solid 1px white;
+  position: sticky;
 }
 .wrapper .maincontents .main1 .td1, .wrapper .maincontents .main2 .td1, .wrapper .maincontents .main3 .td1, .wrapper .maincontents .main4 .td1, .wrapper .maincontents .main5 .td1 {
   width: 136px;
@@ -451,20 +480,6 @@ header .menu_bar button.scroll-button:hover::after {
 .wrapper .maincontents .main5 .box3 #csvTable3 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main5 .box4 #csvTable4 tr:nth-child(even) td:nth-child(1),
 .wrapper .maincontents .main5 .box5 #csvTable5 tr:nth-child(even) td:nth-child(1) {
   border-right: 1px solid #edf3fc;
-  border-bottom: 1px solid #edf3fc;
-}
-.wrapper .maincontents .main1 .box1 #csvTable1 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main1 .box2 #csvTable2 tr:nth-child(even) td:nth-child(2),
-.wrapper .maincontents .main1 .box3 #csvTable3 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main1 .box4 #csvTable4 tr:nth-child(even) td:nth-child(2),
-.wrapper .maincontents .main1 .box5 #csvTable5 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main2 .box1 #csvTable1 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main2 .box2 #csvTable2 tr:nth-child(even) td:nth-child(2),
-.wrapper .maincontents .main2 .box3 #csvTable3 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main2 .box4 #csvTable4 tr:nth-child(even) td:nth-child(2),
-.wrapper .maincontents .main2 .box5 #csvTable5 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main3 .box1 #csvTable1 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main3 .box2 #csvTable2 tr:nth-child(even) td:nth-child(2),
-.wrapper .maincontents .main3 .box3 #csvTable3 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main3 .box4 #csvTable4 tr:nth-child(even) td:nth-child(2),
-.wrapper .maincontents .main3 .box5 #csvTable5 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main4 .box1 #csvTable1 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main4 .box2 #csvTable2 tr:nth-child(even) td:nth-child(2),
-.wrapper .maincontents .main4 .box3 #csvTable3 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main4 .box4 #csvTable4 tr:nth-child(even) td:nth-child(2),
-.wrapper .maincontents .main4 .box5 #csvTable5 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main5 .box1 #csvTable1 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main5 .box2 #csvTable2 tr:nth-child(even) td:nth-child(2),
-.wrapper .maincontents .main5 .box3 #csvTable3 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main5 .box4 #csvTable4 tr:nth-child(even) td:nth-child(2),
-.wrapper .maincontents .main5 .box5 #csvTable5 tr:nth-child(even) td:nth-child(2) {
-  border-bottom: 1px solid #edf3fc;
 }
 
 footer .content {

@@ -173,7 +173,7 @@ header {
 			.box1, .box2,
 			.box5 {
 				width: 100%;
-				max-height: 360px;
+				max-height: 389px;
 				overflow-y: scroll;
 				/* 奇数行 */
 				#csvTable1 tr:nth-child(odd), #csvTable2 tr:nth-child(odd),
@@ -185,12 +185,16 @@ header {
 				#csvTable5 tr:nth-child(even) {
 				background-color: #ffffff; /* 偶数行の背景色 */
 				}
+				&:hover {
+					// box-shadow: 4px 4px 4px 4px;
+					box-shadow: 0 10px 8px 0 #b2d2ea;
+				}
 			}
 
 			.box3,
 			.box4 {
 				width: 100%;
-				max-height: 180px;
+				max-height: 209px;
 				overflow-y: scroll;
 				/* 奇数行 */
 				#csvTable3 tr:nth-child(odd), #csvTable4 tr:nth-child(odd) {
@@ -199,6 +203,10 @@ header {
 				/* 偶数行 */
 				#csvTable3 tr:nth-child(even), #csvTable4 tr:nth-child(even) {
 				background-color: #ffffff; /* 偶数行の背景色 */
+				}
+				&:hover {
+					// box-shadow: 4px 4px 4px 4px;
+					box-shadow: 0 10px 8px 0 #b2d2ea;
 				}
 			}
 		}
@@ -296,6 +304,7 @@ header {
 				top: 0;
 				background: #dbe8ec;
 				border-bottom: solid 1px white;
+				position: sticky;
 			}
 		
 			.td1 {
@@ -344,12 +353,6 @@ header {
 			.box3 #csvTable3 tr:nth-child(even) td:nth-child(1), .box4 #csvTable4 tr:nth-child(even) td:nth-child(1),
 			.box5 #csvTable5 tr:nth-child(even) td:nth-child(1) {
 				border-right: 1px solid #edf3fc;
-				border-bottom: 1px solid #edf3fc;
-			}
-			.box1 #csvTable1 tr:nth-child(even) td:nth-child(2), .box2 #csvTable2 tr:nth-child(even) td:nth-child(2),
-			.box3 #csvTable3 tr:nth-child(even) td:nth-child(2), .box4 #csvTable4 tr:nth-child(even) td:nth-child(2),
-			.box5 #csvTable5 tr:nth-child(even) td:nth-child(2) {
-				border-bottom: 1px solid #edf3fc;
 			}
 		}
 	}
