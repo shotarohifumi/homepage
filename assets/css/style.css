@@ -139,7 +139,7 @@ header .menu_bar button.scroll-button:hover::after {
 .wrapper .maincontents .main5 .box2,
 .wrapper .maincontents .main5 .box5 {
   width: 100%;
-  height: 240px;
+  max-height: 360px;
   overflow-y: scroll;
   /* 奇数行 */
   /* 偶数行 */
@@ -243,7 +243,7 @@ header .menu_bar button.scroll-button:hover::after {
 .wrapper .maincontents .main5 .box3,
 .wrapper .maincontents .main5 .box4 {
   width: 100%;
-  height: 120px;
+  max-height: 180px;
   overflow-y: scroll;
   /* 奇数行 */
   /* 偶数行 */
@@ -427,12 +427,6 @@ header .menu_bar button.scroll-button:hover::after {
 .wrapper .maincontents .main5 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main5 .box4 #csvTable4 td:nth-child(2),
 .wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(2) {
   padding-left: 3vw;
-}
-.wrapper .maincontents .main1 .box1, .wrapper .maincontents .main1 .box2, .wrapper .maincontents .main1 .box5, .wrapper .maincontents .main2 .box1, .wrapper .maincontents .main2 .box2, .wrapper .maincontents .main2 .box5, .wrapper .maincontents .main5 .box1, .wrapper .maincontents .main5 .box2, .wrapper .maincontents .main5 .box5 {
-  height: 360px;
-}
-.wrapper .maincontents .main3 .box3, .wrapper .maincontents .main3 .box4, .wrapper .maincontents .main4 .box3, .wrapper .maincontents .main4 .box4 {
-  height: 180px;
 }
 
 footer .content {
