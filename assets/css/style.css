@@ -105,11 +105,10 @@ header .menu_bar button.scroll-button:hover::after {
   background-color: black;
   cursor: pointer;
   opacity: 0.5;
-  padding: 10px 15px;
+  padding: 15px 20px;
   border-radius: 30%;
   z-index: 1;
-  color: white;
-  font-size: 24px;
+  font-size: 16px;
 }
 .wrapper .maincontents .figtop:hover {
   opacity: 1;
@@ -409,7 +408,6 @@ header .menu_bar button.scroll-button:hover::after {
 .wrapper .maincontents .main4 .box5 #csvTable5 td:nth-child(1), .wrapper .maincontents .main5 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main5 .box2 #csvTable2 td:nth-child(1),
 .wrapper .maincontents .main5 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main5 .box4 #csvTable4 td:nth-child(1),
 .wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(1) {
-  border-right: 1px solid white;
   /* テーブル内の縦線 */
   text-align: center;
   width: 136px;
@@ -427,6 +425,46 @@ header .menu_bar button.scroll-button:hover::after {
 .wrapper .maincontents .main5 .box3 #csvTable3 td:nth-child(2), .wrapper .maincontents .main5 .box4 #csvTable4 td:nth-child(2),
 .wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(2) {
   padding-left: 3vw;
+}
+.wrapper .maincontents .main1 .box1 #csvTable1 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main1 .box2 #csvTable2 tr:nth-child(odd) td:nth-child(1),
+.wrapper .maincontents .main1 .box3 #csvTable3 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main1 .box4 #csvTable4 tr:nth-child(odd) td:nth-child(1),
+.wrapper .maincontents .main1 .box5 #csvTable5 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main2 .box1 #csvTable1 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main2 .box2 #csvTable2 tr:nth-child(odd) td:nth-child(1),
+.wrapper .maincontents .main2 .box3 #csvTable3 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main2 .box4 #csvTable4 tr:nth-child(odd) td:nth-child(1),
+.wrapper .maincontents .main2 .box5 #csvTable5 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main3 .box1 #csvTable1 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main3 .box2 #csvTable2 tr:nth-child(odd) td:nth-child(1),
+.wrapper .maincontents .main3 .box3 #csvTable3 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main3 .box4 #csvTable4 tr:nth-child(odd) td:nth-child(1),
+.wrapper .maincontents .main3 .box5 #csvTable5 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main4 .box1 #csvTable1 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main4 .box2 #csvTable2 tr:nth-child(odd) td:nth-child(1),
+.wrapper .maincontents .main4 .box3 #csvTable3 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main4 .box4 #csvTable4 tr:nth-child(odd) td:nth-child(1),
+.wrapper .maincontents .main4 .box5 #csvTable5 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main5 .box1 #csvTable1 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main5 .box2 #csvTable2 tr:nth-child(odd) td:nth-child(1),
+.wrapper .maincontents .main5 .box3 #csvTable3 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main5 .box4 #csvTable4 tr:nth-child(odd) td:nth-child(1),
+.wrapper .maincontents .main5 .box5 #csvTable5 tr:nth-child(odd) td:nth-child(1) {
+  border-right: 1px solid #ffffff;
+}
+.wrapper .maincontents .main1 .box1 #csvTable1 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main1 .box2 #csvTable2 tr:nth-child(even) td:nth-child(1),
+.wrapper .maincontents .main1 .box3 #csvTable3 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main1 .box4 #csvTable4 tr:nth-child(even) td:nth-child(1),
+.wrapper .maincontents .main1 .box5 #csvTable5 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main2 .box1 #csvTable1 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main2 .box2 #csvTable2 tr:nth-child(even) td:nth-child(1),
+.wrapper .maincontents .main2 .box3 #csvTable3 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main2 .box4 #csvTable4 tr:nth-child(even) td:nth-child(1),
+.wrapper .maincontents .main2 .box5 #csvTable5 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main3 .box1 #csvTable1 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main3 .box2 #csvTable2 tr:nth-child(even) td:nth-child(1),
+.wrapper .maincontents .main3 .box3 #csvTable3 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main3 .box4 #csvTable4 tr:nth-child(even) td:nth-child(1),
+.wrapper .maincontents .main3 .box5 #csvTable5 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main4 .box1 #csvTable1 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main4 .box2 #csvTable2 tr:nth-child(even) td:nth-child(1),
+.wrapper .maincontents .main4 .box3 #csvTable3 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main4 .box4 #csvTable4 tr:nth-child(even) td:nth-child(1),
+.wrapper .maincontents .main4 .box5 #csvTable5 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main5 .box1 #csvTable1 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main5 .box2 #csvTable2 tr:nth-child(even) td:nth-child(1),
+.wrapper .maincontents .main5 .box3 #csvTable3 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main5 .box4 #csvTable4 tr:nth-child(even) td:nth-child(1),
+.wrapper .maincontents .main5 .box5 #csvTable5 tr:nth-child(even) td:nth-child(1) {
+  border-right: 1px solid #edf3fc;
+  border-bottom: 1px solid #edf3fc;
+}
+.wrapper .maincontents .main1 .box1 #csvTable1 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main1 .box2 #csvTable2 tr:nth-child(even) td:nth-child(2),
+.wrapper .maincontents .main1 .box3 #csvTable3 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main1 .box4 #csvTable4 tr:nth-child(even) td:nth-child(2),
+.wrapper .maincontents .main1 .box5 #csvTable5 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main2 .box1 #csvTable1 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main2 .box2 #csvTable2 tr:nth-child(even) td:nth-child(2),
+.wrapper .maincontents .main2 .box3 #csvTable3 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main2 .box4 #csvTable4 tr:nth-child(even) td:nth-child(2),
+.wrapper .maincontents .main2 .box5 #csvTable5 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main3 .box1 #csvTable1 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main3 .box2 #csvTable2 tr:nth-child(even) td:nth-child(2),
+.wrapper .maincontents .main3 .box3 #csvTable3 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main3 .box4 #csvTable4 tr:nth-child(even) td:nth-child(2),
+.wrapper .maincontents .main3 .box5 #csvTable5 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main4 .box1 #csvTable1 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main4 .box2 #csvTable2 tr:nth-child(even) td:nth-child(2),
+.wrapper .maincontents .main4 .box3 #csvTable3 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main4 .box4 #csvTable4 tr:nth-child(even) td:nth-child(2),
+.wrapper .maincontents .main4 .box5 #csvTable5 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main5 .box1 #csvTable1 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main5 .box2 #csvTable2 tr:nth-child(even) td:nth-child(2),
+.wrapper .maincontents .main5 .box3 #csvTable3 tr:nth-child(even) td:nth-child(2), .wrapper .maincontents .main5 .box4 #csvTable4 tr:nth-child(even) td:nth-child(2),
+.wrapper .maincontents .main5 .box5 #csvTable5 tr:nth-child(even) td:nth-child(2) {
+  border-bottom: 1px solid #edf3fc;
 }
 
 footer .content {
