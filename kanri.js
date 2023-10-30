@@ -60,10 +60,27 @@ $(function () {
 		var newData4 = $("#newData4").val();
 		var newData5 = $("#newData5").val();
 
+		
+    // 1列目の値に応じて3列目のテキストを自動入力
+    if (newData1 === "1") {
+			newData3 = "お知らせ";
+		} else if (newData1 === "2") {
+				newData3 = "申請書";
+		} else if (newData1 === "3") {
+				newData3 = "勤務時間報告書";
+		} else if (newData1 === "4") {
+				newData3 = "就業規則等";
+		} else if (newData1 === "5") {
+				newData3 = "その他";
+		}
+
+		var newRow = "<tr><td><input type='number' value='" + newData1 + "'></td><td><input type='number' value='" + newData2 + "'></td><td><input type='text' value='" + newData3 + "'></td><td><input type='text' value='" + newData4 + "'></td><td><input type='url' value='" + newData5 + "'></td></tr>";
+		$("#result table").append(newRow);
+
 		// 新しい行をテーブルに追加
-		if (newData1 !== "" && newData2 !== "" && newData3 !== "" && newData4 !== "" && newData5 !== "") {
-			var newRow = "<tr><td><input type='number' value='" + newData1 + "'></td><td><input type='number' value='" + newData2 + "'></td><td><input type='text' value='" + newData3 + "'></td><td><input type='text' value='" + newData4 + "'></td><td><input type='url' value='" + newData5 + "'></td></tr>";
-			$("#result table").append(newRow);
+		// if (newData1 !== "" && newData2 !== "" && newData3 !== "" && newData4 !== "" && newData5 !== "") {
+		// 	var newRow = "<tr><td><input type='number' value='" + newData1 + "'></td><td><input type='number' value='" + newData2 + "'></td><td><input type='text' value='" + newData3 + "'></td><td><input type='text' value='" + newData4 + "'></td><td><input type='url' value='" + newData5 + "'></td></tr>";
+		// 	$("#result table").append(newRow);
 
 			// フォーム内の入力フィールドをクリア
 			$("#newData1").val("");
@@ -71,7 +88,7 @@ $(function () {
 			$("#newData3").val("");
 			$("#newData4").val("");
 			$("#newData5").val("");
-		}
+	// }
 	}
 
 	// sortするやつ
@@ -95,6 +112,31 @@ $(function () {
 			table.append(row);
 		});
 	}
+
+	// $("#result table").on("input", "input[type='number']:eq(0)", function () {
+	// 	var input = $(this);
+	// 	var row = input.closest("tr");
+	// 	var value = input.val();
+
+	// 	// 1列目に"1"が入力された場合、3列目に"お知らせ"を自動的に設定
+	// 	if (value === "1") {
+	// 		row.find("td:eq(2) input").val("お知らせ");
+	// 	} else if (value === "2") {
+	// 		row.find("td:eq(2) input").val("申請書");
+	// 	} else if (value === "3") {
+	// 		row.find("td:eq(2) input").val("勤務時間報告書");
+	// 	} else if (value === "4") {
+	// 		row.find("td:eq(2) input").val("就業規則等");
+	// 	} else if (value === "5") {
+	// 		row.find("td:eq(2) input").val("その他");
+	// 	} else {
+	// 			// それ以外の値が入力された場合、3列目をクリア
+	// 			row.find("td:eq(2) input").val("");
+	// 	}
+
+	// 	// ソートを実行
+	// 	sortTable();
+	// });
 
 	// セーブボタン⇩
 	$("#saveButton").on("click", function () {
