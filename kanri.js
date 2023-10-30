@@ -79,9 +79,17 @@ $(function () {
 		var table = $("#result table");
 		var rows = table.find("tr").toArray();
 		rows.sort(function(a, b) {
-			var keyA = parseInt($(a).find("td:first input").val());
-			var keyB = parseInt($(b).find("td:first input").val());
-			return keyA - keyB;
+			var keyA1 = parseInt($(a).find("td:eq(0) input").val()); //左の区分番号
+			var keyB1 = parseInt($(b).find("td:eq(0) input").val());
+			
+			var keyA2 = parseInt($(a).find("td:eq(1) input").val()); //隣の区分番号
+			var keyB2 = parseInt($(b).find("td:eq(1) input").val());
+
+			// まず、左の区分番号でソートし、左の区分番号が同じ場合には隣の区分別番号でソート
+			if (keyA1 === keyB1) {
+				return keyA2 - keyB2;
+			}
+			return keyA1 - keyB1;
 		});
 		$.each(rows, function(index, row) {
 			table.append(row);
@@ -131,8 +139,4 @@ $(function () {
 		isLoggedIn = false;
 	}
 
-	// $(data).ready(function() {
-  //   // ここでテーブルをソートする
-  //   sortTable();
-	// });
 });
