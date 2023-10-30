@@ -9,6 +9,7 @@ $(function () {
 			$.get("showfile.csv", function (data) {
 				var tableHTML = displayCSVAsTable(data);
 				$("#result").html(tableHTML);
+				sortTable();
 			});
 			isLoggedIn = true;
 			// パスワードフィールドの値をクリア
@@ -73,6 +74,20 @@ $(function () {
 		}
 	}
 
+	// sortするやつ
+	function sortTable() {
+		var table = $("#result table");
+		var rows = table.find("tr").toArray();
+		rows.sort(function(a, b) {
+			var keyA = parseInt($(a).find("td:first input").val());
+			var keyB = parseInt($(b).find("td:first input").val());
+			return keyA - keyB;
+		});
+		$.each(rows, function(index, row) {
+			table.append(row);
+		});
+	}
+
 	// セーブボタン⇩
 	$("#saveButton").on("click", function () {
 		if (isLoggedIn) {
@@ -87,7 +102,10 @@ $(function () {
 				alert(response);
 				// 表示を非表示に戻す
 				hideResultContainer();
+				// ページ読み込み時にテーブルをソート
+				sortTable();
 			});
+
 		}
 	});
 
@@ -112,4 +130,9 @@ $(function () {
 		$("#result-container").hide();
 		isLoggedIn = false;
 	}
+
+	// $(data).ready(function() {
+  //   // ここでテーブルをソートする
+  //   sortTable();
+	// });
 });
