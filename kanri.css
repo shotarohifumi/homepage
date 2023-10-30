@@ -25,19 +25,53 @@
 	position: relative;
 }
 table {
+	/* width: 100%; */
+	position: relative;
 	margin: 0 auto;
+} 
+table tr:nth-child(1) {
+	top: -4px;
+	position: sticky;
 }
+table tr td:nth-child(1) input {
+	width: 50px;
+}
+table tr td:nth-child(2) input {
+	width: 100px;
+}
+table tr td:nth-child(3) input {
+	width: 150px;
+}
+table tr td:nth-child(4) input {
+	width: 400px;
+}
+table tr td:nth-child(5) input {
+	width: 200px;
+}
+
+
 #addRowForm {
-	/* position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%); */
+	/* margin: 0 auto; */
 	text-align: center;
-	/* display: flex; */
-	width: 100%;
-	/* display: block; */
-	/* flex-direction: column; */
+	padding-top: 8px;
+	/* width: 100%; */
 }
+#addRowForm input#newData1 {
+	width: 50px;
+}
+#addRowForm input#newData2 {
+	width: 100px;
+}
+#addRowForm input#newData3 {
+	width: 150px;
+}
+#addRowForm input#newData4 {
+	width: 400px;
+}
+#addRowForm input#newData5 {
+	width: 200px;
+}
+
 
 #result {
 	display: block; /* テキストエリアを表示 */

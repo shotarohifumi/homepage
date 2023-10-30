@@ -18,7 +18,7 @@ $(function() {
 			} else {
 					alert("パスワードが正しくありません。");
 			}
-
+		});
 
 		// 結果コンテナを表示
 		function showResultContainer() {
@@ -45,7 +45,7 @@ $(function() {
 			table += "</table>";
 			return table;
 		}
-	});
+	
 
 	//フォームの追加 
 	$("#addRowButton").on("click", function() {
