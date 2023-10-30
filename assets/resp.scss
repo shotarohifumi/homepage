@@ -5,25 +5,34 @@
 	}
 
 	header {
+		background-color: transparent;
+		display: flex;
+		flex-direction: column;
 		border-bottom: none;
 		padding-left: 5vw;
 		padding-right: 5vw;
 		
 		.logos {
+			position: relative;
 			// flex-wrap: wrap;
-			text-align: center;
-			justify-content: space-around;
+			// text-align: center;
+			// justify-content: space-around;
 			padding-bottom: 40px;
-			h1 {
+			#hpname {
 					font-size: 1.5em;
 					padding-top: 2vh;
-					// 要素を下に移動
-					// order: 3;
+					text-align: center;
 				}
+				
+				
 				#toplogo {
+					display: block;
+					position: relative;
+					margin: 0 auto;
 					height: 64px;
 					width: 100px;
 				}
+			
 				#home {
 					padding-top: 3vh;
 					i.las.la-home {
@@ -53,9 +62,9 @@
 				color: black;
 				margin-bottom: 1.5em;
 				// transition: 0.5s;
-				&:hover {
-					border-bottom: 3px solid #00c1fe;
-				}
+				// &:hover {
+				// 	border-bottom: 3px solid #00c1fe;
+				// }
 				&:nth-child(1){
 					display: none;
 				}
@@ -69,7 +78,7 @@
 		padding-left: 8vw;		
 		.maincontents{ 
 			h2 {
-				border-bottom: 2px solid;
+				border-bottom: 5px double #459BDB;
 				margin-top: 24px;
 				margin-bottom: 12px;
 				width: 128px;
@@ -104,7 +113,7 @@
 			.main1, .main2, .main5 {
 				.box1, .box2, .box5 {
 					width: 100%;
-					height: 600px;
+					max-height: 629px;
 					scrollbar-width: none;
 					&::-webkit-scrollbar {
 						width: 0;
@@ -120,7 +129,7 @@
 			.main3, .main4 {
 				.box3, .box4 {
 					width: 100%;
-					height: 300px;
+					max-height: 329px;
 					scrollbar-width: none;
 					&::-webkit-scrollbar {
 						width: 0;
@@ -140,10 +149,15 @@
 					flex-direction: column;
 					margin: 16px auto;
 					.button {
-						margin-right: 0rem;
+						margin: 0 auto;
 						margin-bottom: 1.5em;
 					}
+					span#caution{
+						text-align: center;
+						position: unset;
+					}
 				}
+
 			}
 		}
 	}
@@ -234,9 +248,9 @@
 				color: black;
 				margin-bottom: 1.5em;
 				// transition: 0.5s;
-				&:hover {
-					border-bottom: 3px solid #00c1fe;
-				}
+				// &:hover {
+				// 	border-bottom: 3px solid #00c1fe;
+				// }
 				&:nth-child(1){
 					display: none;
 				}
@@ -250,7 +264,7 @@
 		padding-left: 8vw;		
 		.maincontents{ 
 			h2 {
-				border-bottom: 2px solid;
+				border-bottom: 5px double #459BDB;
 				margin-top: 24px;
 				margin-bottom: 12px;
 				width: 128px;
@@ -285,7 +299,7 @@
 			.main1, .main2, .main5 {
 				.box1, .box2, .box5 {
 					width: 100%;
-					height: 600px;
+					max-height: 629px;
 					scrollbar-width: none;
 					&::-webkit-scrollbar {
 						width: 0;
@@ -301,7 +315,7 @@
 			.main3, .main4 {
 				.box3, .box4 {
 					width: 100%;
-					height: 300px;
+					max-height: 329px;
 					scrollbar-width: none;
 					&::-webkit-scrollbar {
 						width: 0;
@@ -321,7 +335,7 @@
 					flex-direction: column;
 					margin: 16px auto;
 					.button {
-						margin-right: 0rem;
+						margin: 0 auto;
 						margin-bottom: 1.5em;
 					}
 				}

@@ -34,7 +34,7 @@ header {
 		padding-bottom: 16px;
 		#toplogo {
 			position: absolute;
-			justify-content: flex-start;
+			// justify-content: flex-start;
 			height: 80px;
 			width: 120px;
 			// アニメーション
@@ -89,25 +89,91 @@ header {
 			font-size: 1.25em;
 		}
 		button.scroll-button {
+			padding-right: 8px;
+			padding-left: 8px;
 			background-color: transparent;
 			position: relative;
-			border-bottom: none;
-			color: black;
-			transition: ease-in-out;
-			&::after {
+			border-bottom: 3px solid transparent;
+			&:before {
 				content: "";
-				position: absolute;
-				width: 0;
-				height: 5px;
-				border-bottom: #459BDB thick double;
-				bottom: 0;
-				left: 0;
-				transition: width 0.5s ease-in-out;
-			}
-			&:hover::after {
 				width: 100%;
-				left: 0;
+				height: 1px;
+				background: #459bdb;
+				position: absolute;
+				top: -1px;
+				right: 0;
+				transition: .1s ease-in-out .1s;
 			}
+			
+			&:after {
+				content: "";
+				width: 1px;
+				height: 100%;
+				background: #459bdb;
+				position: absolute;
+				bottom: 0;
+				right: -1px;
+				transition: .1s ease-in-out .2s;
+			}
+			
+			span:before {
+				content: "";
+				width: 100%;
+				height: 1px;
+				background: #459bdb;
+				position: absolute;
+				bottom: -1px;
+				left: 0;
+				transition: .1s ease-in-out .3s;
+			}
+			
+			span:after {
+				content: "";
+				width: 1px;
+				height: 100%;
+				background: #459bdb;
+				position: absolute;
+				top: 0;
+				left: -1px;
+				transition: .1s ease-in-out;
+			}
+			
+			&:hover span:after {
+				height: 0;
+			}
+			
+			&:hover:before {
+				width: 0;
+			}
+			
+			&:hover:after {
+				height: 0;
+			}
+			
+			&:hover span:before {
+				height: 5px;
+			}
+			
+			
+			// background-color: transparent;
+			// position: relative;
+			// border-bottom: none;
+			// color: black;
+			// transition: ease-in-out;
+			// &::after {
+			// 	content: "";
+			// 	position: absolute;
+			// 	width: 0;
+			// 	height: 5px;
+			// 	border-bottom: #459BDB thick double;
+			// 	bottom: 0;
+			// 	left: 0;
+			// 	transition: width 0.5s ease-in-out;
+			// }
+			// &:hover::after {
+			// 	width: 100%;
+			// 	left: 0;
+			// }
 		}
 	}
 	
@@ -237,6 +303,7 @@ header {
 
 				.button {
 					text-align: center;
+					display: inline-block;
 					font-size: 1.25em;
 					height: 48px;
 					width: 120px;
@@ -249,47 +316,51 @@ header {
 					position: relative;
 					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 					border-radius: 5%;
-				}
-
-				.hovered {
-					animation: pulse 2s infinite;
-				}
-
-				@keyframes pulse {
-					0% {
-						transform: scale(1);
-						background: linear-gradient(to bottom, #a8e1f2, #0094fe);
-						color: whitesmoke;
-						box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
-					}
-
-					25% {
-						transform: scale(1.1);
-						background: linear-gradient(to bottom, #6ed5f5, #0061ff);
-						color: whitesmoke;
-						box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-					}
-
-					50% {
-						transform: scale(1);
-						background: linear-gradient(to bottom, #a8e1f2, #0094fe);
-						color: whitesmoke;
-						box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
-					}
-					75% {
-						transform: scale(1.1);
-						background: linear-gradient(to bottom, #6ed5f5, #0061ff);
-						color: whitesmoke;
-						box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-					}
-
-					100% {
-						transform: scale(1);
-						background: linear-gradient(to bottom, #a8e1f2, #0094fe);
-						color: whitesmoke;
-						box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
+					&:hover {
+						box-shadow: none;
+						transform: translateY(5px);
 					}
 				}
+
+				// .hovered {
+				// 	animation: pulse 2s infinite;
+				// }
+
+				// @keyframes pulse {
+				// 	0% {
+				// 		transform: scale(1);
+				// 		background: linear-gradient(to bottom, #a8e1f2, #0094fe);
+				// 		color: whitesmoke;
+				// 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
+				// 	}
+
+				// 	25% {
+				// 		transform: scale(1.1);
+				// 		background: linear-gradient(to bottom, #6ed5f5, #0061ff);
+				// 		color: whitesmoke;
+				// 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				// 	}
+
+				// 	50% {
+				// 		transform: scale(1);
+				// 		background: linear-gradient(to bottom, #a8e1f2, #0094fe);
+				// 		color: whitesmoke;
+				// 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
+				// 	}
+				// 	75% {
+				// 		transform: scale(1.1);
+				// 		background: linear-gradient(to bottom, #6ed5f5, #0061ff);
+				// 		color: whitesmoke;
+				// 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				// 	}
+
+				// 	100% {
+				// 		transform: scale(1);
+				// 		background: linear-gradient(to bottom, #a8e1f2, #0094fe);
+				// 		color: whitesmoke;
+				// 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
+				// 	}
+				// }
 				span#caution{
 					position: relative;
 					top: 35px;
