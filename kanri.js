@@ -3,48 +3,48 @@ $(function() {
 	var isLoggedIn = false;
 
 	$("#submit").click(function() {
-			var passwordInput = $("#password").val();
+		var passwordInput = $("#password").val();
 
-			if (passwordInput === "nebit") {
-					$.get("showfile.csv", function(data) {
-							var tableHTML = displayCSVAsTable(data);
-							$("#result").html(tableHTML);
-					});
-					isLoggedIn = true;
-					// パスワードフィールドの値をクリア
-					$("#password").val("");
-					// ログイン成功時の処理
-					showResultContainer();
-			} else {
-					alert("パスワードが正しくありません。");
-			}
-		});
-
-		// 結果コンテナを表示
-		function showResultContainer() {
-			$("#result-container").show();
+		if (passwordInput === "nebit") {
+				$.get("showfile.csv", function(data) {
+					var tableHTML = displayCSVAsTable(data);
+					$("#result").html(tableHTML);
+				});
+				isLoggedIn = true;
+				// パスワードフィールドの値をクリア
+				$("#password").val("");
+				// ログイン成功時の処理
+				showResultContainer();
+		} else {
+				alert("パスワードが正しくありません。");
 		}
-	
-		function displayCSVAsTable(csvData) {
-			var rows = csvData.split("\n");
-			var table = "<table>";
+	});
 
-			for (var i = 0; i < rows.length; i++) {
-					var cells = rows[i].split(",");
-					// 未入力の行をスキップ
-					if (cells[0] || cells[1] || cells[2] || cells[3] || cells[4]) {
-						table += "<tr>";
+	// 結果コンテナを表示
+	function showResultContainer() {
+		$("#result-container").show();
+	}
 
-						for (var j = 0; j < cells.length; j++) {
-								table += "<td><input type='text' value='" + cells[j] + "'></td>";
-						}
+	function displayCSVAsTable(csvData) {
+		var rows = csvData.split("\n");
+		var table = "<table>";
 
-						table += "</tr>\n";
-				}
+		for (var i = 0; i < rows.length; i++) {
+				var cells = rows[i].split(",");
+				// 未入力の行をスキップ
+				if (cells[0] || cells[1] || cells[2] || cells[3] || cells[4]) {
+					table += "<tr>";
+
+					for (var j = 0; j < cells.length; j++) {
+							table += "<td><input type='text' value='" + cells[j] + "'></td>";
+					}
+
+					table += "</tr>\n";
 			}
-			table += "</table>";
-			return table;
 		}
+		table += "</table>";
+		return table;
+	}
 	
 
 	//フォームの追加 
