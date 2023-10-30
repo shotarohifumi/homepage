@@ -482,6 +482,9 @@ header .menu_bar button.scroll-button:hover::after {
   border-right: 1px solid #edf3fc;
 }
 
+footer {
+  padding-top: 4px;
+}
 footer .content {
   height: 64px;
   background-color: #459BDB;
