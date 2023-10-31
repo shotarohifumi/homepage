@@ -87,6 +87,26 @@
     margin-bottom: 12px;
     width: 128px;
   }
+  .wrapper .maincontents .figtop {
+    position: fixed;
+    bottom: 85px;
+    right: 0px;
+    border-radius: 10%;
+    border: transparent;
+    background-color: black;
+    cursor: pointer;
+    opacity: 0.5;
+    padding: 15px 20px;
+    border-radius: 30%;
+    z-index: 1;
+    font-size: 16px;
+  }
+  .wrapper .maincontents .figtop:hover {
+    opacity: 1;
+  }
+  .wrapper .maincontents .topbtn {
+    display: none;
+  }
   .wrapper .maincontents .main1 #th, .wrapper .maincontents .main1 .td1, .wrapper .maincontents .main1 .td2, .wrapper .maincontents .main1 tr, .wrapper .maincontents .main2 #th, .wrapper .maincontents .main2 .td1, .wrapper .maincontents .main2 .td2, .wrapper .maincontents .main2 tr, .wrapper .maincontents .main3 #th, .wrapper .maincontents .main3 .td1, .wrapper .maincontents .main3 .td2, .wrapper .maincontents .main3 tr, .wrapper .maincontents .main4 #th, .wrapper .maincontents .main4 .td1, .wrapper .maincontents .main4 .td2, .wrapper .maincontents .main4 tr, .wrapper .maincontents .main5 #th, .wrapper .maincontents .main5 .td1, .wrapper .maincontents .main5 .td2, .wrapper .maincontents .main5 tr {
     font-size: 1em;
   }
@@ -284,6 +304,26 @@
     margin-top: 24px;
     margin-bottom: 12px;
     width: 128px;
+  }
+  .wrapper .maincontents .figtop {
+    position: fixed;
+    bottom: 84px;
+    right: 0px;
+    border-radius: 10%;
+    border: transparent;
+    background-color: black;
+    cursor: pointer;
+    opacity: 0.5;
+    padding: 15px 20px;
+    border-radius: 30%;
+    z-index: 1;
+    font-size: 16px;
+  }
+  .wrapper .maincontents .figtop:hover {
+    opacity: 1;
+  }
+  .wrapper .maincontents .topbtn {
+    display: none;
   }
   .wrapper .maincontents .main1 #th, .wrapper .maincontents .main1 .td1, .wrapper .maincontents .main1 .td2, .wrapper .maincontents .main1 tr, .wrapper .maincontents .main2 #th, .wrapper .maincontents .main2 .td1, .wrapper .maincontents .main2 .td2, .wrapper .maincontents .main2 tr, .wrapper .maincontents .main3 #th, .wrapper .maincontents .main3 .td1, .wrapper .maincontents .main3 .td2, .wrapper .maincontents .main3 tr, .wrapper .maincontents .main4 #th, .wrapper .maincontents .main4 .td1, .wrapper .maincontents .main4 .td2, .wrapper .maincontents .main4 tr, .wrapper .maincontents .main5 #th, .wrapper .maincontents .main5 .td1, .wrapper .maincontents .main5 .td2, .wrapper .maincontents .main5 tr {
     font-size: 1em;

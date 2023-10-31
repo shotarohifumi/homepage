@@ -96,6 +96,28 @@
 				margin-bottom: 12px;
 				width: 128px;
 			}
+			// to-the-topボタン 
+			.figtop {
+				position: fixed;
+				bottom: 85px;
+				right: 0px;
+				border-radius: 10%;
+				border: transparent;
+				background-color: black;
+				cursor: pointer;
+				opacity: 0.5;
+				padding: 15px 20px;
+				border-radius: 30%;
+				z-index: 1;
+				// color: white;
+				font-size: 16px;
+			}
+			.figtop:hover{
+					opacity:1;
+			}
+			.topbtn{
+					display: none;
+			}
 			.main1, .main2, .main3, .main4, .main5 {
 				#th, .td1, .td2, tr{
 					font-size: 1em;
@@ -309,6 +331,28 @@
 				margin-top: 24px;
 				margin-bottom: 12px;
 				width: 128px;
+			}
+			// to-the-topボタン 
+			.figtop {
+				position: fixed;
+				bottom: 84px;
+				right: 0px;
+				border-radius: 10%;
+				border: transparent;
+				background-color: black;
+				cursor: pointer;
+				opacity: 0.5;
+				padding: 15px 20px;
+				border-radius: 30%;
+				z-index: 1;
+				// color: white;
+				font-size: 16px;
+			}
+			.figtop:hover{
+					opacity:1;
+			}
+			.topbtn{
+					display: none;
 			}
 			.main1, .main2, .main3, .main4, .main5 {
 				#th, .td1, .td2, tr{

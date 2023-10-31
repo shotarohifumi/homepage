@@ -10,6 +10,9 @@ $(function () {
 				var tableHTML = displayCSVAsTable(data);
 				$("#result").html(tableHTML);
 				sortTable();
+
+				// テーブルが表示されたら3列目の入力フィールドを無効化
+				$("#newData3").prop("disabled", true);
 			});
 			isLoggedIn = true;
 			// パスワードフィールドの値をクリア
