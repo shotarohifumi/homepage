@@ -91,12 +91,17 @@ table tr td:nth-child(5) input {
 #result::-webkit-scrollbar-track {
 	background: transparent;
 }
-
-#addRowButton {
-	margin: 8px auto;
-	width: 100px;
-	text-align: center;
+.botan {
 	display: block;
+	margin: 8px auto;
+	text-align: center;
+}
+#kakunin {
+	padding: 4px 8px;
+	cursor: pointer;
+}
+#addRowButton {
+	padding: 4px 8px;
 	cursor: pointer;
 }
 #saveButton {
