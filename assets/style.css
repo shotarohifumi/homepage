@@ -20,19 +20,21 @@ header {
   padding-left: 15vw;
   padding-right: 15vw;
 }
-header h1 {
+header .logos {
+  position: relative;
+  padding-bottom: 16px;
+}
+header .logos #toplogo {
+  position: absolute;
+  height: 80px;
+  width: 120px;
+}
+header .logos #hpname {
   font-size: 2em;
   font-weight: bold;
   padding-top: 4vh;
-}
-header .logos {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 12px;
-}
-header .logos #toplogo {
-  height: 80px;
-  width: 120px;
+  text-align: center;
+  margin: 0 auto;
 }
 header .logos #home {
   padding-top: 6vh;
@@ -51,25 +53,63 @@ header .menu_bar li {
   font-size: 1.25em;
 }
 header .menu_bar button.scroll-button {
+  padding-right: 8px;
+  padding-left: 8px;
   background-color: transparent;
   position: relative;
-  border-bottom: none;
-  color: black;
-  transition: ease-in-out;
+  border-bottom: 3px solid transparent;
 }
-header .menu_bar button.scroll-button::after {
+header .menu_bar button.scroll-button:before {
   content: "";
-  position: absolute;
-  width: 0;
-  height: 5px;
-  border-bottom: #459BDB thick double;
-  bottom: 0;
-  left: 0;
-  transition: width 0.5s ease-in-out;
-}
-header .menu_bar button.scroll-button:hover::after {
   width: 100%;
+  height: 1px;
+  background: #459bdb;
+  position: absolute;
+  top: -1px;
+  right: 0;
+  transition: 0.1s ease-in-out 0.1s;
+}
+header .menu_bar button.scroll-button:after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #459bdb;
+  position: absolute;
+  bottom: 0;
+  right: -1px;
+  transition: 0.1s ease-in-out 0.2s;
+}
+header .menu_bar button.scroll-button span:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #459bdb;
+  position: absolute;
+  bottom: -1px;
   left: 0;
+  transition: 0.1s ease-in-out 0.3s;
+}
+header .menu_bar button.scroll-button span:after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #459bdb;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  transition: 0.1s ease-in-out;
+}
+header .menu_bar button.scroll-button:hover span:after {
+  height: 0;
+}
+header .menu_bar button.scroll-button:hover:before {
+  width: 0;
+}
+header .menu_bar button.scroll-button:hover:after {
+  height: 0;
+}
+header .menu_bar button.scroll-button:hover span:before {
+  height: 5px;
 }
 
 .wrapper {
@@ -95,18 +135,17 @@ header .menu_bar button.scroll-button:hover::after {
 }
 .wrapper .maincontents .figtop {
   position: fixed;
-  bottom: 85px;
+  bottom: 88px;
   right: 0px;
   border-radius: 10%;
   border: transparent;
   background-color: black;
   cursor: pointer;
   opacity: 0.5;
-  padding: 10px 15px;
+  padding: 15px 20px;
   border-radius: 30%;
   z-index: 1;
-  color: white;
-  font-size: 24px;
+  font-size: 16px;
 }
 .wrapper .maincontents .figtop:hover {
   opacity: 1;
@@ -136,7 +175,7 @@ header .menu_bar button.scroll-button:hover::after {
 .wrapper .maincontents .main5 .box2,
 .wrapper .maincontents .main5 .box5 {
   width: 100%;
-  height: 240px;
+  max-height: 389px;
   overflow-y: scroll;
   /* 奇数行 */
   /* 偶数行 */
@@ -229,6 +268,22 @@ header .menu_bar button.scroll-button:hover::after {
 .wrapper .maincontents .main5 .box5 #csvTable5 tr:nth-child(even) {
   background-color: #ffffff; /* 偶数行の背景色 */
 }
+.wrapper .maincontents .main1 .box1:hover, .wrapper .maincontents .main1 .box2:hover,
+.wrapper .maincontents .main1 .box5:hover,
+.wrapper .maincontents .main2 .box1:hover,
+.wrapper .maincontents .main2 .box2:hover,
+.wrapper .maincontents .main2 .box5:hover,
+.wrapper .maincontents .main3 .box1:hover,
+.wrapper .maincontents .main3 .box2:hover,
+.wrapper .maincontents .main3 .box5:hover,
+.wrapper .maincontents .main4 .box1:hover,
+.wrapper .maincontents .main4 .box2:hover,
+.wrapper .maincontents .main4 .box5:hover,
+.wrapper .maincontents .main5 .box1:hover,
+.wrapper .maincontents .main5 .box2:hover,
+.wrapper .maincontents .main5 .box5:hover {
+  box-shadow: 0 10px 8px 0 #b2d2ea;
+}
 .wrapper .maincontents .main1 .box3,
 .wrapper .maincontents .main1 .box4,
 .wrapper .maincontents .main2 .box3,
@@ -240,7 +295,7 @@ header .menu_bar button.scroll-button:hover::after {
 .wrapper .maincontents .main5 .box3,
 .wrapper .maincontents .main5 .box4 {
   width: 100%;
-  height: 120px;
+  max-height: 209px;
   overflow-y: scroll;
   /* 奇数行 */
   /* 偶数行 */
@@ -287,6 +342,18 @@ header .menu_bar button.scroll-button:hover::after {
 .wrapper .maincontents .main5 .box4 #csvTable4 tr:nth-child(even) {
   background-color: #ffffff; /* 偶数行の背景色 */
 }
+.wrapper .maincontents .main1 .box3:hover,
+.wrapper .maincontents .main1 .box4:hover,
+.wrapper .maincontents .main2 .box3:hover,
+.wrapper .maincontents .main2 .box4:hover,
+.wrapper .maincontents .main3 .box3:hover,
+.wrapper .maincontents .main3 .box4:hover,
+.wrapper .maincontents .main4 .box3:hover,
+.wrapper .maincontents .main4 .box4:hover,
+.wrapper .maincontents .main5 .box3:hover,
+.wrapper .maincontents .main5 .box4:hover {
+  box-shadow: 0 10px 8px 0 #b2d2ea;
+}
 .wrapper .maincontents .main1,
 .wrapper .maincontents .main3,
 .wrapper .maincontents .main4,
@@ -305,12 +372,14 @@ header .menu_bar button.scroll-button:hover::after {
   display: flex;
   margin-bottom: 1rem;
   text-align: center;
+  position: relative;
 }
 .wrapper .maincontents .main2 .applybtn a {
   text-decoration: none;
 }
 .wrapper .maincontents .main2 .applybtn .button {
   text-align: center;
+  display: inline-block;
   font-size: 1.25em;
   height: 48px;
   width: 120px;
@@ -323,40 +392,13 @@ header .menu_bar button.scroll-button:hover::after {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5%;
 }
-.wrapper .maincontents .main2 .applybtn .hovered {
-  animation: pulse 2s infinite;
+.wrapper .maincontents .main2 .applybtn .button:hover {
+  box-shadow: none;
+  transform: translateY(5px);
 }
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    background: linear-gradient(to bottom, #a8e1f2, #0094fe);
-    color: whitesmoke;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
-  }
-  25% {
-    transform: scale(1.1);
-    background: linear-gradient(to bottom, #6ed5f5, #0061ff);
-    color: whitesmoke;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  50% {
-    transform: scale(1);
-    background: linear-gradient(to bottom, #a8e1f2, #0094fe);
-    color: whitesmoke;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
-  }
-  75% {
-    transform: scale(1.1);
-    background: linear-gradient(to bottom, #6ed5f5, #0061ff);
-    color: whitesmoke;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  100% {
-    transform: scale(1);
-    background: linear-gradient(to bottom, #a8e1f2, #0094fe);
-    color: whitesmoke;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
-  }
+.wrapper .maincontents .main2 .applybtn span#caution {
+  position: relative;
+  top: 35px;
 }
 .wrapper .maincontents .main1 #th, .wrapper .maincontents .main2 #th, .wrapper .maincontents .main3 #th, .wrapper .maincontents .main4 #th, .wrapper .maincontents .main5 #th {
   display: flex;
@@ -364,6 +406,7 @@ header .menu_bar button.scroll-button:hover::after {
   top: 0;
   background: #dbe8ec;
   border-bottom: solid 1px white;
+  position: sticky;
 }
 .wrapper .maincontents .main1 .td1, .wrapper .maincontents .main2 .td1, .wrapper .maincontents .main3 .td1, .wrapper .maincontents .main4 .td1, .wrapper .maincontents .main5 .td1 {
   width: 136px;
@@ -401,7 +444,6 @@ header .menu_bar button.scroll-button:hover::after {
 .wrapper .maincontents .main4 .box5 #csvTable5 td:nth-child(1), .wrapper .maincontents .main5 .box1 #csvTable1 td:nth-child(1), .wrapper .maincontents .main5 .box2 #csvTable2 td:nth-child(1),
 .wrapper .maincontents .main5 .box3 #csvTable3 td:nth-child(1), .wrapper .maincontents .main5 .box4 #csvTable4 td:nth-child(1),
 .wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(1) {
-  border-right: 1px solid white;
   /* テーブル内の縦線 */
   text-align: center;
   width: 136px;
@@ -420,13 +462,36 @@ header .menu_bar button.scroll-button:hover::after {
 .wrapper .maincontents .main5 .box5 #csvTable5 td:nth-child(2) {
   padding-left: 3vw;
 }
-.wrapper .maincontents .main1 .box1, .wrapper .maincontents .main1 .box2, .wrapper .maincontents .main1 .box5, .wrapper .maincontents .main2 .box1, .wrapper .maincontents .main2 .box2, .wrapper .maincontents .main2 .box5, .wrapper .maincontents .main5 .box1, .wrapper .maincontents .main5 .box2, .wrapper .maincontents .main5 .box5 {
-  height: 360px;
+.wrapper .maincontents .main1 .box1 #csvTable1 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main1 .box2 #csvTable2 tr:nth-child(odd) td:nth-child(1),
+.wrapper .maincontents .main1 .box3 #csvTable3 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main1 .box4 #csvTable4 tr:nth-child(odd) td:nth-child(1),
+.wrapper .maincontents .main1 .box5 #csvTable5 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main2 .box1 #csvTable1 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main2 .box2 #csvTable2 tr:nth-child(odd) td:nth-child(1),
+.wrapper .maincontents .main2 .box3 #csvTable3 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main2 .box4 #csvTable4 tr:nth-child(odd) td:nth-child(1),
+.wrapper .maincontents .main2 .box5 #csvTable5 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main3 .box1 #csvTable1 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main3 .box2 #csvTable2 tr:nth-child(odd) td:nth-child(1),
+.wrapper .maincontents .main3 .box3 #csvTable3 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main3 .box4 #csvTable4 tr:nth-child(odd) td:nth-child(1),
+.wrapper .maincontents .main3 .box5 #csvTable5 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main4 .box1 #csvTable1 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main4 .box2 #csvTable2 tr:nth-child(odd) td:nth-child(1),
+.wrapper .maincontents .main4 .box3 #csvTable3 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main4 .box4 #csvTable4 tr:nth-child(odd) td:nth-child(1),
+.wrapper .maincontents .main4 .box5 #csvTable5 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main5 .box1 #csvTable1 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main5 .box2 #csvTable2 tr:nth-child(odd) td:nth-child(1),
+.wrapper .maincontents .main5 .box3 #csvTable3 tr:nth-child(odd) td:nth-child(1), .wrapper .maincontents .main5 .box4 #csvTable4 tr:nth-child(odd) td:nth-child(1),
+.wrapper .maincontents .main5 .box5 #csvTable5 tr:nth-child(odd) td:nth-child(1) {
+  border-right: 1px solid #ffffff;
 }
-.wrapper .maincontents .main3 .box3, .wrapper .maincontents .main3 .box4, .wrapper .maincontents .main4 .box3, .wrapper .maincontents .main4 .box4 {
-  height: 180px;
+.wrapper .maincontents .main1 .box1 #csvTable1 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main1 .box2 #csvTable2 tr:nth-child(even) td:nth-child(1),
+.wrapper .maincontents .main1 .box3 #csvTable3 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main1 .box4 #csvTable4 tr:nth-child(even) td:nth-child(1),
+.wrapper .maincontents .main1 .box5 #csvTable5 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main2 .box1 #csvTable1 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main2 .box2 #csvTable2 tr:nth-child(even) td:nth-child(1),
+.wrapper .maincontents .main2 .box3 #csvTable3 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main2 .box4 #csvTable4 tr:nth-child(even) td:nth-child(1),
+.wrapper .maincontents .main2 .box5 #csvTable5 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main3 .box1 #csvTable1 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main3 .box2 #csvTable2 tr:nth-child(even) td:nth-child(1),
+.wrapper .maincontents .main3 .box3 #csvTable3 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main3 .box4 #csvTable4 tr:nth-child(even) td:nth-child(1),
+.wrapper .maincontents .main3 .box5 #csvTable5 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main4 .box1 #csvTable1 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main4 .box2 #csvTable2 tr:nth-child(even) td:nth-child(1),
+.wrapper .maincontents .main4 .box3 #csvTable3 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main4 .box4 #csvTable4 tr:nth-child(even) td:nth-child(1),
+.wrapper .maincontents .main4 .box5 #csvTable5 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main5 .box1 #csvTable1 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main5 .box2 #csvTable2 tr:nth-child(even) td:nth-child(1),
+.wrapper .maincontents .main5 .box3 #csvTable3 tr:nth-child(even) td:nth-child(1), .wrapper .maincontents .main5 .box4 #csvTable4 tr:nth-child(even) td:nth-child(1),
+.wrapper .maincontents .main5 .box5 #csvTable5 tr:nth-child(even) td:nth-child(1) {
+  border-right: 1px solid #edf3fc;
 }
 
+footer {
+  padding-top: 4px;
+}
 footer .content {
   height: 64px;
   background-color: #459BDB;
