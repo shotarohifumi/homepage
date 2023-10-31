@@ -98,40 +98,22 @@ $(function () {
 		var newData5 = $("#newData5").val();
 
 		
-    // 1列目の値に応じて3列目のテキストを自動入力
-    // if (newData1 === "1") {
-		// 	newData3 = "お知らせ";
-		// } else if (newData1 === "2") {
-		// 		newData3 = "申請書";
-		// } else if (newData1 === "3") {
-		// 		newData3 = "勤務時間報告書";
-		// } else if (newData1 === "4") {
-		// 		newData3 = "就業規則等";
-		// } else if (newData1 === "5") {
-		// 		newData3 = "その他";
-		// }
 		if (newData1 === "" || newData2 === "" || newData3 === "" || newData4 === "" || newData5 === "") {
 			alert("全てのフィールドを入力してください。");
 			return;
-	}
+		}
 
 		var newRow = "<tr><td><input type='number' value='" + newData1 + "'></td><td><input type='number' value='" + newData2 + "'></td><td><input type='text' value='" + newData3 + "'></td><td><input type='text' value='" + newData4 + "'></td><td><input type='url' value='" + newData5 + "'></td></tr>";
 		$("#result table").append(newRow);
 
-		// 新しい行をテーブルに追加
-		// if (newData1 !== "" && newData2 !== "" && newData3 !== "" && newData4 !== "" && newData5 !== "") {
-		// 	var newRow = "<tr><td><input type='number' value='" + newData1 + "'></td><td><input type='number' value='" + newData2 + "'></td><td><input type='text' value='" + newData3 + "'></td><td><input type='text' value='" + newData4 + "'></td><td><input type='url' value='" + newData5 + "'></td></tr>";
-		// 	$("#result table").append(newRow);
-
-			// フォーム内の入力フィールドをクリア
-			$("#newData1").val("");
-			$("#newData2").val("");
-			$("#newData3").val("");
-			$("#newData4").val("");
-			$("#newData5").val("");
-			// 3列目の入力フィールドを無効化
-			$("#newData3").prop("disabled", true);
-	// }
+		// フォーム内の入力フィールドをクリア
+		$("#newData1").val("");
+		$("#newData2").val("");
+		$("#newData3").val("");
+		$("#newData4").val("");
+		$("#newData5").val("");
+		// 3列目の入力フィールドを無効化
+		$("#newData3").prop("disabled", true);
 	}
 
 	// sortするやつ

@@ -14,9 +14,6 @@
 		
 		.logos {
 			position: relative;
-			// flex-wrap: wrap;
-			// text-align: center;
-			// justify-content: space-around;
 			padding-bottom: 40px;
 			#hpname {
 					font-size: 1.5em;
@@ -44,8 +41,7 @@
 		.menu_bar {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
-  		grid-gap: 16px; /* グリッドアイテム間の間隔を調整 */
-			// flex-direction: column;
+  		grid-gap: 20px; /* グリッドアイテム間の間隔を調整 */
 			justify-content: space-around;
 			flex-wrap: wrap;
 			margin: 0px auto;
@@ -56,15 +52,32 @@
 				font-size: 1.25em;
 			}
 			button.scroll-button {
-				background-color: transparent;
-				position: relative;
-				border-bottom: 3px solid transparent;
-				color: black;
-				margin-bottom: 1.5em;
-				// transition: 0.5s;
-				// &:hover {
-				// 	border-bottom: 3px solid #00c1fe;
-				// }
+        padding-right: 0;
+        padding-left: 0;
+        background-color: transparent;
+        position: relative;
+        border-bottom: none;
+        color: black;
+        transition: .3s ease-in-out;
+				&::before, span::before, span::after {
+					width: 0;
+				}
+				&::after {
+						content: "";
+						position: absolute;
+						width: 0;
+						height: 1px;
+						background: 0;
+						border-bottom: 5px double #459BDB; /* 太さやスタイルを調整 */
+						bottom: 0;
+						left: 0;
+						transition: width 0.5s ease-in-out;
+				}
+				&:hover::after {
+						width: 100%;
+						left: 0;
+				}
+
 				&:nth-child(1){
 					display: none;
 				}
@@ -201,14 +214,13 @@
 
 	header {
 		border-bottom: none;
-		padding-left: 5vw;
-		padding-right: 5vw;
+		
 		
 		.logos {
 			flex-wrap: wrap;
 			text-align: center;
 			justify-content: space-around;
-			padding-bottom: 48px;
+			padding-bottom: 0px;
 			h1 {
 					font-size: 1.5em;
 					padding-top: 2vh;
@@ -228,9 +240,12 @@
 		}
 			
 		.menu_bar {
+			// padding-left: 5vw;
+			// padding-right: 5vw;
+			padding: 40px 0;
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
-			grid-gap: 16px; /* グリッドアイテム間の間隔を調整 */
+			grid-gap: 20px; /* グリッドアイテム間の間隔を調整 */
 			// flex-direction: column;
 			justify-content: space-around;
 			flex-wrap: wrap;
@@ -239,248 +254,44 @@
 				display: none;
 			}
 			li {
-				font-size: 1.25em;
+				font-size: 1em;
+				font-weight: bold;
 			}
 			button.scroll-button {
-				padding-right: 0px;
-				padding-left: 0px;
-				background-color: transparent;
-				position: relative;
-				border-bottom: none;
-				color: black;
-				transition: ease-in-out;
-				&::after {
-					content: "";
-					position: absolute;
+        padding-right: 0;
+        padding-left: 0;
+        background-color: transparent;
+        position: relative;
+        border-bottom: none;
+        color: black;
+        transition: .3s ease-in-out;
+				&::before, span::before, span::after {
 					width: 0;
-					height: 5px;
-					border-bottom: #459BDB thick double;
-					bottom: 0;
-					left: 0;
-					transition: width 0.5s ease-in-out;
+				}
+				&::after {
+						content: "";
+						position: absolute;
+						width: 0;
+						height: 1px;
+						background: 0;
+						border-bottom: 5px double #459BDB; /* 太さやスタイルを調整 */
+						bottom: 0;
+						left: 0;
+						transition: width 0.5s ease-in-out;
 				}
 				&:hover::after {
-					width: 100%;
-					left: 0;
+						width: 100%;
+						left: 0;
 				}
-				// &:hover {
-				// 	border-bottom: 3px solid #00c1fe;
-				// }
-				&:before {
-					content: "";
-					width: 100%;
-					height: none;
-					background: none;
-					position: unset;
-					top: 0;
-					right: 0;
-					transition: none;
-				}
-				&:after {
-					content: "";
-					width: 100%;
-					height: 100%;
-					border-bottom: #459BDB thick double;
-					background: none;
-					position: unset;
-					bottom: 0;
-					right: 0px;
-					transition: none;
-				}
-				span:before {
-					content: "";
-					width: none;
-					height: none;
-					background: none;
-					position: unset;
-					bottom: 0;
-					right: 0px;
-					transition: none;
-				}
-				span:after {
-					content: "";
-					width: 100%;
-					height: 100%;
-					background: none;
-					border-bottom: #459BDB thick double;
-					position: unset;
-					bottom: 0;
-					right: 0px;
-					transition: ease-in-out;
-				}
-				&:hover span:after {
-					height: 0;
-				}
-				
-				&:hover:before {
-					width: 0;
-				}
-				
-				&:hover:after {
-					height: 100%;
-				}
-				
-				&:hover span:before {
-					height: 0px;
-				}
+
+		
+
 				&:nth-child(1){
 					display: none;
 				}
 			}
 		}
-			// button.scroll-button {
-			// 	padding-right: 0px;
-			// 	padding-left: 0px;
-			// 	background-color: transparent;
-			// 	position: relative;
-			// 	border-bottom: 3px solid transparent;
-			// 	color: black;
-			// 	margin-bottom: 1.5em;
-			// 	transition: 0.5s ease-in-out;
-			// 	span::after {
-			// 	content: "";
-			// 	position: absolute;
-			// 	width: 0;
-			// 	height: 5px;
-			// 	border-bottom: #459BDB thick double;
-			// 	bottom: 0;
-			// 	left: 0;
-			// 	transition: 0.5s ease-in-out;
-			// 	}
-			// 	span:hover::after {
-			// 		width: 100%;
-			// 		left: 0;
-			// 	}
-			// 	// &:hover {
-			// 	// 	border-bottom: 3px solid #00c1fe;
-			// 	// }
-			// 	&:before {
-			// 		content: "";
-			// 		width: none;
-			// 		height: none;
-			// 		background: none;
-			// 		position: unset;
-			// 		top: 0;
-			// 		right: 0;
-			// 		transition: none;
-			// 	}
-			// 	&:after {
-			// 		content: "";
-			// 		width: none;
-			// 		height: none;
-			// 		background: none;
-			// 		position: unset;
-			// 		bottom: 0;
-			// 		right: 0px;
-			// 		transition: none;
-			// 	}
-			// 	span:before {
-			// 		content: "";
-			// 		width: none;
-			// 		height: none;
-			// 		background: none;
-			// 		position: unset;
-			// 		bottom: 0;
-			// 		right: 0px;
-			// 		transition: none;
-			// 	}
-			// 	span:after {
-			// 		content: "";
-			// 		width: none;
-			// 		height: none;
-			// 		background: none;
-			// 		position: unset;
-			// 		bottom: 0;
-			// 		right: 0px;
-			// 		transition: none;
-			// 	}
-			// 	&:hover span:after {
-			// 		height: 0;
-			// 	}
-				
-			// 	&:hover:before {
-			// 		width: 0;
-			// 	}
-				
-			// 	&:hover:after {
-			// 		height: 0;
-			// 	}
-				
-			// 	&:hover span:before {
-			// 		height: 0px;
-			// 	}
-			// 	&:nth-child(1){
-			// 		display: none;
-			// 	}
-			// }
-		// }
-		
-		///////
-			// padding-right: 8px;
-			// padding-left: 8px;
-			// background-color: transparent;
-			// position: relative;
-			// border-bottom: 3px solid transparent;
-			// &:before {
-			// 	content: "";
-			// 	width: 100%;
-			// 	height: 1px;
-			// 	background: #459bdb;
-			// 	position: absolute;
-			// 	top: -1px;
-			// 	right: 0;
-			// 	transition: .1s ease-in-out .1s;
-			// }
-			
-			// &:after {
-			// 	content: "";
-			// 	width: 1px;
-			// 	height: 100%;
-			// 	background: #459bdb;
-			// 	position: absolute;
-			// 	bottom: 0;
-			// 	right: -1px;
-			// 	transition: .1s ease-in-out .2s;
-			// }
-			
-			// span:before {
-			// 	content: "";
-			// 	width: 100%;
-			// 	height: 1px;
-			// 	background: #459bdb;
-			// 	position: absolute;
-			// 	bottom: -1px;
-			// 	left: 0;
-			// 	transition: .1s ease-in-out .3s;
-			// }
-			
-			// span:after {
-			// 	content: "";
-			// 	width: 1px;
-			// 	height: 100%;
-			// 	background: #459bdb;
-			// 	position: absolute;
-			// 	top: 0;
-			// 	left: -1px;
-			// 	transition: .1s ease-in-out;
-			// }
-			
-			// &:hover span:after {
-			// 	height: 0;
-			// }
-			
-			// &:hover:before {
-			// 	width: 0;
-			// }
-			
-			// &:hover:after {
-			// 	height: 0;
-			// }
-			
-			// &:hover span:before {
-			// 	height: 5px;
-			// }
-		/// 
+	
 	}
 	.wrapper {
 		padding-right: 8vw;		
