@@ -399,6 +399,7 @@ header .menu_bar button.scroll-button:hover span:before {
 .wrapper .maincontents .main2 .applybtn span#caution {
   position: relative;
   top: 35px;
+  font-size: 0.8em;
 }
 .wrapper .maincontents .main1 #th, .wrapper .maincontents .main2 #th, .wrapper .maincontents .main3 #th, .wrapper .maincontents .main4 #th, .wrapper .maincontents .main5 #th {
   display: flex;
