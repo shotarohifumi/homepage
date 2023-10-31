@@ -155,7 +155,17 @@
 					}
 				}
 			}
-		
+			.main1, .main2, .main5 {
+				.box1, .box2, .box3 {
+					margin-bottom: 24px;
+				}
+			}
+			.main3, .main4 {
+				.box3,.box4 {
+					margin-bottom: 24px;
+				}
+			}
+
 			.main2 {
 				.applybtn {
 					justify-content: space-around;
@@ -291,8 +301,8 @@
 	
 	}
 	.wrapper {
-		padding-right: 8vw;		
-		padding-left: 8vw;		
+		padding-right: 10vw;		
+		padding-left: 10vw;		
 		.maincontents{ 
 			h2 {
 				border-bottom: 5px double #459BDB;
